@@ -108,7 +108,7 @@
 <section data-product-page data-fallback-image="{{ asset('assets/images/home/crane.png') }}" data-asset-root="{{ asset('') }}" class="mx-auto w-full max-w-[1600px] px-5 pt-3 pb-8 md:px-8 md:pt-4 md:pb-10" data-products="{{ base64_encode(json_encode($products, JSON_HEX_TAG | JSON_HEX_APOS | JSON_HEX_AMP | JSON_HEX_QUOT)) }}">
     <a
         href="{{ url('/product/hoist-crane') }}"
-        class="inline-flex items-center gap-3 rounded-md px-2 py-2 text-xl font-semibold text-[#536FFF] transition hover:text-[#183E6E]"
+        class="hidden md:inline-flex items-center gap-3 rounded-md px-2 py-2 text-xl font-semibold text-[#536FFF] transition hover:text-[#183E6E]"
     >
         <span aria-hidden="true" class="text-2xl">←</span>
         Back

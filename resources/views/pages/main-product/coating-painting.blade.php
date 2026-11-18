@@ -166,7 +166,7 @@
                     {{-- BACK --}}
                     <a
                         href="{{ route('product.index') }}"
-                        class="inline-flex items-center gap-3 rounded-md px-2 py-2 text-xl font-semibold text-[#536FFF] transition hover:text-[#183E6E]"
+                        class="hidden md:inline-flex items-center gap-3 rounded-md px-2 py-2 text-xl font-semibold text-[#536FFF] transition hover:text-[#183E6E]"
                     >
                         <span aria-hidden="true" class="text-2xl">←</span>
                         Back
