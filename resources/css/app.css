@@ -1,0 +1,190 @@
+
+@import "tailwindcss";
+
+@theme {
+    --color-navy: #183E6E;
+    --color-primary: #1455D9;
+    --color-gold: #F5B940;
+    --color-light: #F5F9FF;
+    --color-dark: #162841;
+
+    --font-heading: "Archivo", sans-serif;
+    --font-body: "Inter", sans-serif;
+}
+
+:root {
+    color-scheme: light;
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    color: var(--color-dark);
+    background: #fff;
+    font-family: var(--font-body);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-heading);
+    letter-spacing: -0.02em;
+}
+
+:focus-visible {
+    outline: 3px solid var(--color-primary);
+    outline-offset: 3px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        scroll-behavior: auto !important;
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+}
+
+
+/* -------------------------------------------------------
+   Responsive system — PT Wira Griya
+   Banner desktop reference: 1351 x 400 px (3.3775:1)
+   Mobile hero image: 750 x 600 px (5:4)
+-------------------------------------------------------- */
+*,
+*::before,
+*::after { box-sizing: border-box; }
+
+html, body { max-width: 100%; overflow-x: clip; }
+img, video, iframe { max-width: 100%; }
+button, a { -webkit-tap-highlight-color: transparent; }
+
+/* Mobile homepage */
+.home-mobile__hero-image {
+    display: block;
+    width: 100%;
+    aspect-ratio: 5 / 4;
+    object-fit: cover;
+    object-position: center;
+}
+
+.home-category-card {
+    display: flex;
+    min-width: 0;
+    flex-direction: column;
+    gap: .55rem;
+    overflow: hidden;
+    border: 1px solid #E3EAF2;
+    border-radius: .8rem;
+    background: #fff;
+    padding: .85rem;
+    box-shadow: 0 2px 10px rgb(24 62 110 / 5%);
+    transition: transform .25s ease, box-shadow .25s ease, border-color .25s ease;
+}
+.home-category-card:active { transform: scale(.985); }
+.home-category-card__image {
+    display: flex;
+    min-height: 100px;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    border-radius: .55rem;
+    background: #F5F8FC;
+    padding: .55rem;
+}
+.home-category-card__image img {
+    display: block;
+    width: 100%;
+    height: 100px;
+    object-fit: contain;
+    transition: transform .3s ease;
+}
+.home-category-card__title { color: #183E6E; font-size: .95rem; font-weight: 700; line-height: 1.35; }
+.home-category-card__link { display: flex; align-items: center; justify-content: space-between; color: #1455D9; font-size: .82rem; font-weight: 700; }
+.home-discovery-link {
+    display: flex;
+    min-height: 52px;
+    align-items: center;
+    justify-content: space-between;
+    gap: .75rem;
+    border: 1px solid #E1E8F1;
+    border-radius: .65rem;
+    background: #fff;
+    padding: .8rem 1rem;
+    color: #183E6E;
+    font-size: .875rem;
+    font-weight: 650;
+    transition: border-color .2s ease, color .2s ease, transform .2s ease, box-shadow .2s ease;
+}
+.home-discovery-link:hover { border-color: #1455D9; color: #1455D9; box-shadow: 0 5px 16px rgb(24 62 110 / 7%); transform: translateY(-2px); }
+.home-discovery-link:active { transform: scale(.99); }
+
+/* Responsive media and long content safety */
+.prose, article, main, section { min-width: 0; }
+pre, code { overflow-wrap: anywhere; }
+input, select, textarea { max-width: 100%; }
+
+/* Admin pages: preserve desktop sidebar, prevent workspace overflow on phones */
+#admin-sidebar { flex-shrink: 0; }
+#admin-sidebar nav { overflow-y: auto; overscroll-behavior: contain; }
+@media (max-width: 1023px) {
+    #admin-sidebar { height: 100dvh; }
+    body.admin-menu-open { overflow: hidden; }
+}
+
+/* Respect reduced motion for all custom transitions */
+@media (hover: hover) and (pointer: fine) {
+    .home-category-card:hover { transform: translateY(-3px); border-color: #C9D8EA; box-shadow: 0 10px 24px rgb(24 62 110 / 9%); }
+    .home-category-card:hover img { transform: scale(1.035); }
+}
+@media (max-width: 359px) {
+    .home-mobile h1 { font-size: 1.85rem; }
+    .home-category-card { padding: .65rem; }
+    .home-category-card__title { font-size: .85rem; }
+}
+@media (prefers-reduced-motion: reduce) {
+    .home-category-card, .home-category-card__image img, .home-discovery-link { transition: none !important; }
+}
+
+
+/* Shared page rhythm and banner dimensions */
+.site-banner,
+.page-hero-banner { width: 100%; overflow: hidden; }
+.site-banner img,
+.page-hero-banner img { display: block; width: 100%; height: auto; }
+@media (max-width: 767px) {
+    .page-content, .site-content { padding-left: 1rem; padding-right: 1rem; }
+    .site-header { padding-top: .75rem; padding-bottom: .75rem; }
+    /* Prevent large fixed-width content from forcing horizontal scrolling. */
+    .overflow-x-auto { max-width: 100%; }
+    .admin-workspace { min-width: 0; width: 100%; }
+}
+
+@media (max-width: 767px) {
+    .aspect-\[5\/4\] > .relative { padding-top: 5rem !important; padding-bottom: 1.25rem !important; padding-left: 1rem !important; padding-right: 1rem !important; }
+    .aspect-\[5\/4\] h1 { font-size: clamp(1.5rem, 6vw, 2rem); line-height: 1.12; }
+    .aspect-\[5\/4\] p { font-size: .8rem; line-height: 1.45; }
+    .aspect-\[5\/4\] .max-w-2xl, .aspect-\[5\/4\] .max-w-xl { max-width: 100%; }
+}
+
+
+/* Company-profile refinement */
+[data-product-category][hidden] { display: none !important; }
+.home-category-card:focus-visible { outline: 3px solid #1455D9; outline-offset: 3px; }
+.home-category-card__image { border: 1px solid #EAF0F6; }
+.home-category-card__title { min-height: 2.2em; }
+
+/* Avoid layout jumps when images are still loading. */
+.home-mobile__hero-image,
+.home-category-card__image img { background: #F5F8FC; }
+
+@media (max-width: 639px) {
+    .home-category-card__image { min-height: 82px; }
+    .home-category-card__image img { height: 82px; }
+}

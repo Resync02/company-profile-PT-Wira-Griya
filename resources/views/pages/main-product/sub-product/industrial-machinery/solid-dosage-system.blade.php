@@ -1,0 +1,424 @@
+@extends('layouts.app')
+@section('title', 'Solid Dosage System | PT Wira Griya')
+@section('description', 'Solid Dosage System products and equipment from PT Wira Griya partner brands.')
+@section('content')
+    @include('components.header')
+
+@php
+    $products = [
+        [
+            'brand' => 'XIAOLUN',
+            'model' => 'High Shear Mixer Granulator',
+            'type' => 'Pharmaceutical Granulation Machine',
+            'business' => 'Pharmaceutical',
+            'image' => 'assets/images/home/industrial-machinery.png',
+            'gallery' => [
+            'assets/images/home/industrial-machinery.png'
+        ],
+            'description' => 'A high-shear mixer granulator for mixing and wet granulation in pharmaceutical solid-dosage production. The manufacturer describes PLC automation and GMP-oriented design.',
+            'features' => [
+            'Mixing and wet granulation process',
+            'PLC automation control',
+            'Designed around pharmaceutical GMP requirements'
+        ],
+            'specs' => [
+            'Brand' => 'Zhejiang Xiaolun Intelligent Manufacturing',
+            'Model' => 'High Shear Mixer Granulator',
+            'Product Type' => 'Granulation equipment',
+            'Application' => 'Pharmaceutical solid dosage',
+            'Control' => 'PLC automation (manufacturer listing)',
+            'Technical Datasheet' => 'Confirm batch size, impeller configuration and process options.'
+        ]
+        ],
+        [
+            'brand' => 'XIAOLUN',
+            'model' => 'BGB Series',
+            'type' => 'High-Efficiency Film Coating Machine',
+            'business' => 'Pharmaceutical',
+            'image' => 'assets/images/home/industrial-machinery.png',
+            'gallery' => [
+            'assets/images/home/industrial-machinery.png'
+        ],
+            'description' => 'A high-efficiency coating machine range for applying film and other coating media to tablets and pills in pharmaceutical production.',
+            'features' => [
+            'Tablet and pill coating',
+            'Film-coating process',
+            'GMP-oriented equipment range'
+        ],
+            'specs' => [
+            'Brand' => 'Zhejiang Xiaolun Intelligent Manufacturing',
+            'Model' => 'BGB Series',
+            'Product Type' => 'Pharmaceutical coating machine',
+            'Application' => 'Tablet and pill coating',
+            'Technical Datasheet' => 'Select machine size and process configuration with the manufacturer.'
+        ]
+        ],
+        [
+            'brand' => 'XIAOLUN',
+            'model' => 'FBM Series',
+            'type' => 'Fluid Bed Drying & Granulation Equipment',
+            'business' => 'Pharmaceutical',
+            'image' => 'assets/images/home/industrial-machinery.png',
+            'gallery' => [
+            'assets/images/home/industrial-machinery.png'
+        ],
+            'description' => 'A fluid-bed equipment range listed by Xiaolun for drying, granulation and coating processes in solid-dosage production.',
+            'features' => [
+            'Fluid-bed processing',
+            'Drying and granulation process',
+            'Designed for pharmaceutical process lines'
+        ],
+            'specs' => [
+            'Brand' => 'Zhejiang Xiaolun Intelligent Manufacturing',
+            'Model' => 'FBM Series',
+            'Product Type' => 'Fluid-bed processing equipment',
+            'Application' => 'Pharmaceutical drying and granulation',
+            'Technical Datasheet' => 'Confirm process stage and product-specific operating parameters.'
+        ]
+        ],
+    ];
+@endphp
+
+<section class="relative aspect-[5/4] overflow-hidden sm:aspect-[1351/400]">
+    <picture class="absolute inset-0 block h-full w-full">
+        <source media="(max-width: 767px)" srcset="{{ asset('assets/images/banner/banner-m.jpg') }}">
+        <img
+            src="{{ asset('assets/images/banner/banner-d.jpg') }}"
+            alt="Pharmaceutical solid dosage processing equipment"
+            class="absolute inset-0 h-full w-full object-cover object-center"
+            fetchpriority="high"
+        >
+    </picture>
+    <div class="absolute inset-0 bg-gradient-to-r from-white via-white/90 to-white/5"></div>
+    <div class="relative z-10 mx-auto flex h-full max-w-[1600px] items-start px-6 pt-28 pb-8 md:px-10 md:pt-32">
+        <div class="max-w-xl">
+            <p class="text-xl font-bold uppercase tracking-wide text-[#183E6E]">Our Products</p>
+            <h1 class="mt-2 text-4xl font-bold leading-tight tracking-tight text-[#162841] md:text-5xl">
+                Industrial Solutions<br>
+                for a <span class="text-[#F5B940]">Better Tomorrow</span>
+            </h1>
+            <p class="mt-3 max-w-md text-base leading-relaxed text-[#162841]/90">
+                High-quality machinery and equipment to support your production process, improve efficiency, and meet the evolving needs of your industry.
+            </p>
+        </div>
+    </div>
+</section>
+
+<section data-product-page data-fallback-image="{{ asset('assets/images/home/industrial-machinery.png') }}" data-asset-root="{{ asset('') }}" class="mx-auto w-full max-w-[1600px] px-5 pt-3 pb-8 md:px-8 md:pt-4 md:pb-10" data-products="{{ base64_encode(json_encode($products, JSON_HEX_TAG | JSON_HEX_APOS | JSON_HEX_AMP | JSON_HEX_QUOT)) }}">
+    <a
+        href="{{ url('/product/industrial-machinery') }}"
+        class="inline-flex items-center gap-3 rounded-md px-2 py-2 text-xl font-semibold text-[#536FFF] transition hover:text-[#183E6E]"
+    >
+        <span aria-hidden="true" class="text-2xl">←</span>
+        Back
+    </a>
+
+    <div class="mt-2 flex flex-col gap-4 lg:flex-row lg:items-start lg:justify-between">
+        <div class="max-w-2xl">
+            <h2 class="text-2xl font-bold text-[#183E6E] md:text-3xl">Solid Dosage System</h2>
+            <p class="mt-1 text-base leading-relaxed text-[#183E6E]/90">Solid dosage production equipment supports pharmaceutical material mixing, granulation, drying and coating. Xiaolun’s partner portfolio includes equipment for these process stages.</p>
+        </div>
+        <div class="grid w-full grid-cols-1 gap-2 sm:grid-cols-2 lg:w-auto lg:min-w-[330px] lg:grid-cols-1">
+            <div role="search" class="flex h-10 items-center overflow-hidden rounded-md border border-gray-300 bg-white">
+                <label for="solid-dosage-system-search" class="sr-only">Search products</label>
+                <input
+                    id="solid-dosage-system-search"
+                    type="search"
+                    placeholder="Search Products..."
+                    aria-label="Search products"
+                    class="min-w-0 flex-1 px-3 text-base outline-none placeholder:text-gray-400 focus:ring-1 focus:ring-[#1455D9]"
+                >
+                <button
+                    type="button"
+                    id="solid-dosage-system-search-button"
+                    aria-label="Search products"
+                    class="flex h-full w-10 shrink-0 cursor-pointer items-center justify-center text-[#183E6E] transition hover:bg-gray-100"
+                >
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <circle cx="11" cy="11" r="7"/><path d="m20 20-4-4"/>
+                    </svg>
+                </button>
+            </div>
+            <div class="flex flex-wrap items-center justify-end gap-2">
+                <label for="solid-dosage-system-sort" class="shrink-0 text-base text-[#183E6E]">Sort by:</label>
+                <select id="solid-dosage-system-sort" class="h-10 min-w-0 flex-1 cursor-pointer rounded-md border border-gray-300 bg-white px-3 text-base font-semibold text-primary outline-none focus:border-[#1455D9] sm:flex-none sm:max-w-[170px]">
+                    <option value="latest">Latest First</option>
+                    <option value="az">A–Z</option>
+                    <option value="za">Z–A</option>
+                </select>
+            </div>
+        </div>
+    </div>
+
+    <div id="solid-dosage-system-product-grid" class="mt-5 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4">
+        @foreach ($products as $index => $product)
+            <article
+                class="solid-dosage-system-product-card group flex min-h-[150px] min-w-0 overflow-hidden rounded-md border border-[#536FFF] bg-white transition hover:border-[#1455D9] hover:shadow-md"
+                data-brand="{{ $product['brand'] }}"
+                data-model="{{ $product['model'] }}"
+                data-business="{{ $product['business'] }}"
+                data-index="{{ $index }}"
+            >
+                <div class="flex w-[42%] shrink-0 items-center justify-center p-3">
+                    <img
+                        src="{{ asset($product['image']) }}"
+                        alt="{{ $product['brand'] }} {{ $product['model'] }}"
+                        class="h-32 w-full object-contain transition duration-300 group-hover:scale-105"
+                        loading="lazy"
+                        data-fallback-src="{{ asset('assets/images/home/industrial-machinery.png') }}" onerror="this.onerror=null;this.src=this.dataset.fallbackSrc;"
+                    >
+                </div>
+                <div class="flex min-w-0 flex-1 flex-col py-3 pr-2">
+                    <p class="text-sm font-bold text-[#536FFF]">{{ $product['brand'] }}</p>
+                    <h3 class="mt-1 break-words text-base font-bold text-[#183E6E]">{{ $product['model'] }}</h3>
+                    <p class="text-sm leading-snug text-[#183E6E]">{{ $product['type'] }}</p>
+                    <button type="button" class="solid-dosage-system-view-details mt-auto inline-flex cursor-pointer items-center gap-1 pt-3 text-left text-sm font-semibold text-[#536FFF] transition hover:text-[#183E6E]" data-product-index="{{ $index }}">
+                        View Details <span aria-hidden="true">→</span>
+                    </button>
+                </div>
+            </article>
+        @endforeach
+    </div>
+
+    <div id="solid-dosage-system-empty-state" class="hidden py-12 text-center text-sm text-gray-500">
+        No products found. Try another keyword.
+    </div>
+    <nav id="solid-dosage-system-pagination" aria-label="Product pagination" class="mt-8 flex flex-wrap items-center justify-center gap-1.5"></nav>
+</section>
+
+<div id="solid-dosage-system-product-modal" class="fixed inset-0 z-[100] hidden items-center justify-center overflow-y-auto bg-black/50 p-2 sm:p-5" aria-hidden="true">
+    <div role="dialog" aria-modal="true" aria-labelledby="solid-dosage-system-modal-title" class="relative my-auto w-full max-w-[1250px] rounded-2xl border-2 border-[#168FE5] bg-white p-5 shadow-xl sm:p-8 lg:p-10">
+        <button type="button" id="solid-dosage-system-modal-close" aria-label="Close product details" class="absolute right-4 top-3 z-10 flex size-10 cursor-pointer items-center justify-center text-4xl font-light text-[#536FFF] transition hover:scale-110 sm:right-6 sm:top-4">&times;</button>
+        <div class="grid grid-cols-1 gap-7 pt-5 lg:grid-cols-[360px_minmax(0,1fr)] lg:gap-10">
+            <div class="min-w-0">
+                <div class="relative flex h-[280px] items-center justify-center overflow-hidden rounded-lg border border-gray-400 bg-white sm:h-[340px] lg:h-[340px]">
+                    <img id="solid-dosage-system-modal-image" src="" alt="" class="h-full w-full object-contain p-3">
+                    <button type="button" id="solid-dosage-system-gallery-prev" aria-label="Previous product image" class="absolute left-3 top-1/2 flex size-10 -translate-y-1/2 items-center justify-center rounded-full border border-gray-200 bg-white/90 text-2xl font-semibold text-[#183E6E] shadow transition hover:bg-[#536FFF] hover:text-white disabled:cursor-not-allowed disabled:opacity-30">&#8249;</button>
+                    <button type="button" id="solid-dosage-system-gallery-next" aria-label="Next product image" class="absolute right-3 top-1/2 flex size-10 -translate-y-1/2 items-center justify-center rounded-full border border-gray-200 bg-white/90 text-2xl font-semibold text-[#183E6E] shadow transition hover:bg-[#536FFF] hover:text-white disabled:cursor-not-allowed disabled:opacity-30">&#8250;</button>
+                    <span id="solid-dosage-system-gallery-counter" class="absolute bottom-3 right-3 rounded-full bg-black/60 px-3 py-1 text-xs font-semibold text-white">1 / 1</span>
+                </div>
+                <div id="solid-dosage-system-modal-thumbnails" class="mt-4 flex flex-wrap gap-2"></div>
+            </div>
+            <div class="min-w-0 lg:pt-4">
+                <div class="flex flex-wrap gap-2 pr-10">
+                    <span class="rounded-lg bg-[#DCD9FF] px-2 py-1 text-sm font-bold leading-none text-[#536FFF]">Industrial Machinery</span>
+                    <span class="rounded-lg bg-[#DCD9FF] px-2 py-1 text-sm font-bold leading-none text-[#536FFF]">Solid Dosage System</span>
+                </div>
+                <p id="solid-dosage-system-modal-brand" class="mt-5 text-xl font-bold text-[#536FFF] sm:text-2xl"></p>
+                <h2 id="solid-dosage-system-modal-title" class="mt-1 break-words text-4xl font-bold leading-tight text-[#183E6E] sm:text-5xl lg:text-6xl"></h2>
+                <p id="solid-dosage-system-modal-type" class="mt-1 text-lg font-bold text-[#183E6E] sm:text-xl"></p>
+                <p id="solid-dosage-system-modal-description" class="mt-4 text-base leading-relaxed text-[#183E6E]"></p>
+                <h3 class="mt-4 text-xl font-bold text-[#183E6E]">Key Features</h3>
+                <ul id="solid-dosage-system-modal-features" class="mt-2 list-disc space-y-2 pl-5 text-base leading-relaxed text-[#183E6E]"></ul>
+            </div>
+        </div>
+        <div class="mt-6">
+            <h3 class="mb-2 text-xl font-bold text-[#183E6E] sm:text-2xl">Key Specifications</h3>
+            <div class="overflow-x-auto rounded-lg border border-gray-200">
+                <table class="w-full min-w-[320px] border-collapse text-left text-base text-[#183E6E]">
+                    <thead class="bg-[#183E6E] text-white"><tr>
+                        <th scope="col" class="w-1/3 border-r border-white/20 px-4 py-3 text-sm font-bold sm:text-base">Specification</th>
+                        <th scope="col" class="px-4 py-3 text-sm font-bold sm:text-base">Details</th>
+                    </tr></thead>
+                    <tbody id="solid-dosage-system-modal-specs" class="divide-y divide-gray-200 bg-white"></tbody>
+                </table>
+            </div>
+            <p class="mt-3 text-sm leading-relaxed text-gray-500">Product information is based on the partner product range. Confirm the final configuration and latest technical specifications with PT Wira Griya before ordering.</p>
+        </div>
+    </div>
+</div>
+
+@include('components.footer')
+
+@push('scripts')
+<script>
+(() => {
+    const init = () => {
+        const pageRoot = document.querySelector("[data-product-page]");
+        let products = [];
+
+        try {
+            const encodedProducts = pageRoot?.dataset.products || '';
+            const binaryJson = encodedProducts ? atob(encodedProducts) : '';
+            const utf8Json = binaryJson
+                ? new TextDecoder().decode(Uint8Array.from(binaryJson, character => character.charCodeAt(0)))
+                : '[]';
+            products = JSON.parse(utf8Json);
+        } catch (error) {
+            console.error('Unable to read product data.', error);
+            return;
+        }
+        const searchInput = document.getElementById('solid-dosage-system-search');
+        const sortSelect = document.getElementById('solid-dosage-system-sort');
+        const cards = Array.from(document.querySelectorAll('.solid-dosage-system-product-card'));
+        const grid = document.getElementById('solid-dosage-system-product-grid');
+        const emptyState = document.getElementById('solid-dosage-system-empty-state');
+        const pagination = document.getElementById('solid-dosage-system-pagination');
+        const modal = document.getElementById('solid-dosage-system-product-modal');
+        const modalClose = document.getElementById('solid-dosage-system-modal-close');
+        const modalImage = document.getElementById('solid-dosage-system-modal-image');
+        const thumbnails = document.getElementById('solid-dosage-system-modal-thumbnails');
+        const previousButton = document.getElementById('solid-dosage-system-gallery-prev');
+        const nextButton = document.getElementById('solid-dosage-system-gallery-next');
+        const galleryCounter = document.getElementById('solid-dosage-system-gallery-counter');
+        const fallbackImage = pageRoot?.dataset.fallbackImage || "";
+        const assetRoot = pageRoot?.dataset.assetRoot || "";
+        const perPage = 8;
+        let currentPage = 1;
+        let activeGallery = [];
+        let activeGalleryIndex = 0;
+
+        if (!searchInput || !sortSelect || !grid || !modal || !modalClose) return;
+
+        const getFilteredProducts = () => {
+            const query = searchInput.value.trim().toLowerCase();
+            const filtered = products.filter((product) => {
+                const haystack = [product.brand, product.model, product.type, product.description, product.business, ...(product.features || [])].join(' ').toLowerCase();
+                return haystack.includes(query);
+            });
+            if (sortSelect.value === 'az') filtered.sort((a,b) => `${a.brand} ${a.model}`.localeCompare(`${b.brand} ${b.model}`));
+            else if (sortSelect.value === 'za') filtered.sort((a,b) => `${b.brand} ${b.model}`.localeCompare(`${a.brand} ${a.model}`));
+            else filtered.sort((a,b) => products.indexOf(a) - products.indexOf(b));
+            return filtered;
+        };
+
+        const renderPagination = (totalPages) => {
+            pagination.replaceChildren();
+            pagination.classList.toggle('hidden', totalPages <= 1);
+            if (totalPages <= 1) return;
+            const addButton = (label, page, options = {}) => {
+                const button = document.createElement('button');
+                button.type = 'button';
+                button.textContent = label;
+                button.disabled = Boolean(options.disabled);
+                button.className = [
+                    'flex h-9 min-w-9 items-center justify-center rounded border px-3 text-sm transition',
+                    options.active ? 'border-[#536FFF] bg-[#536FFF] font-bold text-white' : 'border-gray-200 bg-white text-[#536FFF] hover:border-[#536FFF]',
+                    button.disabled ? 'cursor-not-allowed opacity-40' : 'cursor-pointer'
+                ].join(' ');
+                button.addEventListener('click', () => { currentPage = page; renderProducts(); });
+                pagination.appendChild(button);
+            };
+            addButton('‹', Math.max(1, currentPage - 1), { disabled: currentPage === 1 });
+            for (let page = 1; page <= totalPages; page++) addButton(String(page), page, { active: page === currentPage });
+            addButton('›', Math.min(totalPages, currentPage + 1), { disabled: currentPage === totalPages });
+        };
+
+        const renderProducts = () => {
+            const filtered = getFilteredProducts();
+            const totalPages = Math.ceil(filtered.length / perPage);
+            currentPage = totalPages === 0 ? 1 : Math.min(currentPage, totalPages);
+            const start = (currentPage - 1) * perPage;
+            const visible = new Set(filtered.slice(start, start + perPage).map(product => products.indexOf(product)));
+            cards.forEach(card => card.classList.toggle('hidden', !visible.has(Number(card.dataset.index))));
+            emptyState.classList.toggle('hidden', filtered.length !== 0);
+            grid.classList.toggle('hidden', filtered.length === 0);
+            renderPagination(totalPages);
+        };
+
+        const showGalleryImage = (index) => {
+            if (!activeGallery.length) return;
+            activeGalleryIndex = (index + activeGallery.length) % activeGallery.length;
+            const path = activeGallery[activeGalleryIndex];
+            modalImage.onerror = () => { modalImage.onerror = null; modalImage.src = fallbackImage; };
+            modalImage.src = assetRoot + path;
+            modalImage.alt = 'Product image ' + (activeGalleryIndex + 1);
+            galleryCounter.textContent = `${activeGalleryIndex + 1} / ${activeGallery.length}`;
+            previousButton.disabled = activeGallery.length <= 1;
+            nextButton.disabled = activeGallery.length <= 1;
+            thumbnails.querySelectorAll('button').forEach((button, index) => {
+                button.classList.toggle('border-[#168FE5]', index === activeGalleryIndex);
+                button.classList.toggle('ring-1', index === activeGalleryIndex);
+                button.classList.toggle('ring-[#168FE5]', index === activeGalleryIndex);
+            });
+        };
+
+        const openProductModal = (index) => {
+            const product = products[index];
+            if (!product) return;
+            document.getElementById('solid-dosage-system-modal-brand').textContent = product.brand;
+            document.getElementById('solid-dosage-system-modal-title').textContent = product.model;
+            document.getElementById('solid-dosage-system-modal-type').textContent = product.type;
+            document.getElementById('solid-dosage-system-modal-description').textContent = product.description;
+
+            const featureList = document.getElementById('solid-dosage-system-modal-features');
+            featureList.replaceChildren();
+            (product.features || []).forEach(feature => {
+                const item = document.createElement('li');
+                item.textContent = feature;
+                featureList.appendChild(item);
+            });
+
+            const specsBody = document.getElementById('solid-dosage-system-modal-specs');
+            specsBody.replaceChildren();
+            Object.entries(product.specs || {}).forEach(([label, value]) => {
+                if (!value) return;
+                const row = document.createElement('tr');
+                row.className = 'transition-colors odd:bg-white even:bg-[#F5F9FF] hover:bg-blue-50';
+                const heading = document.createElement('th');
+                heading.scope = 'row';
+                heading.className = 'w-1/3 border-r border-gray-200 px-4 py-3 align-top text-sm font-semibold text-[#183E6E] sm:text-base';
+                heading.textContent = label;
+                const cell = document.createElement('td');
+                cell.className = 'px-4 py-3 align-top text-sm leading-relaxed text-gray-800 sm:text-base';
+                cell.textContent = value;
+                row.append(heading, cell);
+                specsBody.appendChild(row);
+            });
+
+            activeGallery = [...new Set((product.gallery?.length ? product.gallery : [product.image]).filter(Boolean))].slice(0, 5);
+            activeGalleryIndex = 0;
+            thumbnails.replaceChildren();
+            activeGallery.forEach((path, imageIndex) => {
+                const button = document.createElement('button');
+                button.type = 'button';
+                button.setAttribute('aria-label', `Show product image ${imageIndex + 1}`);
+                button.className = 'flex h-14 w-14 shrink-0 items-center justify-center overflow-hidden rounded-lg border border-gray-300 bg-white p-1 transition hover:border-[#168FE5]';
+                const image = document.createElement('img');
+                image.src = assetRoot + path;
+                image.alt = product.model + ' image ' + (imageIndex + 1);
+                image.className = 'h-full w-full object-contain';
+                image.onerror = () => button.classList.add('hidden');
+                button.appendChild(image);
+                button.addEventListener('click', () => showGalleryImage(imageIndex));
+                thumbnails.appendChild(button);
+            });
+            previousButton.onclick = () => showGalleryImage(activeGalleryIndex - 1);
+            nextButton.onclick = () => showGalleryImage(activeGalleryIndex + 1);
+            showGalleryImage(0);
+            modal.classList.remove('hidden');
+            modal.classList.add('flex');
+            modal.setAttribute('aria-hidden', 'false');
+            document.body.classList.add('overflow-hidden');
+            modalClose.focus();
+        };
+
+        const closeProductModal = () => {
+            modal.classList.add('hidden');
+            modal.classList.remove('flex');
+            modal.setAttribute('aria-hidden', 'true');
+            document.body.classList.remove('overflow-hidden');
+        };
+
+        searchInput.addEventListener('input', () => { currentPage = 1; renderProducts(); });
+        document.getElementById('solid-dosage-system-search-button')?.addEventListener('click', () => { currentPage = 1; renderProducts(); });
+        sortSelect.addEventListener('change', () => { currentPage = 1; renderProducts(); });
+        grid.addEventListener('click', (event) => {
+            const target = event.target instanceof Element ? event.target : event.target.parentElement;
+            const button = target?.closest('.solid-dosage-system-view-details');
+            if (!button || !grid.contains(button)) return;
+            event.preventDefault();
+            openProductModal(Number(button.dataset.productIndex));
+        });
+        modalClose.addEventListener('click', closeProductModal);
+        modal.addEventListener('click', (event) => { if (event.target === modal) closeProductModal(); });
+        document.addEventListener('keydown', (event) => { if (event.key === 'Escape' && !modal.classList.contains('hidden')) closeProductModal(); });
+        renderProducts();
+    };
+
+    if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', init, { once: true });
+    else init();
+})();
+</script>
+@endpush
+@endsection
