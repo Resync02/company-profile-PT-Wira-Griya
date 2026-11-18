@@ -2,6 +2,7 @@
 <?php
 
 use App\Http\Controllers\ContactInquiryController;
+use App\Http\Controllers\WebsiteSearchController;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\View;
 
@@ -10,6 +11,7 @@ use Illuminate\Support\Facades\View;
     Route::view('/news', 'pages.news')->name('news');
     Route::view('/contact-us', 'pages.contact')->name('contact');
     Route::post('/contact-us', [ContactInquiryController::class, 'store'])->middleware('throttle:5,1')->name('contact.submit');
+    Route::get('/search', WebsiteSearchController::class)->name('search');
     // News listing page.
     // Each news detail is stored as its own Blade file:
     // resources/views/pages/news/{slug}.blade.php

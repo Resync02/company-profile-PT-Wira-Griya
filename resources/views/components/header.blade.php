@@ -1,15 +1,15 @@
 <header class="site-header absolute inset-x-0 top-0 z-40 flex items-start justify-between gap-3 px-4 py-3 sm:px-5 md:px-10 md:py-5">
 
     <div class="ml-auto flex items-start justify-end gap-2.5 sm:gap-3">
-        <div id="search-container" class="flex items-center overflow-hidden rounded-md bg-white/95 shadow-sm transition-all duration-300">
-            <form id="search-form" action="{{ route('product.index') }}" method="GET" class="flex items-center" role="search">
+        <div id="search-container" data-search-active="{{ request()->routeIs('search') ? 'true' : 'false' }}" class="flex items-center overflow-hidden rounded-md bg-white/95 shadow-sm transition-all duration-300">
+            <form id="search-form" action="{{ route('search') }}" method="GET" class="flex items-center" role="search">
                 <input
                     id="search-input"
                     type="search"
                     name="q"
-                    value="{{ request()->routeIs('product.index') ? request('q') : '' }}"
-                    placeholder="Search products..."
-                    aria-label="Search product categories"
+                    value="{{ request()->routeIs('search') ? request('q') : '' }}"
+                    placeholder="Search anything..."
+                    aria-label="Search all website content"
                     autocomplete="off"
                     required
                     class="w-0 min-w-0 bg-transparent px-0 py-3 text-sm text-dark outline-none transition-all duration-300 placeholder:text-gray-400 focus-visible:ring-2 focus-visible:ring-inset focus-visible:ring-[#1455D9]"

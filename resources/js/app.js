@@ -5,6 +5,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const searchInput = document.getElementById('search-input');
     const searchToggle = document.getElementById('search-toggle');
     const searchForm = document.getElementById('search-form');
+    const searchContainer = document.getElementById('search-container');
 
     function openSearch() {
         if (!searchInput || !searchToggle) return;
@@ -26,6 +27,10 @@ document.addEventListener('DOMContentLoaded', () => {
         searchToggle.setAttribute('aria-label', 'Open search');
     }
 
+    if (searchContainer?.dataset.searchActive === 'true') {
+        openSearch();
+    }
+
     searchToggle?.addEventListener('click', () => {
         searchToggle.getAttribute('aria-expanded') === 'true'
             ? closeSearch()
@@ -37,7 +42,7 @@ document.addEventListener('DOMContentLoaded', () => {
             event.preventDefault();
             searchInput?.focus();
         }
-        // A non-empty query submits to the product catalogue using GET.
+        // A non-empty query submits to the global website search using GET.
     });
 
     // Product category search: matches category names and their listed product types.
