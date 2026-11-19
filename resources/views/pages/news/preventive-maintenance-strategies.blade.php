@@ -11,7 +11,7 @@
         'category' => 'Tips & Guides',
         'date' => '2026-11-17',
         'author' => 'Admin Wira',
-        'image' => 'assets/images/home/industrial-machinery.png',
+        'image' => 'assets/images/home/industrial-machinery.webp',
         'excerpt' => 'A structured preventive maintenance program helps industrial operators monitor equipment condition, reduce avoidable interruptions, and plan maintenance activities more effectively.',
         'description' => 'Industrial equipment supports production, material handling, and day-to-day facility operations. When maintenance is handled only after a breakdown, unplanned downtime can disrupt schedules and place additional pressure on operating teams. A preventive maintenance approach uses planned inspections, servicing intervals, and clear records to help identify equipment concerns before they become larger problems.',
         'sections' => [
@@ -59,12 +59,12 @@
         {{-- MOBILE --}}
         <source
             media="(max-width: 767px)"
-            srcset="{{ asset('assets/images/banner/banner-m.jpg') }}"
+            srcset="{{ asset('assets/images/banner/banner-m.webp') }}"
         >
 
         {{-- DESKTOP --}}
         <img
-            src="{{ asset('assets/images/banner/banner-d.jpg') }}"
+            src="{{ asset('assets/images/banner/banner-d.webp') }}"
             alt="PT Wira Griya industrial solutions"
             class="block h-auto w-full"
             fetchpriority="high"

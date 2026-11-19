@@ -12,7 +12,7 @@
         'date' => '2026-12-03',
         'category' => 'Industry Meetup',
         'location' => 'Indonesia',
-        'image' => 'assets/images/event/industrial-equipment-engineering/event1.jpg',
+        'image' => 'assets/images/event/industrial-equipment-engineering/event1.webp',
         'description' => 'Industrial Equipment & Engineering Meetup brings together people with an interest in industrial equipment, engineering practices, and operational challenges. The meetup is intended as a setting to exchange practical insights, discuss equipment and maintenance needs, and build connections between professionals and organizations in the industrial sector. The detailed agenda, speakers, and registration arrangements are to be confirmed by the event organizer.',
         'time' => 'To be announced',
         'venue' => 'To be announced, Indonesia',
@@ -39,12 +39,12 @@
         {{-- MOBILE --}}
         <source
             media="(max-width: 767px)"
-            srcset="{{ asset('assets/images/banner/banner-m.jpg') }}"
+            srcset="{{ asset('assets/images/banner/banner-m.webp') }}"
         >
 
         {{-- DESKTOP --}}
         <img
-            src="{{ asset('assets/images/banner/banner-d.jpg') }}"
+            src="{{ asset('assets/images/banner/banner-d.webp') }}"
             alt="PT Wira Griya industrial solutions"
             class="block h-auto w-full"
             fetchpriority="high"

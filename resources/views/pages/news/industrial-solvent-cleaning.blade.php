@@ -11,7 +11,7 @@
         'title' => 'Industrial Solvent Cleaning for Safer Production Processes',
         'category' => 'Product Insight',
         'date' => '2026-11-12',
-        'image' => 'assets/images/thumbnail_product/solvent.png',
+        'image' => 'assets/images/thumbnail_product/solvent.webp',
         'excerpt' => 'Learn how to evaluate industrial solvent cleaning requirements, equipment compatibility, process flow, and safe chemical handling.',
         'description' => 'Cleaning is an important stage in many industrial processes. Oil, grease, residues, and other contaminants can affect coating, bonding, assembly, or the performance of finished components. An industrial solvent cleaning process should be selected according to the type of contaminant, the material being cleaned, the required cleanliness level, and the controls needed for safe operation.',
         'sections' => [
@@ -59,12 +59,12 @@
         {{-- MOBILE --}}
         <source
             media="(max-width: 767px)"
-            srcset="{{ asset('assets/images/banner/banner-m.jpg') }}"
+            srcset="{{ asset('assets/images/banner/banner-m.webp') }}"
         >
 
         {{-- DESKTOP --}}
         <img
-            src="{{ asset('assets/images/banner/banner-d.jpg') }}"
+            src="{{ asset('assets/images/banner/banner-d.webp') }}"
             alt="PT Wira Griya industrial solutions"
             class="block h-auto w-full"
             fetchpriority="high"

@@ -8,7 +8,7 @@
 
     {{-- HERO BANNER --}}
     <section class="relative aspect-[5/4] overflow-hidden sm:aspect-[1351/400]">
-        <picture class="absolute inset-0 block h-full w-full"><source media="(max-width: 767px)" srcset="{{ asset('assets/images/banner/banner-m.jpg') }}"><img src="{{ asset('assets/images/thumbnail_product/machinery.png') }}"
+        <picture class="absolute inset-0 block h-full w-full"><source media="(max-width: 767px)" srcset="{{ asset('assets/images/banner/banner-m.webp') }}"><img src="{{ asset('assets/images/thumbnail_product/machinery.webp') }}"
             alt="Industrial machinery and production equipment"
             class="absolute inset-0 size-full object-cover object-center"
         ></picture>
@@ -134,7 +134,7 @@
                     class="group flex min-h-[124px] items-center gap-4 rounded-md border-2 border-[#5575FF] bg-white p-3 transition hover:-translate-y-0.5 hover:bg-blue-50 hover:shadow-md"
                 >
                     <div class="flex h-20 w-[34%] shrink-0 items-center justify-center overflow-hidden rounded bg-[#F5F9FF] p-1">
-                        <img src="{{ asset('assets/images/home/industrial-machinery.png') }}" alt="Powder & Material Handling" class="h-full w-full object-contain transition duration-300 group-hover:scale-105" loading="lazy" onerror="this.onerror=null; this.src='{{ asset('assets/images/thumbnail_product/machinery.png') }}';">
+                        <img src="{{ asset('assets/images/home/industrial-machinery.webp') }}" alt="Powder & Material Handling" class="h-full w-full object-contain transition duration-300 group-hover:scale-105" loading="lazy" onerror="this.onerror=null; this.src='{{ asset('assets/images/thumbnail_product/machinery.webp') }}';">
                     </div>
                     <span class="min-w-0 flex-1 text-base font-bold leading-tight text-navy">Powder &amp; Material Handling</span>
                     <span class="shrink-0 text-2xl font-bold text-navy transition-transform group-hover:translate-x-1" aria-hidden="true">›</span>
@@ -145,7 +145,7 @@
                     class="group flex min-h-[124px] items-center gap-4 rounded-md border-2 border-[#5575FF] bg-white p-3 transition hover:-translate-y-0.5 hover:bg-blue-50 hover:shadow-md"
                 >
                     <div class="flex h-20 w-[34%] shrink-0 items-center justify-center overflow-hidden rounded bg-[#F5F9FF] p-1">
-                        <img src="{{ asset('assets/images/home/industrial-machinery.png') }}" alt="Tube Filling & Sealing" class="h-full w-full object-contain transition duration-300 group-hover:scale-105" loading="lazy" onerror="this.onerror=null; this.src='{{ asset('assets/images/thumbnail_product/machinery.png') }}';">
+                        <img src="{{ asset('assets/images/home/industrial-machinery.webp') }}" alt="Tube Filling & Sealing" class="h-full w-full object-contain transition duration-300 group-hover:scale-105" loading="lazy" onerror="this.onerror=null; this.src='{{ asset('assets/images/thumbnail_product/machinery.webp') }}';">
                     </div>
                     <span class="min-w-0 flex-1 text-base font-bold leading-tight text-navy">Tube Filling &amp; Sealing</span>
                     <span class="shrink-0 text-2xl font-bold text-navy transition-transform group-hover:translate-x-1" aria-hidden="true">›</span>
@@ -156,7 +156,7 @@
                     class="group flex min-h-[124px] items-center gap-4 rounded-md border-2 border-[#5575FF] bg-white p-3 transition hover:-translate-y-0.5 hover:bg-blue-50 hover:shadow-md"
                 >
                     <div class="flex h-20 w-[34%] shrink-0 items-center justify-center overflow-hidden rounded bg-[#F5F9FF] p-1">
-                        <img src="{{ asset('assets/images/home/industrial-machinery.png') }}" alt="Packaging Solutions" class="h-full w-full object-contain transition duration-300 group-hover:scale-105" loading="lazy" onerror="this.onerror=null; this.src='{{ asset('assets/images/thumbnail_product/machinery.png') }}';">
+                        <img src="{{ asset('assets/images/home/industrial-machinery.webp') }}" alt="Packaging Solutions" class="h-full w-full object-contain transition duration-300 group-hover:scale-105" loading="lazy" onerror="this.onerror=null; this.src='{{ asset('assets/images/thumbnail_product/machinery.webp') }}';">
                     </div>
                     <span class="min-w-0 flex-1 text-base font-bold leading-tight text-navy">Packaging Solutions</span>
                     <span class="shrink-0 text-2xl font-bold text-navy transition-transform group-hover:translate-x-1" aria-hidden="true">›</span>
@@ -167,7 +167,7 @@
                     class="group flex min-h-[124px] items-center gap-4 rounded-md border-2 border-[#5575FF] bg-white p-3 transition hover:-translate-y-0.5 hover:bg-blue-50 hover:shadow-md"
                 >
                     <div class="flex h-20 w-[34%] shrink-0 items-center justify-center overflow-hidden rounded bg-[#F5F9FF] p-1">
-                        <img src="{{ asset('assets/images/home/industrial-machinery.png') }}" alt="Mixing & Process System" class="h-full w-full object-contain transition duration-300 group-hover:scale-105" loading="lazy" onerror="this.onerror=null; this.src='{{ asset('assets/images/thumbnail_product/machinery.png') }}';">
+                        <img src="{{ asset('assets/images/home/industrial-machinery.webp') }}" alt="Mixing & Process System" class="h-full w-full object-contain transition duration-300 group-hover:scale-105" loading="lazy" onerror="this.onerror=null; this.src='{{ asset('assets/images/thumbnail_product/machinery.webp') }}';">
                     </div>
                     <span class="min-w-0 flex-1 text-base font-bold leading-tight text-navy">Mixing &amp; Process System</span>
                     <span class="shrink-0 text-2xl font-bold text-navy transition-transform group-hover:translate-x-1" aria-hidden="true">›</span>
@@ -178,7 +178,7 @@
                     class="group flex min-h-[124px] items-center gap-4 rounded-md border-2 border-[#5575FF] bg-white p-3 transition hover:-translate-y-0.5 hover:bg-blue-50 hover:shadow-md"
                 >
                     <div class="flex h-20 w-[34%] shrink-0 items-center justify-center overflow-hidden rounded bg-[#F5F9FF] p-1">
-                        <img src="{{ asset('assets/images/home/industrial-machinery.png') }}" alt="Solid Dosage System" class="h-full w-full object-contain transition duration-300 group-hover:scale-105" loading="lazy" onerror="this.onerror=null; this.src='{{ asset('assets/images/thumbnail_product/machinery.png') }}';">
+                        <img src="{{ asset('assets/images/home/industrial-machinery.webp') }}" alt="Solid Dosage System" class="h-full w-full object-contain transition duration-300 group-hover:scale-105" loading="lazy" onerror="this.onerror=null; this.src='{{ asset('assets/images/thumbnail_product/machinery.webp') }}';">
                     </div>
                     <span class="min-w-0 flex-1 text-base font-bold leading-tight text-navy">Solid Dosage System</span>
                     <span class="shrink-0 text-2xl font-bold text-navy transition-transform group-hover:translate-x-1" aria-hidden="true">›</span>
@@ -189,7 +189,7 @@
                     class="group flex min-h-[124px] items-center gap-4 rounded-md border-2 border-[#5575FF] bg-white p-3 transition hover:-translate-y-0.5 hover:bg-blue-50 hover:shadow-md"
                 >
                     <div class="flex h-20 w-[34%] shrink-0 items-center justify-center overflow-hidden rounded bg-[#F5F9FF] p-1">
-                        <img src="{{ asset('assets/images/home/industrial-machinery.png') }}" alt="Liquid Filling & Capping" class="h-full w-full object-contain transition duration-300 group-hover:scale-105" loading="lazy" onerror="this.onerror=null; this.src='{{ asset('assets/images/thumbnail_product/machinery.png') }}';">
+                        <img src="{{ asset('assets/images/home/industrial-machinery.webp') }}" alt="Liquid Filling & Capping" class="h-full w-full object-contain transition duration-300 group-hover:scale-105" loading="lazy" onerror="this.onerror=null; this.src='{{ asset('assets/images/thumbnail_product/machinery.webp') }}';">
                     </div>
                     <span class="min-w-0 flex-1 text-base font-bold leading-tight text-navy">Liquid Filling &amp; Capping</span>
                     <span class="shrink-0 text-2xl font-bold text-navy transition-transform group-hover:translate-x-1" aria-hidden="true">›</span>
@@ -200,7 +200,7 @@
                     class="group flex min-h-[124px] items-center gap-4 rounded-md border-2 border-[#5575FF] bg-white p-3 transition hover:-translate-y-0.5 hover:bg-blue-50 hover:shadow-md"
                 >
                     <div class="flex h-20 w-[34%] shrink-0 items-center justify-center overflow-hidden rounded bg-[#F5F9FF] p-1">
-                        <img src="{{ asset('assets/images/home/industrial-machinery.png') }}" alt="Liquid Filling & Capping" class="h-full w-full object-contain transition duration-300 group-hover:scale-105" loading="lazy" onerror="this.onerror=null; this.src='{{ asset('assets/images/thumbnail_product/machinery.png') }}';">
+                        <img src="{{ asset('assets/images/home/industrial-machinery.webp') }}" alt="Liquid Filling & Capping" class="h-full w-full object-contain transition duration-300 group-hover:scale-105" loading="lazy" onerror="this.onerror=null; this.src='{{ asset('assets/images/thumbnail_product/machinery.webp') }}';">
                     </div>
                     <span class="min-w-0 flex-1 text-base font-bold leading-tight text-navy">Labelling &amp; End-of-Line Automation</span>
                     <span class="shrink-0 text-2xl font-bold text-navy transition-transform group-hover:translate-x-1" aria-hidden="true">›</span>

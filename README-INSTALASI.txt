@@ -29,7 +29,7 @@ Letakkan file gambar di folder public\assets\images\ dengan nama:
 - hero-product-01.png
 - hero-product-02.png
 - hero-product-03.png
-- hero-mobile.jpg
+- hero-mobile.webp
 - home-about.jpg
 
 CATATAN PENYESUAIAN

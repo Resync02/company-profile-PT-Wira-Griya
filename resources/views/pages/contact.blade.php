@@ -13,12 +13,12 @@
         {{-- MOBILE BANNER --}}
         <source
             media="(max-width: 767px)"
-            srcset="{{ asset('assets/images/banner/banner-m.jpg') }}"
+            srcset="{{ asset('assets/images/banner/banner-m.webp') }}"
         >
 
         {{-- DESKTOP BANNER --}}
         <img
-            src="{{ asset('assets/images/banner/banner-d.jpg') }}"
+            src="{{ asset('assets/images/banner/banner-d.webp') }}"
             alt="Contact PT Wira Griya for industrial products and solutions"
             class="block h-auto w-full"
             fetchpriority="high"
@@ -59,11 +59,11 @@
 
                     {{-- GENERAL CONTACT --}}
                     <div>
-                        <h2 class="text-xl font-bold text-navy">
+                        <h2 class="text-2xl font-bold text-navy">
                             GENERAL CONTACT
                         </h2>
 
-                        <p class="mt-1 text-base leading-relaxed text-dark/80">
+                        <p class="mt-1 text-lg leading-relaxed text-dark/80">
                             For general inquiries, you can also reach us through the following channels.
                         </p>
 
@@ -74,11 +74,11 @@
                                 href="mailto:hanggar@wira.co.id"
                                 class="flex min-h-[88px] items-center gap-4 rounded-md border border-gray-300 p-4 transition hover:border-primary hover:shadow-sm"
                             >
-                                <span class="flex size-11 shrink-0 items-center justify-center rounded-full bg-gray-100 text-navy">
+                                <span class="flex size-12 shrink-0 items-center justify-center rounded-full bg-gray-100 text-navy">
                                     <svg
                                         xmlns="http://www.w3.org/2000/svg"
-                                        width="26"
-                                        height="26"
+                                        width="30"
+                                        height="30"
                                         viewBox="0 0 24 24"
                                         fill="none"
                                         stroke="currentColor"
@@ -93,23 +93,23 @@
                                 </span>
 
                                 <span class="min-w-0">
-                                    <span class="block text-base font-bold text-navy">Company Email</span>
-                                    <span class="mt-1 block break-words text-base text-primary">hanggar@wira.co.id</span>
+                                    <span class="block text-lg font-bold text-navy">Company Email</span>
+                                    <span class="mt-1 block break-words text-lg text-primary">hanggar@wira.co.id</span>
                                 </span>
                             </a>
 
 {{-- WhatsApp Contact --}}
 <a
-                        href="https://wa.me/6285161840017"
+                        href="https://wa.me/6285697828194"
                         target="_blank"
                         rel="noopener noreferrer"
                         class="flex min-h-[88px] items-center gap-4 rounded-md border border-gray-300 p-4 transition hover:border-primary hover:shadow-sm"
                     >
-                        <span class="flex size-11 shrink-0 items-center justify-center rounded-full bg-gray-100 text-[#25D366]">
+                        <span class="flex size-12 shrink-0 items-center justify-center rounded-full bg-gray-100 text-[#25D366]">
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"
-                                width="26"
-                                height="26"
+                                width="30"
+                                height="30"
                                 viewBox="0 0 24 24"
                                 fill="currentColor"
                                 aria-hidden="true"
@@ -119,8 +119,8 @@
                         </span>
 
                         <span class="min-w-0">
-                            <span class="block text-base font-bold text-navy">WhatsApp</span>
-                            <span class="mt-1 block text-sm text-primary">+62 851-6184-0017</span>
+                            <span class="block text-lg font-bold text-navy">WhatsApp</span>
+                            <span class="mt-1 block text-base text-primary">+62 856-9782-8194</span>
                         </span>
                     </a>
                         </div>
@@ -143,7 +143,7 @@
                                 <div class="grid grid-cols-[40%_60%]">
                                     <div class="min-h-[130px] bg-gray-100">
                                         <img
-                                            src="{{ asset('assets/images/contact/head-office.jpg') }}"
+                                            src="{{ asset('assets/images/contact/head-office.webp') }}"
                                             alt="Head Office"
                                             class="size-full object-cover"
                                             loading="lazy"
@@ -176,7 +176,7 @@
                                 <div class="grid grid-cols-[40%_60%]">
                                     <div class="min-h-[130px] bg-gray-100">
                                         <img
-                                            src="{{ asset('assets/images/contact/site-office.jpg') }}"
+                                            src="{{ asset('assets/images/contact/site-office.webp') }}"
                                             alt="Site Office"
                                             class="size-full object-cover"
                                             loading="lazy"
@@ -219,7 +219,7 @@
         Find answers to common questions about our products, services, and support.
     </p>
 
-    <div class="mt-4 space-y-2">
+    <div class="mt-4 space-y-2" data-contact-faq-group>
 
         {{-- GENERAL INFORMATION --}}
         <details class="group rounded-md border border-gray-300 bg-white">
@@ -553,4 +553,35 @@
 
     {{-- FOOTER --}}
     @include('components.footer')
+
+
+    {{-- CONTACT FAQ: keep only one item expanded at a time --}}
+    <script>
+        (() => {
+            const initContactFaq = () => {
+                const faqGroup = document.querySelector('[data-contact-faq-group]');
+                if (!faqGroup) return;
+
+                const faqItems = Array.from(faqGroup.querySelectorAll('details'));
+
+                faqItems.forEach((item) => {
+                    item.addEventListener('toggle', () => {
+                        if (!item.open) return;
+
+                        faqItems.forEach((otherItem) => {
+                            if (otherItem !== item && otherItem.open) {
+                                otherItem.open = false;
+                            }
+                        });
+                    });
+                });
+            };
+
+            if (document.readyState === 'loading') {
+                document.addEventListener('DOMContentLoaded', initContactFaq, { once: true });
+            } else {
+                initContactFaq();
+            }
+        })();
+    </script>
 @endsection

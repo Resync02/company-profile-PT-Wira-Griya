@@ -23,7 +23,7 @@
         class="inline-flex items-center rounded-sm transition focus:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2"
     >
         <img
-            src="{{ asset('assets/images/wira.png') }}"
+            src="{{ asset('assets/images/wira.webp') }}"
             alt="Wira Griya"
             class="h-10 w-auto max-w-[180px] object-contain sm:h-12"
         >

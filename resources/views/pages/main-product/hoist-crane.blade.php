@@ -8,7 +8,7 @@
 
     {{-- HERO BANNER --}}
     <section class="relative aspect-[5/4] overflow-hidden sm:aspect-[1351/400]">
-        <picture class="absolute inset-0 block h-full w-full"><source media="(max-width: 767px)" srcset="{{ asset('assets/images/banner/banner-m.jpg') }}"><img src="{{ asset('assets/images/thumbnail_product/crane.png') }}"
+        <picture class="absolute inset-0 block h-full w-full"><source media="(max-width: 767px)" srcset="{{ asset('assets/images/banner/banner-m.webp') }}"><img src="{{ asset('assets/images/thumbnail_product/crane.webp') }}"
             alt="Industrial hoist and crane equipment"
             class="absolute inset-0 size-full object-cover object-center"
         ></picture>
@@ -140,11 +140,11 @@
                 >
                     <div class="flex h-20 w-[38%] shrink-0 items-center justify-center overflow-hidden rounded bg-[#F5F9FF] p-1">
                         <img
-                            src="{{ asset('assets/images/home/crane3.png') }}"
+                            src="{{ asset('assets/images/home/crane3.webp') }}"
                             alt="Electric-Chain Hoist"
                             class="h-full w-full object-contain transition duration-300 group-hover:scale-105"
                             loading="lazy"
-                            onerror="this.onerror=null; this.src='{{ asset('assets/images/thumbnail_product/crane.png')}}';"
+                            onerror="this.onerror=null; this.src='{{ asset('assets/images/thumbnail_product/crane.webp')}}';"
                         >
                     </div>
                     <span class="min-w-0 flex-1 text-base font-bold leading-tight text-navy">Electric-Chain Hoist</span>
@@ -157,11 +157,11 @@
                 >
                     <div class="flex h-20 w-[38%] shrink-0 items-center justify-center overflow-hidden rounded bg-[#F5F9FF] p-1">
                         <img
-                            src="{{ asset('assets/images/home/crane2.png') }}"
+                            src="{{ asset('assets/images/home/crane2.webp') }}"
                             alt="Wire Rope Hoist"
                             class="h-full w-full object-contain transition duration-300 group-hover:scale-105"
                             loading="lazy"
-                            onerror="this.onerror=null; this.src='{{ asset('assets/images/thumbnail_product/crane.png') }}';"
+                            onerror="this.onerror=null; this.src='{{ asset('assets/images/thumbnail_product/crane.webp') }}';"
                         >
                     </div>
                     <span class="min-w-0 flex-1 text-base font-bold leading-tight text-navy">Wire Rope Hoist</span>
@@ -174,11 +174,11 @@
                 >
                     <div class="flex h-20 w-[38%] shrink-0 items-center justify-center overflow-hidden rounded bg-[#F5F9FF] p-1">
                         <img
-                            src="{{ asset('assets/images/home/crane.png') }}"
+                            src="{{ asset('assets/images/home/crane.webp') }}"
                             alt="Heavy-Duty Hoist"
                             class="h-full w-full object-contain transition duration-300 group-hover:scale-105"
                             loading="lazy"
-                            onerror="this.onerror=null; this.src='{{ asset('assets/images/thumbnail_product/crane.png') }}';"
+                            onerror="this.onerror=null; this.src='{{ asset('assets/images/thumbnail_product/crane.webp') }}';"
                         >
                     </div>
                     <span class="min-w-0 flex-1 text-base font-bold leading-tight text-navy">Heavy-Duty Hoist</span>

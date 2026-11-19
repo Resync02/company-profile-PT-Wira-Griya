@@ -12,7 +12,7 @@
         'date' => '2026-11-18',
         'category' => 'Manufacturing Exhibition',
         'location' => 'Indonesia',
-        'image' => 'assets/images/event/manufacturing-technology-exhibition/event1.jpg',
+        'image' => 'assets/images/event/manufacturing-technology-exhibition/event1.webp',
         'description' => 'Manufacturing Technology Exhibition 2026 is an event focused on manufacturing equipment, production technologies, and industrial solutions. It provides an opportunity for visitors to explore developments in manufacturing processes, learn about equipment applications, and connect with people working across the industrial sector. Specific exhibitors, sessions, and visitor arrangements should be confirmed through the event organizer.',
         'time' => 'To be announced',
         'venue' => 'To be announced, Indonesia',
@@ -39,12 +39,12 @@
         {{-- MOBILE --}}
         <source
             media="(max-width: 767px)"
-            srcset="{{ asset('assets/images/banner/banner-m.jpg') }}"
+            srcset="{{ asset('assets/images/banner/banner-m.webp') }}"
         >
 
         {{-- DESKTOP --}}
         <img
-            src="{{ asset('assets/images/banner/banner-d.jpg') }}"
+            src="{{ asset('assets/images/banner/banner-d.webp') }}"
             alt="PT Wira Griya industrial solutions"
             class="block h-auto w-full"
             fetchpriority="high"

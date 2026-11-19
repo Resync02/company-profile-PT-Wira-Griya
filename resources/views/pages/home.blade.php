@@ -21,48 +21,48 @@
 
             <a href="{{ url('/') }}" aria-label="Home" id="home-highlight"
                class="absolute left-[2.8%] top-0 z-[60] block w-[34%] cursor-pointer">
-                <img src="{{ asset('assets/images/home/home.jpeg') }}" alt="PT Wira Griya home" class="block h-auto w-full object-contain">
+                <img src="{{ asset('assets/images/home/home.webp') }}" alt="PT Wira Griya home" class="block h-auto w-full object-contain">
             </a>
 
             <a href="{{ url('/product/coating-painting/robotic-painting') }}"
                aria-label="Explore robotic painting solutions"
                class="group absolute left-[24%] top-[35%] z-10 block w-[15%] cursor-pointer">
-                <img src="{{ asset('assets/images/home/robot-paint.png') }}" alt="Industrial paint robot"
+                <img src="{{ asset('assets/images/home/robot-paint.webp') }}" alt="Industrial paint robot"
                      class="block h-auto w-full object-contain transition-transform duration-500 ease-out group-hover:scale-110 motion-reduce:transition-none">
             </a>
 
             <a href="{{ url('/product/hoist-crane/heavy-duty-hoist') }}"
                aria-label="Explore heavy duty hoists"
                class="group absolute left-[3%] top-[12%] z-10 block w-[12%] cursor-pointer">
-                <img src="{{ asset('assets/images/home/crane.png') }}" alt="Heavy duty hoist"
+                <img src="{{ asset('assets/images/home/crane.webp') }}" alt="Heavy duty hoist"
                      class="block h-auto w-full object-contain transition-transform duration-500 ease-out group-hover:scale-110 motion-reduce:transition-none">
             </a>
 
             <a href="{{ url('/product/hoist-crane/electric-chain-hoist') }}"
                aria-label="Explore electric chain hoists"
                class="group absolute left-[49%] top-[21%] z-10 block w-[10%] cursor-pointer">
-                <img src="{{ asset('assets/images/home/crane3.png') }}" alt="Electric chain hoist"
+                <img src="{{ asset('assets/images/home/crane3.webp') }}" alt="Electric chain hoist"
                      class="block h-auto w-full object-contain transition-transform duration-500 ease-out group-hover:scale-110 motion-reduce:transition-none">
             </a>
 
             <a href="{{ url('/product/industrial-machinery/powder-material-handling') }}"
                aria-label="Explore industrial machinery"
                class="group absolute left-[53%] top-[40%] z-10 block w-[39%] cursor-pointer">
-                <img src="{{ asset('assets/images/home/industrial-machinery.png') }}" alt="Industrial machinery"
+                <img src="{{ asset('assets/images/home/industrial-machinery.webp') }}" alt="Industrial machinery"
                      class="block h-auto w-full object-contain transition-transform duration-500 ease-out group-hover:scale-110 motion-reduce:transition-none">
             </a>
 
             <a href="{{ url('/product/coating-painting/powder-coating') }}"
                aria-label="Explore powder coating solutions"
                class="group absolute left-[19.5%] top-[51%] z-10 block w-[13%] cursor-pointer">
-                <img src="{{ asset('assets/images/home/paint.png') }}" alt="Powder coating equipment"
+                <img src="{{ asset('assets/images/home/paint.webp') }}" alt="Powder coating equipment"
                      class="block h-auto w-full object-contain transition-transform duration-500 ease-out group-hover:scale-110 motion-reduce:transition-none">
             </a>
 
             <a href="{{ url('/product/odor-control') }}"
                aria-label="Explore odor control solutions"
                class="group absolute left-[22%] top-[14%] z-10 block w-[30%] cursor-pointer">
-                <img src="{{ asset('assets/images/home/odor.png') }}" alt="Odor control system"
+                <img src="{{ asset('assets/images/home/odor.webp') }}" alt="Odor control system"
                      class="block h-auto w-full object-contain transition-transform duration-500 ease-out group-hover:scale-110 motion-reduce:transition-none">
             </a>
         </section>
@@ -71,7 +71,7 @@
         <section class="home-mobile lg:hidden">
             <div class="relative isolate overflow-hidden bg-[#183E6E]">
                 <img
-                    src="{{ asset('assets/images/home/hero-mobile.jpg') }}"
+                    src="{{ asset('assets/images/home/hero-mobile.webp') }}"
                     alt="Manufacturing facility with industrial equipment"
                     class="home-mobile__hero-image"
                     fetchpriority="high"
@@ -114,27 +114,27 @@
 
             <div class="grid grid-cols-2 gap-3 sm:grid-cols-3 sm:gap-4 lg:grid-cols-5">
                 <a href="{{ url('/product/hoist-crane') }}" class="home-category-card group">
-                    <span class="home-category-card__image"><img src="{{ asset('assets/images/thumbnail_product/crane.png') }}" alt="Hoist and crane equipment" loading="lazy" width="240" height="150"></span>
+                    <span class="home-category-card__image"><img src="{{ asset('assets/images/thumbnail_product/crane.webp') }}" alt="Hoist and crane equipment" loading="lazy" width="240" height="150"></span>
                     <span class="home-category-card__title">Hoist &amp; Crane</span>
                     <span class="home-category-card__link">Explore solutions <span aria-hidden="true">↗</span></span>
                 </a>
                 <a href="{{ url('/product/coating-painting') }}" class="home-category-card group">
-                    <span class="home-category-card__image"><img src="{{ asset('assets/images/thumbnail_product/paint.png') }}" alt="Painting and coating equipment" loading="lazy" width="240" height="150"></span>
+                    <span class="home-category-card__image"><img src="{{ asset('assets/images/thumbnail_product/paint.webp') }}" alt="Painting and coating equipment" loading="lazy" width="240" height="150"></span>
                     <span class="home-category-card__title">Painting &amp; Coating</span>
                     <span class="home-category-card__link">Explore solutions <span aria-hidden="true">↗</span></span>
                 </a>
                 <a href="{{ url('/product/industrial-machinery') }}" class="home-category-card group">
-                    <span class="home-category-card__image"><img src="{{ asset('assets/images/thumbnail_product/machinery.png') }}" alt="Industrial machinery" loading="lazy" width="240" height="150"></span>
+                    <span class="home-category-card__image"><img src="{{ asset('assets/images/thumbnail_product/machinery.webp') }}" alt="Industrial machinery" loading="lazy" width="240" height="150"></span>
                     <span class="home-category-card__title">Industrial Machinery</span>
                     <span class="home-category-card__link">Explore solutions <span aria-hidden="true">↗</span></span>
                 </a>
                 <a href="{{ url('/product/solvent-cleaner') }}" class="home-category-card group">
-                    <span class="home-category-card__image"><img src="{{ asset('assets/images/thumbnail_product/solvent.png') }}" alt="Solvent cleaner equipment" loading="lazy" width="240" height="150"></span>
+                    <span class="home-category-card__image"><img src="{{ asset('assets/images/thumbnail_product/solvent.webp') }}" alt="Solvent cleaner equipment" loading="lazy" width="240" height="150"></span>
                     <span class="home-category-card__title">Solvent Cleaner</span>
                     <span class="home-category-card__link">Explore solutions <span aria-hidden="true">↗</span></span>
                 </a>
                 <a href="{{ url('/product/odor-control') }}" class="home-category-card group col-span-2 sm:col-span-1">
-                    <span class="home-category-card__image"><img src="{{ asset('assets/images/thumbnail_product/odor.png') }}" alt="Industrial odor control equipment" loading="lazy" width="240" height="150"></span>
+                    <span class="home-category-card__image"><img src="{{ asset('assets/images/thumbnail_product/odor.webp') }}" alt="Industrial odor control equipment" loading="lazy" width="240" height="150"></span>
                     <span class="home-category-card__title">Odor Control</span>
                     <span class="home-category-card__link">Explore solutions <span aria-hidden="true">↗</span></span>
                 </a>
@@ -145,7 +145,7 @@
         <section class="border-y border-[#E5ECF3] bg-[#F5F8FC]">
             <div class="mx-auto grid w-full max-w-[1600px] items-center gap-8 px-4 py-10 sm:px-6 sm:py-14 md:grid-cols-2 lg:gap-14 lg:px-10 lg:py-16">
                 <div class="overflow-hidden rounded-xl bg-white shadow-sm">
-                    <img src="{{ asset('assets/images/about/about.png') }}" alt="PT Wira Griya industrial solutions and equipment" class="block aspect-[4/3] w-full object-cover" loading="lazy" width="800" height="600">
+                    <img src="{{ asset('assets/images/about/about.webp') }}" alt="PT Wira Griya industrial solutions and equipment" class="block aspect-[4/3] w-full object-cover" loading="lazy" width="800" height="600">
                 </div>
                 <div>
                     <p class="text-xs font-bold uppercase tracking-[0.18em] text-[#1455D9]">About PT Wira Griya</p>

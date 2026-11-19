@@ -12,7 +12,7 @@
         'date' => '2026-12-10',
         'category' => 'Industry Forum',
         'location' => 'To be announced',
-        'image' => 'assets/images/home/industrial-machinery.png',
+        'image' => 'assets/images/home/industrial-machinery.webp',
         'description' => 'Industrial Automation Forum is proposed as a knowledge-sharing event for people involved in manufacturing and industrial operations. The discussion is intended to cover how automation technologies can support repeatable workflows, equipment integration, process monitoring, and operational planning. The final agenda, speakers, date, venue, and registration information have not yet been announced.',
         'time' => 'To be announced',
         'venue' => 'To be announced',
@@ -39,12 +39,12 @@
         {{-- MOBILE --}}
         <source
             media="(max-width: 767px)"
-            srcset="{{ asset('assets/images/banner/banner-m.jpg') }}"
+            srcset="{{ asset('assets/images/banner/banner-m.webp') }}"
         >
 
         {{-- DESKTOP --}}
         <img
-            src="{{ asset('assets/images/banner/banner-d.jpg') }}"
+            src="{{ asset('assets/images/banner/banner-d.webp') }}"
             class="block h-auto w-full"
             fetchpriority="high"
         >

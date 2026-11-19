@@ -17,7 +17,7 @@
             'date' => '2026-11-18',
             'time' => '10:00 - 17:00 WIB',
             'location' => 'Jakarta, Indonesia',
-            'image' => 'assets/images/home/industrial-machinery.png',
+            'image' => 'assets/images/home/industrial-machinery.webp',
             'excerpt' => 'Discover manufacturing technologies and solutions for industrial production.',
         ],
         [
@@ -28,7 +28,7 @@
             'date' => '2026-12-03',
             'time' => '09:00 - 16:00 WIB',
             'location' => 'Jakarta, Indonesia',
-            'image' => 'assets/images/home/crane2.png',
+            'image' => 'assets/images/home/crane2.webp',
             'excerpt' => 'Meet engineering specialists and exchange ideas on equipment performance, maintenance, and safety.',
         ],
                 [
@@ -39,7 +39,7 @@
             'date' => '2026-12-10',
             'time' => 'To be announced',
             'location' => 'To be announced',
-            'image' => 'assets/images/home/industrial-machinery.png',
+            'image' => 'assets/images/home/industrial-machinery.webp',
             'excerpt' => 'Discuss automation technologies, equipment integration, and process monitoring for industrial operations.',
         ],
         [
@@ -50,7 +50,7 @@
             'date' => '2026-12-17',
             'time' => 'To be announced',
             'location' => 'To be announced',
-            'image' => 'assets/images/home/robot-paint.png',
+            'image' => 'assets/images/home/robot-paint.webp',
             'excerpt' => 'Explore industrial surface preparation, coating equipment, process consistency, and quality considerations.',
         ],
     ];
@@ -67,12 +67,12 @@
         {{-- MOBILE --}}
         <source
             media="(max-width: 767px)"
-            srcset="{{ asset('assets/images/banner/banner-m.jpg') }}"
+            srcset="{{ asset('assets/images/banner/banner-m.webp') }}"
         >
 
         {{-- DESKTOP --}}
         <img
-            src="{{ asset('assets/images/banner/banner-d.jpg') }}"
+            src="{{ asset('assets/images/banner/banner-d.webp') }}"
             alt="PT Wira Griya industrial solutions"
             class="block h-auto w-full"
             fetchpriority="high"

@@ -11,7 +11,7 @@
         'date' => '2026-03-18',
         'title' => 'Tips for Choosing the Right Overhead Crane for Your Industry',
         'author' => 'Admin Wira',
-        'image' => 'assets/images/news/tips-for-choosing/news1.png',
+        'image' => 'assets/images/news/tips-for-choosing/news1.webp',
         'excerpt' => 'A practical guide to evaluating lifting capacity, facility layout, operating conditions, and safety when selecting an overhead crane.',
         'description' => 'Overhead cranes help move heavy materials across factories, workshops, and warehouses. Choosing the right system is important for maintaining an efficient material-handling process and supporting safe daily operations. The selection should be based on the loads being handled, the building structure, the work cycle, and the conditions in which the crane will operate.',
         'sections' => [
@@ -59,12 +59,12 @@
         {{-- MOBILE --}}
         <source
             media="(max-width: 767px)"
-            srcset="{{ asset('assets/images/banner/banner-m.jpg') }}"
+            srcset="{{ asset('assets/images/banner/banner-m.webp') }}"
         >
 
         {{-- DESKTOP --}}
         <img
-            src="{{ asset('assets/images/banner/banner-d.jpg') }}"
+            src="{{ asset('assets/images/banner/banner-d.webp') }}"
             alt="PT Wira Griya industrial solutions"
             class="block h-auto w-full"
             fetchpriority="high"

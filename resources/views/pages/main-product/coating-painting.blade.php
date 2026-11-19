@@ -15,7 +15,7 @@
         <a href="{{ url('/product/coating-painting/hand-guns') }}"
            class="absolute inset-0 block"
            aria-label="Explore Hand Guns">
-            <picture class="absolute inset-0 block h-full w-full"><source media="(max-width: 767px)" srcset="{{ asset('assets/images/banner/banner-m.jpg') }}"><img src="{{ asset('assets/images/banner/banner-d.jpg') }}"
+            <picture class="absolute inset-0 block h-full w-full"><source media="(max-width: 767px)" srcset="{{ asset('assets/images/banner/banner-m.webp') }}"><img src="{{ asset('assets/images/banner/banner-d.webp') }}"
                  alt="Industrial coating and painting facility"
                  class="absolute inset-0 size-full object-cover object-center"></picture>
             <div class="absolute inset-0 bg-gradient-to-r from-white via-white/85 to-white/5"></div>
@@ -39,7 +39,7 @@
         <a href="{{ url('/product/coating-painting/automatic-guns') }}"
            tabindex="-1" class="absolute inset-0 block"
            aria-label="Explore Automatic Guns">
-            <img src="{{ asset('assets/images/home/paint.png') }}"
+            <img src="{{ asset('assets/images/home/paint.webp') }}"
                  alt="Industrial paint application equipment"
                  class="absolute inset-0 size-full bg-white object-contain object-right">
             <div class="absolute inset-0 bg-gradient-to-r from-white via-white/85 to-white/10"></div>
@@ -62,7 +62,7 @@
         <a href="{{ url('/product/coating-painting/powder-coating') }}"
            tabindex="-1" class="absolute inset-0 block"
            aria-label="Explore Powder Coating">
-            <img src="{{ asset('assets/images/thumbnail_product/paint.png') }}"
+            <img src="{{ asset('assets/images/thumbnail_product/paint.webp') }}"
                  alt="Industrial painting and coating equipment"
                  class="absolute inset-0 size-full bg-white object-contain object-right">
             <div class="absolute inset-0 bg-gradient-to-r from-white via-white/85 to-white/10"></div>
@@ -85,7 +85,7 @@
         <a href="{{ url('/product/coating-painting/paint-supply') }}"
            tabindex="-1" class="absolute inset-0 block"
            aria-label="Explore Paint Supply">
-            <img src="{{ asset('assets/images/home/paint.png') }}"
+            <img src="{{ asset('assets/images/home/paint.webp') }}"
                  alt="Paint supply equipment"
                  class="absolute inset-0 size-full bg-white object-contain object-right">
             <div class="absolute inset-0 bg-gradient-to-r from-white via-white/85 to-white/10"></div>
@@ -108,7 +108,7 @@
         <a href="{{ url('/product/coating-painting/robotic-painting') }}"
            tabindex="-1" class="absolute inset-0 block"
            aria-label="Explore Robotic Painting">
-            <img src="{{ asset('assets/images/home/robot-paint.png') }}"
+            <img src="{{ asset('assets/images/home/robot-paint.webp') }}"
                  alt="Robotic painting equipment"
                  class="absolute inset-0 size-full bg-white object-contain object-right">
             <div class="absolute inset-0 bg-gradient-to-r from-white via-white/85 to-white/10"></div>
@@ -256,7 +256,7 @@
                 >
                     <div class="flex h-18 w-[38%] shrink-0 items-center justify-center overflow-hidden">
                         <img
-                            src="{{ asset('assets/images/sub-product/coating-painting/hand-guns.png') }}"
+                            src="{{ asset('assets/images/sub-product/coating-painting/hand-guns.webp') }}"
                             alt="Hand guns"
                             class="h-full w-full object-contain transition duration-300 group-hover:scale-105"
                             loading="lazy"
@@ -274,7 +274,7 @@
                 >
                     <div class="flex h-18 w-[38%] shrink-0 items-center justify-center overflow-hidden">
                         <img
-                            src="{{ asset('assets/images/sub-product/coating-painting/automatic-guns.png') }}"
+                            src="{{ asset('assets/images/sub-product/coating-painting/automatic-guns.webp') }}"
                             alt="Automatic guns"
                             class="h-full w-full object-contain transition duration-300 group-hover:scale-105"
                             loading="lazy"
@@ -292,7 +292,7 @@
                 >
                     <div class="flex h-18 w-[38%] shrink-0 items-center justify-center overflow-hidden">
                         <img
-                            src="{{ asset('assets/images/sub-product/coating-painting/powder-coating.png') }}"
+                            src="{{ asset('assets/images/sub-product/coating-painting/powder-coating.webp') }}"
                             alt="Industrial painting and coating equipment"
                             class="h-full w-full object-contain transition duration-300 group-hover:scale-105"
                             loading="lazy"
@@ -310,7 +310,7 @@
                 >
                     <div class="flex h-18 w-[38%] shrink-0 items-center justify-center overflow-hidden">
                         <img
-                            src="{{ asset('assets/images/sub-product/coating-painting/paint-supply.png') }}"
+                            src="{{ asset('assets/images/sub-product/coating-painting/paint-supply.webp') }}"
                             alt="Paint supply equipment"
                             class="h-full w-full object-contain transition duration-300 group-hover:scale-105"
                             loading="lazy"
@@ -328,7 +328,7 @@
                 >
                     <div class="flex h-18 w-[38%] shrink-0 items-center justify-center overflow-hidden">
                         <img
-                            src="{{ asset('assets/images/sub-product/coating-painting/mixing-color.png') }}"
+                            src="{{ asset('assets/images/sub-product/coating-painting/mixing-color.webp') }}"
                             alt="Mixing and color change equipment"
                             class="h-full w-full object-contain transition duration-300 group-hover:scale-105"
                             loading="lazy"
@@ -346,7 +346,7 @@
                 >
                     <div class="flex h-18 w-[38%] shrink-0 items-center justify-center overflow-hidden">
                         <img
-                            src="{{ asset('assets/images/sub-product/coating-painting/robotic-painting.png') }}"
+                            src="{{ asset('assets/images/sub-product/coating-painting/robotic-painting.webp') }}"
                             alt="Robotic painting equipment"
                             class="h-full w-full object-contain transition duration-300 group-hover:scale-105"
                             loading="lazy"

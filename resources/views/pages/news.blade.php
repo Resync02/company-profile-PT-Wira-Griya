@@ -14,7 +14,7 @@
             'date' => '2026-03-25',
             'title' => 'Optimizing Product Quality with Advanced Coating Machine Solutions',
             'excerpt' => 'In today’s competitive manufacturing industry, product appearance and surface durability play a vital role in determining product success.',
-            'image' => 'assets/images/home/paint.png',
+            'image' => 'assets/images/home/paint.webp',
         ],
         [
             'id' => 3,
@@ -23,7 +23,7 @@
             'date' => '2026-03-18',
             'title' => 'Tips for Choosing the Right Overhead Crane for Your Industry',
             'excerpt' => 'Selecting the right overhead crane can improve operational efficiency, safety, and long-term productivity.',
-            'image' => 'assets/images/home/crane.png',
+            'image' => 'assets/images/home/crane.webp',
         ],
                 [
             'id' => 11,
@@ -32,7 +32,7 @@
             'date' => '2026-11-17',
             'title' => 'Preventive Maintenance Strategies for Industrial Equipment',
             'excerpt' => 'A structured preventive maintenance program helps industrial operators monitor equipment condition, reduce avoidable interruptions, and plan maintenance activities more effectively.',
-            'image' => 'assets/images/home/industrial-machinery.png',
+            'image' => 'assets/images/home/industrial-machinery.webp',
         ],
         [
             'id' => 12,
@@ -41,7 +41,7 @@
             'date' => '2026-11-12',
             'title' => 'Industrial Solvent Cleaning for Safer Production Processes',
             'excerpt' => 'Learn how to evaluate industrial solvent cleaning requirements, equipment compatibility, process flow, and safe chemical handling.',
-            'image' => 'assets/images/thumbnail_product/solvent.png',
+            'image' => 'assets/images/thumbnail_product/solvent.webp',
         ],
     ];
 
@@ -54,7 +54,7 @@
             'category' => 'Upcoming Event',
             'location' => 'Jakarta, Indonesia',
             'description' => 'Discover manufacturing innovations and emerging technologies for more efficient production.',
-            'image' => 'assets/images/home/industrial-machinery.png',
+            'image' => 'assets/images/home/industrial-machinery.webp',
         ],
         [
             'id' => 4,
@@ -64,7 +64,7 @@
             'category' => 'Upcoming Event',
             'location' => 'Jakarta, Indonesia',
             'description' => 'Meet engineering specialists and exchange ideas on equipment performance, maintenance, and safety.',
-            'image' => 'assets/images/home/crane2.png',
+            'image' => 'assets/images/home/crane2.webp',
         ],
                 [
             'id' => 5,
@@ -74,7 +74,7 @@
             'date' => null,
             'time' => 'To be announced',
             'location' => 'To be announced',
-            'image' => 'assets/images/home/industrial-machinery.png',
+            'image' => 'assets/images/home/industrial-machinery.webp',
             'description' => 'Discuss automation technologies, equipment integration, and process monitoring for industrial operations.',
         ],
         [
@@ -85,7 +85,7 @@
             'date' => null,
             'time' => 'To be announced',
             'location' => 'To be announced',
-            'image' => 'assets/images/home/robot-paint.png',
+            'image' => 'assets/images/home/robot-paint.webp',
             'description' => 'Explore industrial surface preparation, coating equipment, process consistency, and quality considerations.',
         ],
     ];
@@ -100,12 +100,12 @@
         {{-- MOBILE --}}
         <source
             media="(max-width: 767px)"
-            srcset="{{ asset('assets/images/banner/banner-m.jpg') }}"
+            srcset="{{ asset('assets/images/banner/banner-m.webp') }}"
         >
 
         {{-- DESKTOP --}}
         <img
-            src="{{ asset('assets/images/banner/banner-d.jpg') }}"
+            src="{{ asset('assets/images/banner/banner-d.webp') }}"
             alt="PT Wira Griya industrial solutions"
             class="block h-auto w-full"
             fetchpriority="high"

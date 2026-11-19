@@ -11,9 +11,9 @@
             'model' => 'Ribbon Blender',
             'type' => 'Industrial Ribbon Mixer',
             'business' => 'Food, Chemical & Pharmaceutical',
-            'image' => 'assets/images/home/industrial-machinery.png',
+            'image' => 'assets/images/home/industrial-machinery.webp',
             'gallery' => [
-            'assets/images/home/industrial-machinery.png'
+            'assets/images/home/industrial-machinery.webp'
         ],
             'description' => 'A ribbon blender for batch mixing of bulk powder and granule materials in industrial production processes.',
             'features' => [
@@ -34,9 +34,9 @@
             'model' => '3D Mixer',
             'type' => 'Three-Dimensional Powder Mixer',
             'business' => 'Food, Chemical & Pharmaceutical',
-            'image' => 'assets/images/home/industrial-machinery.png',
+            'image' => 'assets/images/home/industrial-machinery.webp',
             'gallery' => [
-            'assets/images/home/industrial-machinery.png'
+            'assets/images/home/industrial-machinery.webp'
         ],
             'description' => 'A three-dimensional mixing machine within Eversun’s industrial mixing range for blending dry bulk materials.',
             'features' => [
@@ -57,9 +57,9 @@
             'model' => 'HD(A) Series',
             'type' => 'Multi-Directional Motion Mixer',
             'business' => 'Pharmaceutical',
-            'image' => 'assets/images/home/industrial-machinery.png',
+            'image' => 'assets/images/home/industrial-machinery.webp',
             'gallery' => [
-            'assets/images/home/industrial-machinery.png'
+            'assets/images/home/industrial-machinery.webp'
         ],
             'description' => 'A multi-directional motion mixer from Xiaolun’s pharmaceutical equipment portfolio for blending solid dosage materials.',
             'features' => [
@@ -80,9 +80,9 @@
 
 <section class="relative aspect-[5/4] overflow-hidden sm:aspect-[1351/400]">
     <picture class="absolute inset-0 block h-full w-full">
-        <source media="(max-width: 767px)" srcset="{{ asset('assets/images/banner/banner-m.jpg') }}">
+        <source media="(max-width: 767px)" srcset="{{ asset('assets/images/banner/banner-m.webp') }}">
         <img
-            src="{{ asset('assets/images/banner/banner-d.jpg') }}"
+            src="{{ asset('assets/images/banner/banner-d.webp') }}"
             alt="Industrial mixing and blending systems"
             class="absolute inset-0 h-full w-full object-cover object-center"
             fetchpriority="high"
@@ -103,7 +103,7 @@
     </div>
 </section>
 
-<section data-product-page data-fallback-image="{{ asset('assets/images/home/industrial-machinery.png') }}" data-asset-root="{{ asset('') }}" class="mx-auto w-full max-w-[1600px] px-5 pt-3 pb-8 md:px-8 md:pt-4 md:pb-10" data-products="{{ base64_encode(json_encode($products, JSON_HEX_TAG | JSON_HEX_APOS | JSON_HEX_AMP | JSON_HEX_QUOT)) }}">
+<section data-product-page data-fallback-image="{{ asset('assets/images/home/industrial-machinery.webp') }}" data-asset-root="{{ asset('') }}" class="mx-auto w-full max-w-[1600px] px-5 pt-3 pb-8 md:px-8 md:pt-4 md:pb-10" data-products="{{ base64_encode(json_encode($products, JSON_HEX_TAG | JSON_HEX_APOS | JSON_HEX_AMP | JSON_HEX_QUOT)) }}">
     <a
         href="{{ url('/product/industrial-machinery') }}"
         class="hidden md:inline-flex items-center gap-3 rounded-md px-2 py-2 text-xl font-semibold text-[#536FFF] transition hover:text-[#183E6E]"
@@ -164,7 +164,7 @@
                         alt="{{ $product['brand'] }} {{ $product['model'] }}"
                         class="h-32 w-full object-contain transition duration-300 group-hover:scale-105"
                         loading="lazy"
-                        data-fallback-src="{{ asset('assets/images/home/industrial-machinery.png') }}" onerror="this.onerror=null;this.src=this.dataset.fallbackSrc;"
+                        data-fallback-src="{{ asset('assets/images/home/industrial-machinery.webp') }}" onerror="this.onerror=null;this.src=this.dataset.fallbackSrc;"
                     >
                 </div>
                 <div class="flex min-w-0 flex-1 flex-col py-3 pr-2">
@@ -222,7 +222,19 @@
                     <tbody id="mixing-process-system-modal-specs" class="divide-y divide-gray-200 bg-white"></tbody>
                 </table>
             </div>
-            <p class="mt-3 text-sm leading-relaxed text-gray-500">Product information is based on the partner product range. Confirm the final configuration and latest technical specifications with PT Wira Griya before ordering.</p>
+        <div class="mt-6 flex justify-end border-t border-gray-200 pt-5">
+            <a
+                id="mixing-process-system-modal-whatsapp-inquiry"
+                href="https://wa.me/6285697828194"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="inline-flex w-full items-center justify-center gap-2 rounded-lg bg-[#25D366] px-6 py-3 text-sm font-bold text-white shadow-sm transition hover:bg-[#1DA851] focus:outline-none focus-visible:ring-2 focus-visible:ring-[#25D366] focus-visible:ring-offset-2 sm:w-auto"
+            >
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="h-5 w-5 shrink-0 fill-current" aria-hidden="true"><path d="M20.52 3.48A11.86 11.86 0 0 0 12.07 0C5.5 0 .15 5.34.15 11.91c0 2.1.55 4.15 1.6 5.96L0 24l6.3-1.65a11.9 11.9 0 0 0 5.76 1.47h.01c6.57 0 11.92-5.34 11.92-11.91 0-3.18-1.24-6.17-3.47-8.43ZM12.07 21.8a9.9 9.9 0 0 1-5.04-1.38l-.36-.21-3.74.98 1-3.65-.24-.37a9.86 9.86 0 0 1-1.52-5.26c0-5.47 4.45-9.92 9.91-9.92 2.65 0 5.14 1.03 7.01 2.91a9.86 9.86 0 0 1 2.9 7.01c0 5.47-4.45 9.91-9.92 9.91Zm5.44-7.42c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.65.07-.3-.15-1.26-.47-2.4-1.49-.89-.79-1.49-1.76-1.66-2.06-.17-.3-.02-.46.13-.61.14-.14.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.03-.52-.07-.15-.67-1.62-.92-2.22-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.49s1.07 2.89 1.22 3.09c.15.2 2.1 3.2 5.09 4.49.71.31 1.27.49 1.7.63.71.23 1.36.2 1.87.12.57-.09 1.76-.72 2.01-1.42.25-.7.25-1.3.17-1.42-.07-.12-.27-.2-.57-.35Z"/></svg>
+                <span>Inquire via WhatsApp</span>
+            </a>
+        </div>
+
         </div>
     </div>
 </div>
@@ -335,6 +347,15 @@
         const openProductModal = (index) => {
             const product = products[index];
             if (!product) return;
+            const whatsappInquiry = document.getElementById('mixing-process-system-modal-whatsapp-inquiry');
+            if (whatsappInquiry) {
+                const inquiryMessage = [
+                    'Saya ingin menanyakan produk ini',
+                    `Merek: ${product.brand}`,
+                    `Model: ${product.model}`,
+                ].join('\n');
+                whatsappInquiry.href = `https://wa.me/6285697828194?text=${encodeURIComponent(inquiryMessage)}`;
+            }
             document.getElementById('mixing-process-system-modal-brand').textContent = product.brand;
             document.getElementById('mixing-process-system-modal-title').textContent = product.model;
             document.getElementById('mixing-process-system-modal-type').textContent = product.type;

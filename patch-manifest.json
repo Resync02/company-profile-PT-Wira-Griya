@@ -1,0 +1,23 @@
+{
+  "updated_pages": [
+    "resources/views/pages/main-product/sub-product/coating-painting/automatic-guns.blade.php",
+    "resources/views/pages/main-product/sub-product/coating-painting/hand-guns.blade.php",
+    "resources/views/pages/main-product/sub-product/coating-painting/mixing-color-change.blade.php",
+    "resources/views/pages/main-product/sub-product/coating-painting/paint-supply.blade.php",
+    "resources/views/pages/main-product/sub-product/coating-painting/powder-coating.blade.php",
+    "resources/views/pages/main-product/sub-product/coating-painting/robotic-painting.blade.php",
+    "resources/views/pages/main-product/sub-product/hoist-crane/electric-chain-hoist.blade.php",
+    "resources/views/pages/main-product/sub-product/hoist-crane/heavy-duty-hoist.blade.php",
+    "resources/views/pages/main-product/sub-product/hoist-crane/wire-rope-hoist.blade.php",
+    "resources/views/pages/main-product/sub-product/industrial-machinery/labeling-end-of-line-automation.blade.php",
+    "resources/views/pages/main-product/sub-product/industrial-machinery/liquid-filling-capping.blade.php",
+    "resources/views/pages/main-product/sub-product/industrial-machinery/mixing-process-system.blade.php",
+    "resources/views/pages/main-product/sub-product/industrial-machinery/packaging-solutions.blade.php",
+    "resources/views/pages/main-product/sub-product/industrial-machinery/powder-material-handling.blade.php",
+    "resources/views/pages/main-product/sub-product/industrial-machinery/solid-dosage-system.blade.php",
+    "resources/views/pages/main-product/sub-product/industrial-machinery/tube-filling-sealing.blade.php"
+  ],
+  "removed_partner_disclaimers": 15,
+  "removed_demonstration_disclaimers": 1,
+  "whatsapp_inquiry_preserved_pages": 16
+}

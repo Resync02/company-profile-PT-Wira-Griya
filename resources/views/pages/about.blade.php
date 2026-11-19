@@ -17,12 +17,12 @@
         {{-- MOBILE --}}
         <source
             media="(max-width: 767px)"
-            srcset="{{ asset('assets/images/banner/banner-m.jpg') }}"
+            srcset="{{ asset('assets/images/banner/banner-m.webp') }}"
         >
 
         {{-- DESKTOP --}}
         <img
-            src="{{ asset('assets/images/banner/banner-d.jpg') }}"
+            src="{{ asset('assets/images/banner/banner-d.webp') }}"
             alt="PT Wira Griya office building"
             class="block h-auto w-full"
             fetchpriority="high"
@@ -72,7 +72,7 @@
                 {{-- Story Image --}}
                 <div class="overflow-hidden">
                     <img
-                        src="{{ asset('assets/images/about/about.png') }}"
+                        src="{{ asset('assets/images/about/about.webp') }}"
                         alt="Industrial machinery and production facility"
                         class="h-full max-h-[390px] min-h-[240px] w-full object-cover"
                         loading="lazy"
@@ -205,7 +205,7 @@
 {{-- CUSTOMER LOGOS SLIDER TEMPLATE --}}
 <template
     id="customers-modal-template"
-    data-client-logo-base="{{ asset('assets/images/logo/client') }}"
+    data-client-logo-base="{{ asset('assets/images/about/customer') }}"
 >
     <div class="relative">
         <div class="relative px-8 sm:px-10">
@@ -255,7 +255,7 @@
 {{-- PARTNER LOGOS SLIDER TEMPLATE --}}
 <template
     id="partners-modal-template"
-    data-partner-logo-base="{{ asset('assets/images/logo/partner') }}"
+    data-partner-logo-base="{{ asset('assets/images/about/partners') }}"
 >
     <div class="relative">
 
@@ -297,7 +297,7 @@
 <template id="history-modal-template">
     <div class="flex h-full min-h-0 w-full items-center justify-center">
         <img
-            src="{{ asset('assets/images/about/history/history.png') }}"
+            src="{{ asset('assets/images/about/history/history.webp') }}"
             alt="PT Wira Griya 50 years of company experience"
             width="1670"
             height="942"
@@ -317,6 +317,11 @@
             flex-direction: column;
             justify-content: center;
             gap: 24px;
+            padding: 24px;
+            border-radius: 14px;
+            background-image: linear-gradient(135deg, rgba(255,255,255,.06) 0%, rgba(255,255,255,.12) 100%), url('/assets/images/about/bg.webp');
+            background-size: cover;
+            background-position: center;
         }
 
         /* =========================================
@@ -324,7 +329,9 @@
         ========================================= */
         .bfc-hover-card {
             position: relative;
-            height: 420px;
+            height: 550px;
+            padding-top: 176px;
+            box-sizing: border-box;
             overflow: visible;
             cursor: pointer;
         }
@@ -335,25 +342,27 @@
         }
 
         /* =========================================
-           HORIZONTAL HOVER BUBBLE
+           PARTNER LOGO PANEL — RESERVED SPACE ABOVE IMAGE
         ========================================= */
         .bfc-hover-bubble {
             position: absolute;
-            top: 50%;
-            right: calc(100% + 12px);
-            width: 320px;
+            top: 6px;
+            left: 50%;
+            right: auto;
+            width: min(260px, calc(100vw - 80px));
             min-height: 140px;
-            padding: 18px;
+            padding: 14px;
             border: 1px solid #D1D5DB;
             border-radius: 12px;
-            background: #FFFFFF;
+            background: rgba(255, 255, 255, .97);
             box-shadow: 0 8px 24px rgba(30, 70, 117, 0.16);
+            backdrop-filter: blur(8px);
 
             opacity: 0;
             visibility: hidden;
             pointer-events: none;
 
-            transform: translate(8px, -50%);
+            transform: translate(-50%, -8px);
             transition:
                 opacity 200ms ease,
                 visibility 200ms ease,
@@ -362,45 +371,13 @@
             z-index: 60;
         }
 
-        /* Bubble arrow pointing right */
-        .bfc-hover-bubble::after {
-            content: "";
-            position: absolute;
-            top: 50%;
-            left: 100%;
-            transform: translateY(-50%);
-            border: 9px solid transparent;
-            border-left-color: #FFFFFF;
-        }
-
-        /* Show bubble on hover */
+        /* Show partner logos in the dedicated space above the product image. */
         .bfc-hover-card:hover .bfc-hover-bubble,
         .bfc-hover-card:focus-within .bfc-hover-bubble {
             opacity: 1;
             visibility: visible;
             pointer-events: auto;
-            transform: translate(0, -50%);
-        }
-
-        /* =========================================
-           FIRST CARD: BUBBLE OPENS TO THE RIGHT
-        ========================================= */
-        .bfc-hover-card--right .bfc-hover-bubble {
-            right: auto;
-            left: calc(100% + 12px);
-            transform: translate(-8px, -50%);
-        }
-
-        .bfc-hover-card--right .bfc-hover-bubble::after {
-            left: auto;
-            right: 100%;
-            border-left-color: transparent;
-            border-right-color: #FFFFFF;
-        }
-
-        .bfc-hover-card--right:hover .bfc-hover-bubble,
-        .bfc-hover-card--right:focus-within .bfc-hover-bubble {
-            transform: translate(0, -50%);
+            transform: translate(-50%, 0);
         }
 
         /* =========================================
@@ -476,22 +453,16 @@
            RESPONSIVE
         ========================================= */
         @media (max-width: 640px) {
-            .bfc-hover-bubble,
-            .bfc-hover-card--right .bfc-hover-bubble {
-                top: 50%;
+            .bfc-hover-card {
+                height: 550px;
+                padding-top: 176px;
+            }
+
+            .bfc-hover-bubble {
+                top: 6px;
                 left: 50%;
                 right: auto;
-                width: min(320px, calc(100vw - 40px));
-                transform: translate(-50%, -50%);
-            }
-
-            .bfc-hover-card:hover .bfc-hover-bubble,
-            .bfc-hover-card:focus-within .bfc-hover-bubble {
-                transform: translate(-50%, -50%);
-            }
-
-            .bfc-hover-bubble::after {
-                display: none;
+                width: min(320px, calc(100vw - 80px));
             }
         }
 
@@ -525,7 +496,7 @@
 
                     <div class="h-64 overflow-hidden bg-white">
                         <img
-                            src="{{ asset('assets/images/thumbnail_product/crane.png') }}"
+                            src="{{ asset('assets/images/thumbnail_product/crane.webp') }}"
                             alt="Hoist and crane equipment"
                             class="h-full w-full object-contain p-2"
                             loading="lazy"
@@ -560,28 +531,28 @@
                             <div class="bfc-logo-set">
 
                                 <img
-                                    src="{{ asset('assets/images/about/partners/gh.png') }}"
+                                    src="{{ asset('assets/images/about/partners/gh.webp') }}"
                                     alt="GH Cranes"
                                     class="bfc-logo-image"
                                     loading="lazy"
                                 >
 
                                 <img
-                                    src="{{ asset('assets/images/about/partners/cmak.png') }}"
+                                    src="{{ asset('assets/images/about/partners/cmak.webp') }}"
                                     alt="CMAK"
                                     class="bfc-logo-image"
                                     loading="lazy"
                                 >
 
                                 <img
-                                    src="{{ asset('assets/images/about/partners/wh.png') }}"
+                                    src="{{ asset('assets/images/about/partners/wh.webp') }}"
                                     alt="World Hoist"
                                     class="bfc-logo-image"
                                     loading="lazy"
                                 >
 
                                 <img
-                                    src="{{ asset('assets/images/about/partners/nh.png') }}"
+                                    src="{{ asset('assets/images/about/partners/nh.webp') }}"
                                     alt="Nippon Hoist"
                                     class="bfc-logo-image"
                                     loading="lazy"
@@ -593,25 +564,25 @@
                             <div class="bfc-logo-set" aria-hidden="true">
 
                                 <img
-                                    src="{{ asset('assets/images/about/partners/gh.png') }}"
+                                    src="{{ asset('assets/images/about/partners/gh.webp') }}"
                                     alt=""
                                     class="bfc-logo-image"
                                 >
 
                                 <img
-                                    src="{{ asset('assets/images/about/partners/cmak.png') }}"
+                                    src="{{ asset('assets/images/about/partners/cmak.webp') }}"
                                     alt=""
                                     class="bfc-logo-image"
                                 >
 
                                 <img
-                                    src="{{ asset('assets/images/about/partners/wh.png') }}"
+                                    src="{{ asset('assets/images/about/partners/wh.webp') }}"
                                     alt=""
                                     class="bfc-logo-image"
                                 >
 
                                 <img
-                                    src="{{ asset('assets/images/about/partners/nh.png') }}"
+                                    src="{{ asset('assets/images/about/partners/nh.webp') }}"
                                     alt=""
                                     class="bfc-logo-image"
                                 >
@@ -636,7 +607,7 @@
 
                     <div class="h-64 overflow-hidden bg-white">
                         <img
-                            src="{{ asset('assets/images/thumbnail_product/paint.png') }}"
+                            src="{{ asset('assets/images/thumbnail_product/paint.webp') }}"
                             alt="Coating and painting equipment"
                             class="h-full w-full object-contain p-2"
                             loading="lazy"
@@ -671,21 +642,21 @@
                             <div class="bfc-logo-set">
 
                                 <img
-                                    src="{{ asset('assets/images/about/partners/asahi.png') }}"
+                                    src="{{ asset('assets/images/about/partners/asahi.webp') }}"
                                     alt="ASAHI SUNAC"
                                     class="bfc-logo-image"
                                     loading="lazy"
                                 >
 
                                 <img
-                                    src="{{ asset('assets/images/about/partners/bfcoating.png') }}"
+                                    src="{{ asset('assets/images/about/partners/bfcoating.webp') }}"
                                     alt="BF Coating"
                                     class="bfc-logo-image"
                                     loading="lazy"
                                 >
 
                                 <img
-                                    src="{{ asset('assets/images/about/partners/vr.png') }}"
+                                    src="{{ asset('assets/images/about/partners/vr.webp') }}"
                                     alt="VR Coatings"
                                     class="bfc-logo-image"
                                     loading="lazy"
@@ -697,19 +668,19 @@
                             <div class="bfc-logo-set" aria-hidden="true">
 
                                 <img
-                                    src="{{ asset('assets/images/about/partners/asahi.png') }}"
+                                    src="{{ asset('assets/images/about/partners/asahi.webp') }}"
                                     alt=""
                                     class="bfc-logo-image"
                                 >
 
                                 <img
-                                    src="{{ asset('assets/images/about/partners/bfcoating.png') }}"
+                                    src="{{ asset('assets/images/about/partners/bfcoating.webp') }}"
                                     alt=""
                                     class="bfc-logo-image"
                                 >
 
                                 <img
-                                    src="{{ asset('assets/images/about/partners/vr.png') }}"
+                                    src="{{ asset('assets/images/about/partners/vr.webp') }}"
                                     alt=""
                                     class="bfc-logo-image"
                                 >
@@ -734,7 +705,7 @@
 
                     <div class="h-64 overflow-hidden bg-white">
                         <img
-                            src="{{ asset('assets/images/thumbnail_product/machinery.png') }}"
+                            src="{{ asset('assets/images/thumbnail_product/machinery.webp') }}"
                             alt="Industrial machinery"
                             class="h-full w-full object-contain p-2"
                             loading="lazy"
@@ -769,14 +740,14 @@
                             <div class="bfc-logo-set">
 
                                 <img
-                                    src="{{ asset('assets/images/about/partners/eversun.png') }}"
+                                    src="{{ asset('assets/images/about/partners/eversun.webp') }}"
                                     alt="Eversun Machinery"
                                     class="bfc-logo-image"
                                     loading="lazy"
                                 >
 
                                 <img
-                                    src="{{ asset('assets/images/about/partners/yaskawa.png') }}"
+                                    src="{{ asset('assets/images/about/partners/yaskawa.webp') }}"
                                     alt="Yaskawa"
                                     class="bfc-logo-image"
                                     loading="lazy"
@@ -788,13 +759,13 @@
                             <div class="bfc-logo-set" aria-hidden="true">
 
                                 <img
-                                    src="{{ asset('assets/images/about/partners/eversun.png') }}"
+                                    src="{{ asset('assets/images/about/partners/eversun.webp') }}"
                                     alt=""
                                     class="bfc-logo-image"
                                 >
 
                                 <img
-                                    src="{{ asset('assets/images/about/partners/yaskawa.png') }}"
+                                    src="{{ asset('assets/images/about/partners/yaskawa.webp') }}"
                                     alt=""
                                     class="bfc-logo-image"
                                 >
@@ -819,7 +790,7 @@
 
                     <div class="h-64 overflow-hidden bg-white">
                         <img
-                            src="{{ asset('assets/images/thumbnail_product/solvent.png') }}"
+                            src="{{ asset('assets/images/thumbnail_product/solvent.webp') }}"
                             alt="Industrial solvent cleaner equipment"
                             class="h-full w-full object-contain p-2"
                             loading="lazy"
@@ -849,7 +820,7 @@
                     <div class="bfc-single-logo">
 
                         <img
-                            src="{{ asset('assets/images/wira.png') }}"
+                            src="{{ asset('assets/images/wira.webp') }}"
                             alt="Wira Griya"
                             loading="lazy"
                         >
@@ -876,7 +847,7 @@
 
                     <div class="h-64 overflow-hidden bg-white">
                         <img
-                            src="{{ asset('assets/images/thumbnail_product/odor.png') }}"
+                            src="{{ asset('assets/images/thumbnail_product/odor.webp') }}"
                             alt="Industrial odor control equipment"
                             class="h-full w-full object-contain p-2"
                             loading="lazy"
@@ -906,7 +877,7 @@
                     <div class="bfc-single-logo">
 
                         <img
-                            src="{{ asset('assets/images/wira.png') }}"
+                            src="{{ asset('assets/images/wira.webp') }}"
                             alt="Wira Griya"
                             loading="lazy"
                         >
@@ -931,7 +902,7 @@
 <template id="cities-modal-template">
     <div class="flex h-full min-h-0 w-full items-center justify-center">
         <img
-            src="{{ asset('assets/images/about/cities/serve.png') }}"
+            src="{{ asset('assets/images/about/cities/serve.webp') }}"
             alt="PT Wira Griya business network across Indonesia and cities served"
             width="1670"
             height="942"
@@ -945,9 +916,14 @@
 {{-- TESTIMONIAL CONTENT --}}
 <template id="testimonial-modal-template">
     <style>
+        .testimonial-modal-background {
+            /* Keep the background full-height even when page 2 contains only two cards. */
+            min-height: max(100%, 620px);
+        }
+
         .testimonial-grid {
             display: grid;
-            grid-template-columns: repeat(2, minmax(0, 1fr));
+            grid-template-columns: repeat(3, minmax(0, 1fr));
             gap: 16px;
         }
 
@@ -958,7 +934,7 @@
 
         .testimonial-flip-card {
             position: relative;
-            height: 260px;
+            height: 280px;
             cursor: pointer;
             outline: none;
         }
@@ -1024,7 +1000,7 @@
             min-width: 0;
             flex-direction: column;
             justify-content: space-between;
-            padding: 18px;
+            padding: 14px;
         }
 
         .testimonial-company-logo {
@@ -1094,6 +1070,12 @@
             margin-top: 22px;
         }
 
+        @media (min-width: 768px) and (max-width: 1100px) {
+            .testimonial-grid {
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+            }
+        }
+
         @media (max-width: 767px) {
             .testimonial-gallery {
                 padding: 0 38px;
@@ -1111,7 +1093,7 @@
             }
 
             .testimonial-flip-card {
-                height: 235px;
+                height: 255px;
             }
 
             .testimonial-front-info {
@@ -1129,7 +1111,7 @@
 
         @media (max-width: 380px) {
             .testimonial-flip-card {
-                height: 210px;
+                height: 230px;
             }
 
             .testimonial-flip-front {
@@ -1217,7 +1199,10 @@
         ];
     @endphp
 
-    <div class="w-full">
+    <div
+        class="testimonial-modal-background w-full rounded-xl p-3 sm:p-5"
+        style="background-image: linear-gradient(135deg, rgba(255,255,255,.06) 0%, rgba(255,255,255,.12) 100%), url('/assets/images/about/bg.webp'); background-size: cover; background-position: center;"
+    >
 
         {{-- TESTIMONIAL GALLERY WITH SIDE NAVIGATION --}}
         <div class="testimonial-gallery">
@@ -1272,23 +1257,23 @@
                                     </div>
 
                                     <div>
-                                        <p class="text-[10px] font-bold uppercase tracking-[.12em] text-[#2D5FA3]">
+                                        <p class="text-xs font-bold uppercase tracking-[.12em] text-[#2D5FA3]">
                                             Customer Representative
                                         </p>
 
-                                        <h3 class="mt-2 text-base font-bold leading-tight text-[#183E6E] sm:text-lg">
+                                        <h3 class="mt-2 text-lg font-bold leading-tight text-[#183E6E] sm:text-xl">
                                             {{ $testimonial['name'] }}
                                         </h3>
 
-                                        <p class="mt-1 text-xs leading-relaxed text-gray-600">
+                                        <p class="mt-1 text-sm leading-relaxed text-gray-600">
                                             {{ $testimonial['position'] }}
                                         </p>
 
-                                        <p class="mt-1 text-xs font-medium text-gray-500">
+                                        <p class="mt-1 text-sm font-medium text-gray-500">
                                             {{ $testimonial['company'] }}
                                         </p>
 
-                                        <p class="mt-3 text-[10px] font-semibold text-[#2D5FA3]">
+                                        <p class="mt-3 text-xs font-semibold text-[#2D5FA3]">
                                             Hover / Click to flip ↗
                                         </p>
                                     </div>
@@ -1304,11 +1289,11 @@
                                         “
                                     </span>
 
-                                    <blockquote class="mt-2 text-sm font-semibold leading-relaxed sm:text-base">
+                                    <blockquote class="mt-2 text-base font-semibold leading-relaxed sm:text-lg">
                                         {{ $testimonial['quote'] }}
                                     </blockquote>
 
-                                    <p class="mt-5 text-[10px] font-bold uppercase tracking-[.16em] text-white/65">
+                                    <p class="mt-5 text-xs font-bold uppercase tracking-[.16em] text-white/65">
                                         {{ $testimonial['company'] }} · Sample Quote
                                     </p>
 

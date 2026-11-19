@@ -12,7 +12,7 @@
         'date' => '2026-12-17',
         'category' => 'Technical Workshop',
         'location' => 'To be announced',
-        'image' => 'assets/images/home/robot-paint.png',
+        'image' => 'assets/images/home/robot-paint.webp',
         'description' => 'Surface Coating Technology Workshop is proposed as a technical learning session focused on industrial surface preparation and coating processes. The workshop may address coating and painting equipment configurations, application consistency, process control, and maintenance considerations. The final program, speakers, date, venue, and registration arrangements remain subject to confirmation.',
         'time' => 'To be announced',
         'venue' => 'To be announced',
@@ -39,12 +39,12 @@
         {{-- MOBILE --}}
         <source
             media="(max-width: 767px)"
-            srcset="{{ asset('assets/images/banner/banner-m.jpg') }}"
+            srcset="{{ asset('assets/images/banner/banner-m.webp') }}"
         >
 
         {{-- DESKTOP --}}
         <img
-            src="{{ asset('assets/images/banner/banner-d.jpg') }}"
+            src="{{ asset('assets/images/banner/banner-d.webp') }}"
             class="block h-auto w-full"
             fetchpriority="high"
         >

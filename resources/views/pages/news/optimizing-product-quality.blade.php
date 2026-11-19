@@ -11,7 +11,7 @@
         'date' => '2026-03-25',
         'title' => 'Optimizing Product Quality with Advanced Coating Machine Solutions',
         'author' => 'Admin Wira',
-        'image' => 'assets/images/news/optimizing-product-quality/news1.png',
+        'image' => 'assets/images/news/optimizing-product-quality/news1.webp',
         'excerpt' => 'Learn how advanced coating machine solutions can help manufacturers improve finish consistency, manage material usage, and support efficient production.',
         'description' => 'Product quality is influenced not only by the materials used, but also by how consistently a coating is applied. In industrial production, a well-selected coating machine can help manufacturers achieve repeatable finishes, control material usage, and maintain a stable workflow. The right solution depends on the product, coating material, production volume, and operating environment.',
         'sections' => [
@@ -19,8 +19,8 @@
                 'heading' => 'The Role of Coating Machines in Manufacturing',
                 'paragraph' => 'A coating machine applies a controlled layer of paint, powder, or another finishing material to a product surface. Depending on the application, the system may involve spray equipment, a coating booth, material delivery components, conveyors, and curing or drying equipment. Coordinating these elements helps create a more consistent finishing process.',
                 'images' => [
-                    'assets/images/news/optimizing-product-quality/gambar1.jpg',
-                    'assets/images/news/optimizing-product-quality/gambar2.jpg',
+                    'assets/images/news/optimizing-product-quality/gambar1.webp',
+                    'assets/images/news/optimizing-product-quality/gambar2.webp',
                 ],
             ],
             [
@@ -59,12 +59,12 @@
         {{-- MOBILE --}}
         <source
             media="(max-width: 767px)"
-            srcset="{{ asset('assets/images/banner/banner-m.jpg') }}"
+            srcset="{{ asset('assets/images/banner/banner-m.webp') }}"
         >
 
         {{-- DESKTOP --}}
         <img
-            src="{{ asset('assets/images/banner/banner-d.jpg') }}"
+            src="{{ asset('assets/images/banner/banner-d.webp') }}"
             alt="PT Wira Griya industrial solutions"
             class="block h-auto w-full"
             fetchpriority="high"

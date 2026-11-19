@@ -11,9 +11,9 @@
             'model' => 'Diffuser P-5000',
             'type' => 'Odor Control Diffuser',
             'business' => 'Industrial & Commercial',
-            'image' => 'assets/images/thumbnail_product/odor.png',
+            'image' => 'assets/images/thumbnail_product/odor.webp',
             'gallery' => [
-                'assets/images/thumbnail_product/odor.png',
+                'assets/images/thumbnail_product/odor.webp',
             ],
             'description' => 'An odor-control diffuser solution intended to help manage unwanted odors in suitable indoor or commercial environments. Contact our team to confirm coverage, installation requirements, and compatible applications.',
             'features' => [
@@ -35,9 +35,9 @@
             'model' => 'Air Purifier – Ionising Air Treatment',
             'type' => 'Air Purification & Ionising Treatment',
             'business' => 'Indoor Air Quality',
-            'image' => 'assets/images/thumbnail_product/odor.png',
+            'image' => 'assets/images/thumbnail_product/odor.webp',
             'gallery' => [
-                'assets/images/thumbnail_product/odor.png',
+                'assets/images/thumbnail_product/odor.webp',
             ],
             'description' => 'An IONAIR® air-treatment product focused on air purification and ionising treatment. Contact our team for the official product information and to confirm suitability for your facility.',
             'features' => [
@@ -59,9 +59,9 @@
             'model' => 'Deodorizing Device',
             'type' => 'Odor-Control Device',
             'business' => 'Industrial & Commercial',
-            'image' => 'assets/images/thumbnail_product/odor.png',
+            'image' => 'assets/images/thumbnail_product/odor.webp',
             'gallery' => [
-                'assets/images/thumbnail_product/odor.png',
+                'assets/images/thumbnail_product/odor.webp',
             ],
             'description' => 'A deodorizing device for odor-control needs. Contact our team to obtain the official datasheet and determine whether the product fits your application and site requirements.',
             'features' => [
@@ -82,8 +82,8 @@
 @endphp
 {{-- HERO BANNER --}}
 <section class="relative aspect-[5/4] overflow-hidden sm:aspect-[1351/400]">
-    <picture class="absolute inset-0 block h-full w-full"><source media="(max-width: 767px)" srcset="{{ asset('assets/images/banner/banner-m.jpg') }}"><img
-        src="{{ asset('assets/images/banner/banner-d.jpg') }}"
+    <picture class="absolute inset-0 block h-full w-full"><source media="(max-width: 767px)" srcset="{{ asset('assets/images/banner/banner-m.webp') }}"><img
+        src="{{ asset('assets/images/banner/banner-d.webp') }}"
         alt="Odor-control solutions"
         class="absolute inset-0 h-full w-full object-cover object-center"
     ></picture>
@@ -196,7 +196,7 @@
                         alt="{{ $product['brand'] }} {{ $product['model'] }}"
                         class="h-32 w-full object-contain transition duration-300 group-hover:scale-105"
                         loading="lazy"
-                        onerror="this.onerror=null;this.src='{{ asset('assets/images/thumbnail_product/odor.png') }}';"
+                        onerror="this.onerror=null;this.src='{{ asset('assets/images/thumbnail_product/odor.webp') }}';"
                     >
                 </div>
                 <div class="flex min-w-0 flex-1 flex-col py-3 pr-2">
@@ -502,7 +502,7 @@ const thumbnails = document.getElementById('odor-modal-thumbnails');
 const previousButton = document.getElementById('odor-gallery-prev');
 const nextButton = document.getElementById('odor-gallery-next');
 const galleryCounter = document.getElementById('odor-gallery-counter');
-const fallbackImage = '{{ asset('assets/images/thumbnail_product/odor.png') }}';
+const fallbackImage = '{{ asset('assets/images/thumbnail_product/odor.webp') }}';
 const getImageUrl = (path) => '{{ asset('') }}' + path;
 // Gunakan maksimal 5 gambar yang didefinisikan pada product.gallery.
 // Jika gallery kosong, gunakan gambar utama produk sebagai fallback.

@@ -45,9 +45,9 @@
             class="absolute inset-0 block"
         >
 
-            <picture class="absolute inset-0 block h-full w-full"><source media="(max-width: 767px)" srcset="{{ asset('assets/images/home/hero-mobile.jpg') }}"><img
+            <picture class="absolute inset-0 block h-full w-full"><source media="(max-width: 767px)" srcset="{{ asset('assets/images/home/hero-mobile.webp') }}"><img
 
-                src="{{ asset('assets/images/banner/banner-d.jpg') }}"
+                src="{{ asset('assets/images/banner/banner-d.webp') }}"
 http://127.0.0.1:8000/product/hoist-crane
                 class="absolute inset-0 size-full object-cover object-center"
 
@@ -119,9 +119,9 @@ http://127.0.0.1:8000/product/hoist-crane
 
         >
 
-            <picture class="absolute inset-0 block h-full w-full"><source media="(max-width: 767px)" srcset="{{ asset('assets/images/banner/banner-m.jpg') }}"><img
+            <picture class="absolute inset-0 block h-full w-full"><source media="(max-width: 767px)" srcset="{{ asset('assets/images/banner/banner-m.webp') }}"><img
 
-                src="{{ asset('assets/images/banner/banner-d.jpg') }}"
+                src="{{ asset('assets/images/banner/banner-d.webp') }}"
 
                 alt="Industrial painting and coating equipment"
 
@@ -187,9 +187,9 @@ http://127.0.0.1:8000/product/hoist-crane
 
         >
 
-            <picture class="absolute inset-0 block h-full w-full"><source media="(max-width: 767px)" srcset="{{ asset('assets/images/banner/banner-m.jpg') }}"><img
+            <picture class="absolute inset-0 block h-full w-full"><source media="(max-width: 767px)" srcset="{{ asset('assets/images/banner/banner-m.webp') }}"><img
 
-                src="{{ asset('assets/images/banner/banner-d.jpg') }}"
+                src="{{ asset('assets/images/banner/banner-d.webp') }}"
 
                 alt="Industrial machinery"
 
@@ -255,9 +255,9 @@ http://127.0.0.1:8000/product/hoist-crane
 
         >
 
-            <picture class="absolute inset-0 block h-full w-full"><source media="(max-width: 767px)" srcset="{{ asset('assets/images/banner/banner-m.jpg') }}"><img
+            <picture class="absolute inset-0 block h-full w-full"><source media="(max-width: 767px)" srcset="{{ asset('assets/images/banner/banner-m.webp') }}"><img
 
-                src="{{ asset('assets/images/banner/banner-d.jpg') }}"
+                src="{{ asset('assets/images/banner/banner-d.webp') }}"
 
                 alt="Industrial solvent cleaning equipment"
 
@@ -323,9 +323,9 @@ http://127.0.0.1:8000/product/hoist-crane
 
         >
 
-            <picture class="absolute inset-0 block h-full w-full"><source media="(max-width: 767px)" srcset="{{ asset('assets/images/banner/banner-m.jpg') }}"><img
+            <picture class="absolute inset-0 block h-full w-full"><source media="(max-width: 767px)" srcset="{{ asset('assets/images/banner/banner-m.webp') }}"><img
 
-                src="{{ asset('assets/images/banner/banner-d.jpg') }}"
+                src="{{ asset('assets/images/banner/banner-d.webp') }}"
 
                 alt="Industrial odor control equipment"
 
@@ -541,7 +541,7 @@ http://127.0.0.1:8000/product/hoist-crane
 
                         <img
 
-                            src="{{ asset('assets/images/thumbnail_product/crane.png') }}"
+                            src="{{ asset('assets/images/thumbnail_product/crane.webp') }}"
 
                             class="h-full w-full object-contain transition duration-300 group-hover:scale-105"
 
@@ -583,7 +583,7 @@ http://127.0.0.1:8000/product/hoist-crane
 
                         <img
 
-                            src="{{ asset('assets/images/thumbnail_product/paint.png') }}"
+                            src="{{ asset('assets/images/thumbnail_product/paint.webp') }}"
 
                             alt="Painting and coating equipment"
 
@@ -627,7 +627,7 @@ http://127.0.0.1:8000/product/hoist-crane
 
                         <img
 
-                            src="{{ asset('assets/images/thumbnail_product/machinery.png') }}"
+                            src="{{ asset('assets/images/thumbnail_product/machinery.webp') }}"
 
                             alt="Industrial machinery"
 
@@ -671,7 +671,7 @@ http://127.0.0.1:8000/product/hoist-crane
 
                         <img
 
-                            src="{{ asset('assets/images/thumbnail_product/solvent.png') }}"
+                            src="{{ asset('assets/images/thumbnail_product/solvent.webp') }}"
 
                             alt="Solvent cleaner equipment"
 
@@ -715,7 +715,7 @@ http://127.0.0.1:8000/product/hoist-crane
 
                         <img
 
-                            src="{{ asset('assets/images/thumbnail_product/odor.png') }}"
+                            src="{{ asset('assets/images/thumbnail_product/odor.webp') }}"
 
                             alt="Odor control equipment"
 

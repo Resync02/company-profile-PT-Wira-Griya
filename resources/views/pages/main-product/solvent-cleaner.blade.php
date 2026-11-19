@@ -11,8 +11,8 @@
             'model' => '600-1200',
             'type' => 'Solvent Recovery System',
             'business' => 'Solvent Recovery',
-            'image' => 'assets/images/thumbnail_product/solvent.png',
-            'gallery' => ['assets/images/thumbnail_product/solvent.png'],
+            'image' => 'assets/images/thumbnail_product/solvent.webp',
+            'gallery' => ['assets/images/thumbnail_product/solvent.webp'],
             'description' => 'HR 600-1200 solvent-control equipment. Contact PT Wira Griya to confirm the intended application, configuration, and technical details for this model.',
             'features' => ['Solvent-control equipment', 'Model designation: HR 600-1200', 'Ask our team about suitable applications and configuration', 'Refer to the official datasheet for verified technical details'],
             'specs' => ['Brand' => 'HR', 'Model' => '600-1200', 'Product Type' => 'Solvent Control / Recovery Equipment', 'Application' => 'Solvent Management', 'Technical Specifications' => 'Please contact us for the official datasheet'],
@@ -22,8 +22,8 @@
             'model' => '100-202-400',
             'type' => 'Solvent Recovery System',
             'business' => 'Solvent Recovery',
-            'image' => 'assets/images/thumbnail_product/solvent.png',
-            'gallery' => ['assets/images/thumbnail_product/solvent.png'],
+            'image' => 'assets/images/thumbnail_product/solvent.webp',
+            'gallery' => ['assets/images/thumbnail_product/solvent.webp'],
             'description' => 'ROTO PLUS 100-202-400 product for solvent-control applications. Contact our team to identify the appropriate configuration and obtain confirmed technical information.',
             'features' => ['Solvent-control equipment', 'Model designation: ROTO PLUS 100-202-400', 'Configuration and application should be confirmed with the supplier', 'Official specifications available on request'],
             'specs' => ['Brand' => 'ROTO PLUS', 'Model' => '100-202-400', 'Product Type' => 'Solvent Control / Recovery Equipment', 'Application' => 'Solvent Management', 'Technical Specifications' => 'Please contact us for the official datasheet'],
@@ -33,8 +33,8 @@
             'model' => 'ECO PLUS',
             'type' => 'Solvent Recovery System',
             'business' => 'Solvent Recovery',
-            'image' => 'assets/images/thumbnail_product/solvent.png',
-            'gallery' => ['assets/images/thumbnail_product/solvent.png'],
+            'image' => 'assets/images/thumbnail_product/solvent.webp',
+            'gallery' => ['assets/images/thumbnail_product/solvent.webp'],
             'description' => 'ECO PLUS solvent-control product. Please contact PT Wira Griya for product documentation and confirmation of its intended use and configuration.',
             'features' => ['Solvent-control equipment', 'Product designation: ECO PLUS', 'Ask our team about intended applications', 'Confirm technical details using the official datasheet'],
             'specs' => ['Brand' => 'ECO PLUS', 'Model' => 'ECO PLUS', 'Product Type' => 'Solvent Control / Recovery Equipment', 'Application' => 'Solvent Management', 'Technical Specifications' => 'Please contact us for the official datasheet'],
@@ -44,8 +44,8 @@
             'model' => '90-202',
             'type' => 'Solvent Recovery System',
             'business' => 'Solvent Recovery',
-            'image' => 'assets/images/thumbnail_product/solvent.png',
-            'gallery' => ['assets/images/thumbnail_product/solvent.png'],
+            'image' => 'assets/images/thumbnail_product/solvent.webp',
+            'gallery' => ['assets/images/thumbnail_product/solvent.webp'],
             'description' => 'IST 90-202 solvent-control equipment. Contact our team for verified model details, operating requirements, and application guidance.',
             'features' => ['Solvent-control equipment', 'Model designation: IST 90-202', 'Operating requirements should be confirmed for the application', 'Official technical data available on request'],
             'specs' => ['Brand' => 'IST', 'Model' => '90-202', 'Product Type' => 'Solvent Control / Recovery Equipment', 'Application' => 'Solvent Management', 'Technical Specifications' => 'Please contact us for the official datasheet'],
@@ -55,8 +55,8 @@
             'model' => '15-22-42-62',
             'type' => 'Solvent Recovery System',
             'business' => 'Solvent Recovery',
-            'image' => 'assets/images/thumbnail_product/solvent.png',
-            'gallery' => ['assets/images/thumbnail_product/solvent.png'],
+            'image' => 'assets/images/thumbnail_product/solvent.webp',
+            'gallery' => ['assets/images/thumbnail_product/solvent.webp'],
             'description' => 'IST 15-22-42-62 product family for solvent-control needs. Contact PT Wira Griya to clarify the specific model variant and request the correct datasheet.',
             'features' => ['IST product family', 'Listed model variants: 15, 22, 42, and 62', 'Confirm the required variant before selecting a system', 'Refer to official documentation for verified specifications'],
             'specs' => ['Brand' => 'IST', 'Model / Series' => '15-22-42-62', 'Product Type' => 'Solvent Control / Recovery Equipment', 'Application' => 'Solvent Management', 'Technical Specifications' => 'Please contact us for the official datasheet'],
@@ -66,8 +66,8 @@
             'model' => 'C1-C2',
             'type' => 'Solvent Recovery System',
             'business' => 'Solvent Recovery',
-            'image' => 'assets/images/thumbnail_product/solvent.png',
-            'gallery' => ['assets/images/thumbnail_product/solvent.png'],
+            'image' => 'assets/images/thumbnail_product/solvent.webp',
+            'gallery' => ['assets/images/thumbnail_product/solvent.webp'],
             'description' => 'IST C1-C2 solvent-control product series. Contact our team for help identifying the appropriate variant and accessing the official product documentation.',
             'features' => ['IST product series', 'Model designation: C1-C2', 'Confirm model variant and application requirements', 'Official technical specifications available on request'],
             'specs' => ['Brand' => 'IST', 'Model / Series' => 'C1-C2', 'Product Type' => 'Solvent Control / Recovery Equipment', 'Application' => 'Solvent Management', 'Technical Specifications' => 'Please contact us for the official datasheet'],
@@ -77,8 +77,8 @@
             'model' => 'Recovery System Standard Series',
             'type' => 'Solvent Recovery System',
             'business' => 'Solvent Recovery',
-            'image' => 'assets/images/thumbnail_product/solvent.png',
-            'gallery' => ['assets/images/thumbnail_product/solvent.png'],
+            'image' => 'assets/images/thumbnail_product/solvent.webp',
+            'gallery' => ['assets/images/thumbnail_product/solvent.webp'],
             'description' => 'Formeco Recovery System Standard Series for solvent-recovery applications. Contact our team to confirm the available model, capacity, and technical configuration.',
             'features' => ['Formeco solvent recovery system series', 'Standard Series product range', 'Model and capacity should be selected for the application', 'Request the official datasheet for verified specifications'],
             'specs' => ['Brand' => 'Formeco', 'Series' => 'Standard Series', 'Product Type' => 'Solvent Recovery System', 'Application' => 'Solvent Recovery', 'Technical Specifications' => 'Please contact us for the official datasheet'],
@@ -88,8 +88,8 @@
             'model' => 'Recovery System Industrial Series',
             'type' => 'Solvent Recovery System',
             'business' => 'Solvent Recovery',
-            'image' => 'assets/images/thumbnail_product/solvent.png',
-            'gallery' => ['assets/images/thumbnail_product/solvent.png'],
+            'image' => 'assets/images/thumbnail_product/solvent.webp',
+            'gallery' => ['assets/images/thumbnail_product/solvent.webp'],
             'description' => 'Formeco Recovery System Industrial Series for solvent-recovery applications. Contact PT Wira Griya to confirm system sizing, configuration, and the relevant datasheet.',
             'features' => ['Formeco solvent recovery system series', 'Industrial Series product range', 'Confirm system sizing and process compatibility', 'Request official documentation for verified specifications'],
             'specs' => ['Brand' => 'Formeco', 'Series' => 'Industrial Series', 'Product Type' => 'Solvent Recovery System', 'Application' => 'Solvent Recovery', 'Technical Specifications' => 'Please contact us for the official datasheet'],
@@ -99,8 +99,8 @@
             'model' => 'Recovery System Compact Series',
             'type' => 'Solvent Recovery System',
             'business' => 'Solvent Recovery',
-            'image' => 'assets/images/thumbnail_product/solvent.png',
-            'gallery' => ['assets/images/thumbnail_product/solvent.png'],
+            'image' => 'assets/images/thumbnail_product/solvent.webp',
+            'gallery' => ['assets/images/thumbnail_product/solvent.webp'],
             'description' => 'Formeco Recovery System Compact Series for solvent-recovery applications. Contact our team to confirm the specific model and suitability for your process and site.',
             'features' => ['Formeco solvent recovery system series', 'Compact Series product range', 'Confirm model and installation requirements', 'Official technical data available on request'],
             'specs' => ['Brand' => 'Formeco', 'Series' => 'Compact Series', 'Product Type' => 'Solvent Recovery System', 'Application' => 'Solvent Recovery', 'Technical Specifications' => 'Please contact us for the official datasheet'],
@@ -109,8 +109,8 @@
 @endphp
 {{-- HERO BANNER --}}
 <section class="relative aspect-[5/4] overflow-hidden sm:aspect-[1351/400]">
-    <picture class="absolute inset-0 block h-full w-full"><source media="(max-width: 767px)" srcset="{{ asset('assets/images/banner/banner-m.jpg') }}"><img
-        src="{{ asset('assets/images/banner/banner-d.jpg') }}"
+    <picture class="absolute inset-0 block h-full w-full"><source media="(max-width: 767px)" srcset="{{ asset('assets/images/banner/banner-m.webp') }}"><img
+        src="{{ asset('assets/images/banner/banner-d.webp') }}"
         alt="Solvent-control solutions"
         class="absolute inset-0 h-full w-full object-cover object-center"
     ></picture>
@@ -223,7 +223,7 @@
                         alt="{{ $product['brand'] }} {{ $product['model'] }}"
                         class="h-32 w-full object-contain transition duration-300 group-hover:scale-105"
                         loading="lazy"
-                        onerror="this.onerror=null;this.src='{{ asset('assets/images/thumbnail_product/solvent.png') }}';"
+                        onerror="this.onerror=null;this.src='{{ asset('assets/images/thumbnail_product/solvent.webp') }}';"
                     >
                 </div>
                 <div class="flex min-w-0 flex-1 flex-col py-3 pr-2">
@@ -528,7 +528,7 @@ const thumbnails = document.getElementById('solvent-modal-thumbnails');
 const previousButton = document.getElementById('solvent-gallery-prev');
 const nextButton = document.getElementById('solvent-gallery-next');
 const galleryCounter = document.getElementById('solvent-gallery-counter');
-const fallbackImage = '{{ asset('assets/images/thumbnail_product/solvent.png') }}';
+const fallbackImage = '{{ asset('assets/images/thumbnail_product/solvent.webp') }}';
 const getImageUrl = (path) => '{{ asset('') }}' + path;
 // Gunakan maksimal 5 gambar yang didefinisikan pada product.gallery.
 // Jika gallery kosong, gunakan gambar utama produk sebagai fallback.

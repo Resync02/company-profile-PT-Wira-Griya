@@ -249,7 +249,7 @@ vision: {
             <!-- Unified Background -->
             <div
                 class="absolute inset-0 bg-cover bg-center"
-                style="background-image: url('/assets/images/about/vnm/vnm.png');"
+                style="background-image: url('/assets/images/about/vnm/vnm.webp');"
                 aria-hidden="true"
             ></div>
 
@@ -412,7 +412,10 @@ vision: {
         certifications: {
             title: 'Certifications & Legal Documents',
             body: `
-                <div class="flex min-h-full items-center justify-center py-6 sm:py-8">
+                <div
+                    class="flex min-h-full w-full items-center justify-center rounded-xl p-4 sm:p-6"
+                    style="background-image: linear-gradient(135deg, rgba(255,255,255,.06) 0%, rgba(255,255,255,.12) 100%), url('/assets/images/about/bg.webp'); background-size: cover; background-position: center;"
+                >
                     <div class="grid w-full max-w-6xl grid-cols-2 gap-x-6 gap-y-8 sm:grid-cols-4">
 
                     <!-- Certificate 1 -->
@@ -420,12 +423,12 @@ vision: {
                         <button
                             type="button"
                             class="certificate-item group block w-full cursor-pointer overflow-hidden rounded-md bg-gray-50"
-                            data-certificate-image="/assets/images/about/certifications/c1.jpeg"
+                            data-certificate-image="/assets/images/about/certifications/c1.webp"
                             data-certificate-alt="ISO 9001:2015 - Quality Management System"
                             aria-label="View ISO 9001:2015 certificate"
                         >
                             <img
-                                src="/assets/images/about/certifications/c1.jpeg"
+                                src="/assets/images/about/certifications/c1.webp"
                                 alt="ISO 9001:2015"
                                 class="aspect-[3/4] w-full object-contain transition duration-300 group-hover:scale-[1.03]"
                                 loading="lazy"
@@ -443,12 +446,12 @@ vision: {
                         <button
                             type="button"
                             class="certificate-item group block w-full cursor-pointer overflow-hidden rounded-md bg-gray-50"
-                            data-certificate-image="/assets/images/about/certifications/c2.jpeg"
+                            data-certificate-image="/assets/images/about/certifications/c2.webp"
                             data-certificate-alt="ISO 14001:2015 - Environmental Management"
                             aria-label="View ISO 14001:2015 certificate"
                         >
                             <img
-                                src="/assets/images/about/certifications/c2.jpeg"
+                                src="/assets/images/about/certifications/c2.webp"
                                 alt="ISO 14001:2015"
                                 class="aspect-[3/4] w-full object-contain transition duration-300 group-hover:scale-[1.03]"
                                 loading="lazy"
@@ -465,12 +468,12 @@ vision: {
                         <button
                             type="button"
                             class="certificate-item group block w-full cursor-pointer overflow-hidden rounded-md bg-gray-50"
-                            data-certificate-image="/assets/images/about/certifications/c3.jpeg"
+                            data-certificate-image="/assets/images/about/certifications/c3.webp"
                             data-certificate-alt="ISO 45001:2018 - Occupational Health and Safety"
                             aria-label="View ISO 45001:2018 certificate"
                         >
                             <img
-                                src="/assets/images/about/certifications/c3.jpeg"
+                                src="/assets/images/about/certifications/c3.webp"
                                 alt="ISO 45001:2018"
                                 class="aspect-[3/4] w-full object-contain transition duration-300 group-hover:scale-[1.03]"
                                 loading="lazy"
@@ -482,17 +485,17 @@ vision: {
                         </div>
                     </article>
 
-                    <!-- Certificate 4: Temporary reuse of c3.jpeg -->
+                    <!-- Certificate 4: Temporary reuse of c3.webp -->
                     <article class="min-w-0 overflow-hidden rounded-lg bg-white text-center">
                         <button
                             type="button"
                             class="certificate-item group block w-full cursor-pointer overflow-hidden rounded-md bg-gray-50"
-                            data-certificate-image="/assets/images/about/certifications/c3.jpeg"
+                            data-certificate-image="/assets/images/about/certifications/c3.webp"
                             data-certificate-alt="Temporary certificate 4 preview"
                             aria-label="View certificate 4"
                         >
                             <img
-                                src="/assets/images/about/certifications/c3.jpeg"
+                                src="/assets/images/about/certifications/c3.webp"
                                 alt="Temporary certificate 4 preview"
                                 class="aspect-[3/4] w-full object-contain transition duration-300 group-hover:scale-[1.03]"
                                 loading="lazy"
@@ -547,19 +550,10 @@ vision: {
                 opacity: 1;
                 visibility: visible;
                 pointer-events: auto;
-                transform: translate(0, -50%);
+                transform: translate(-50%, 0);
             }
             .bfc-hover-card.is-active .bfc-logo-track {
                 animation: bfc-marquee 16s linear infinite;
-            }
-            .bfc-hover-card--right.is-active .bfc-hover-bubble {
-                transform: translate(0, -50%);
-            }
-            @media (max-width: 640px) {
-                .bfc-hover-card.is-active .bfc-hover-bubble,
-                .bfc-hover-card--right.is-active .bfc-hover-bubble {
-                    transform: translate(-50%, -50%);
-                }
             }
             @media (prefers-reduced-motion: reduce) {
                 .bfc-hover-card.is-active .bfc-logo-track {
@@ -620,7 +614,7 @@ vision: {
 
 // =========================
 // TESTIMONIAL FLIP CARD + PAGINATION
-// 8 TESTIMONIALS / 4 PER PAGE
+// 8 TESTIMONIALS / 6 PER PAGE
 // =========================
 function initTestimonialFlipCards() {
         if (!modalBody) return;
@@ -635,7 +629,7 @@ function initTestimonialFlipCards() {
 
         if (!grid || !cards.length || !dotsContainer) return;
 
-        const perPage = 4;
+        const perPage = 6;
         const totalPages = Math.ceil(cards.length / perPage);
         let currentPage = 0;
 
@@ -686,8 +680,8 @@ function initTestimonialFlipCards() {
                 const fallback = document.createElement('div');
 
                 fallback.className = isPhoto
-                    ? 'flex h-full min-h-0 w-full items-center justify-center bg-[#DCE8F4] px-3 text-center text-xs font-semibold text-[#183E6E]'
-                    : 'flex h-14 w-full max-w-[190px] items-center justify-center rounded bg-[#F3F6FA] px-2 text-center text-xs font-semibold text-[#183E6E]';
+                    ? 'flex h-full min-h-0 w-full items-center justify-center bg-[#DCE8F4] px-3 text-center text-sm font-semibold text-[#183E6E]'
+                    : 'flex h-14 w-full max-w-[190px] items-center justify-center rounded bg-[#F3F6FA] px-2 text-center text-sm font-semibold text-[#183E6E]';
                 fallback.textContent = isPhoto ? 'Customer Photo' : 'Company Logo';
                 image.replaceWith(fallback);
             }, { once: true });
@@ -772,7 +766,8 @@ function initTestimonialFlipCards() {
         // Clone the existing Blade template into the shared modal.
         modalBody.replaceChildren(template.content.cloneNode(true));
 
-        const basePath = '/assets/images/about/customer';
+        const basePath = template.dataset.clientLogoBase || '/assets/images/about/customer';
+        modalBody.dataset.logoLayoutVersion = 'customer-4col-v2';
         const track = modalBody.querySelector('[data-customers-track]');
         const viewport = modalBody.querySelector('[data-customers-viewport]');
         const previousButton = modalBody.querySelector('[data-customers-prev]');
@@ -782,29 +777,81 @@ function initTestimonialFlipCards() {
         if (!basePath || !track || !viewport || !dotsContainer) return;
 
         // Replace these filenames with the exact files in public/assets/images/logo/client.
+        // Ordered by industry for a more intuitive customer-logo journey.
+        // All logos already available in public/assets/images/about/customer are included.
         const customerLogos = [
-            { name: 'Schneider Electric', file: 'schneider.png' },
-            { name: 'KAI', file: 'KAI.png' },
-            { name: 'PLN', file: 'PLN.png' },
-            { name: 'Pindad', file: 'Pindad.png' },
-            { name: 'Wika', file: 'Wika.png' },
-            { name: 'Kohler', file: 'Kohler.png' },
-            { name: 'INOAC', file: 'INOAC.png' },
-            { name: 'Wilo', file: 'wilo.png' },
-            { name: 'TOTO', file: 'toto.png' },
-            { name: 'YKK', file: 'ykk.png' },
-            { name: 'Hitachi', file: 'Hitachi.png' },
-            { name: 'Chuhatsu', file: 'Chuhatsu.png' },
-            { name: 'Daihatsu', file: 'Daihatsu.png' },
-            { name: 'Honda', file: 'Honda.png' },
-            { name: 'Isuzu', file: 'Isuzu.png' },
-            { name: 'AIM', file: 'AIM.png' },
-            { name: 'CMWI', file: 'CMWI.png' },
-            { name: 'Dharma', file: 'dharma.png' },
-            { name: 'IKPT', file: 'IKPT.png' },
-            { name: 'Ikuyo', file: 'ikuyo.png' },
-            { name: 'Indofood', file: 'Indofood.png' },
-            { name: 'Kansai', file: 'kansai.png' },
+            // Pharmacy & Healthcare
+            { name: 'K24', file: 'K24.webp' },
+            { name: 'Mega We Care', file: 'Mega.webp' },
+            { name: 'Phapros', file: 'Phapros.webp' },
+            { name: 'Pharos', file: 'Pharos.webp' },
+            { name: 'Prosweal Indomax', file: 'Prosweal.webp' },
+            { name: 'Sakafarma', file: 'Sakafarma.webp' },
+
+            // Automotive & Mobility
+            { name: 'Chuhatsu', file: 'Chuhatsu.webp' },
+            { name: 'Daihatsu', file: 'Daihatsu.webp' },
+            { name: 'Dharma Poliplast', file: 'dharma.webp' },
+            { name: 'Honda', file: 'Honda.webp' },
+            { name: 'INOAC', file: 'INOAC.webp' },
+            { name: 'Isuzu', file: 'Isuzu.webp' },
+            { name: 'Ikuyo Indonesia', file: 'ikuyo.webp' },
+            { name: 'Katsushiro Indonesia', file: 'katsushiro.webp' },
+            { name: 'Kawasaki', file: 'Kawasaki.webp' },
+            { name: 'Mitsubishi', file: 'Mitsubishi.webp' },
+            { name: 'Nissan', file: 'Nissan.webp' },
+            { name: 'Sakura', file: 'Sakura.webp' },
+            { name: 'Sankeikid Manutech', file: 'Sankeikid.webp' },
+            { name: 'Sugity', file: 'Sugity.webp' },
+            { name: 'Suzuki', file: 'Suzuki.webp' },
+            { name: 'Toyota', file: 'Toyota.webp' },
+            { name: 'Yamaha', file: 'Yamaha.webp' },
+            { name: 'Yokohama', file: 'yokohama.webp' },
+
+            // Painting & Surface Coating
+            { name: 'Kansai Paint', file: 'kansai.webp' },
+            { name: 'Nippon Paint', file: 'nippon-paint-seeklogo.webp' },
+            { name: 'Taikisha', file: 'Taikisha.webp' },
+
+            // Industrial Machinery, Engineering & Manufacturing
+            { name: 'AIM', file: 'AIM.webp' },
+            { name: 'Asno Horie', file: 'Asnohorie.webp' },
+            { name: 'CMWI', file: 'CMWI.webp' },
+            { name: 'Hitachi', file: 'Hitachi.webp' },
+            { name: 'IKPT', file: 'IKPT.webp' },
+            { name: 'KSB', file: 'KSB.webp' },
+            { name: 'Komatsu', file: 'komatsu-seeklogo.webp' },
+            { name: 'Parker Engineering', file: 'PE.webp' },
+            { name: 'Pindad', file: 'Pindad.webp' },
+            { name: 'Proline', file: 'Proline.webp' },
+            { name: 'Sakai', file: 'Sakai.webp' },
+            { name: 'Sany', file: 'Sany.webp' },
+            { name: 'Schneider Electric', file: 'schneider.webp' },
+            { name: 'Stanley', file: 'Stanley.webp' },
+            { name: 'Sumitomo', file: 'Sumitomo.webp' },
+            { name: 'United Tractors', file: 'UT.webp' },
+            { name: 'Wilo', file: 'wilo.webp' },
+
+            // Energy, Utilities & Transportation
+            { name: 'KAI', file: 'KAI.webp' },
+            { name: 'Pertamina', file: 'Pertamina.webp' },
+            { name: 'PJB', file: 'PJB.webp' },
+            { name: 'PLN', file: 'PLN.webp' },
+
+            // Infrastructure & Construction Materials
+            { name: 'Krakatau Steel', file: 'Krakatau-Steel.webp' },
+            { name: 'Nindya', file: 'Nindya.webp' },
+            { name: 'Semen Padang', file: 'Semen_Padang.webp' },
+            { name: 'Wika', file: 'Wika.webp' },
+
+            // Food, Beverage, Building & Consumer Products
+            { name: 'Indofood', file: 'Indofood.webp' },
+            { name: 'Madurasa', file: 'Madurasa.webp' },
+            { name: 'Mayora', file: 'Mayora.webp' },
+            { name: 'Kohler', file: 'Kohler.webp' },
+            { name: 'Panasonic', file: 'Panasonic.webp' },
+            { name: 'TOTO', file: 'toto.webp' },
+            { name: 'YKK', file: 'ykk.webp' },
         ];
 
         let currentPage = 0;
@@ -819,85 +866,109 @@ function initTestimonialFlipCards() {
 
         function renderSlider() {
             logosPerPage = getLogosPerPage();
-
+            const columns = window.innerWidth >= 640 ? 4 : 2;
+            const gap = window.innerWidth >= 640 ? 16 : 12;
             const totalPages = Math.ceil(customerLogos.length / logosPerPage);
 
             currentPage = Math.min(currentPage, Math.max(0, totalPages - 1));
-
             track.replaceChildren();
             dotsContainer.replaceChildren();
 
-            for (let pageIndex = 0; pageIndex < totalPages; pageIndex++) {
+            for (let pageIndex = 0; pageIndex < totalPages; pageIndex += 1) {
                 const page = document.createElement('div');
+                page.className = 'min-w-full shrink-0';
+                Object.assign(page.style, {
+                    display: 'flex',
+                    flexDirection: 'column',
+                    gap: '16px',
+                    width: '100%',
+                    boxSizing: 'border-box',
+                    padding: '4px 8px',
+                });
 
-                page.className =
-                    'grid min-w-full shrink-0 grid-cols-2 items-center gap-3 px-2 sm:grid-cols-4 sm:gap-4 lg:grid-cols-4';
                 const start = pageIndex * logosPerPage;
-                const pageLogos = customerLogos.slice(
-                    start,
-                    start + logosPerPage
-                );
+                const pageLogos = customerLogos.slice(start, start + logosPerPage);
 
-                pageLogos.forEach((logo) => {
-                    const logoCard = document.createElement('div');
+                // Create each row separately. justify-content:center centers the final
+                // row automatically when it contains fewer than four logos.
+                for (let rowStart = 0; rowStart < pageLogos.length; rowStart += columns) {
+                    const row = document.createElement('div');
+                    Object.assign(row.style, {
+                        display: 'flex',
+                        flex: '0 0 auto',
+                        width: '100%',
+                        justifyContent: 'center',
+                        gap: `${gap}px`,
+                        boxSizing: 'border-box',
+                    });
 
-                logoCard.className =
-                    'flex h-28 min-w-0 items-center justify-center overflow-hidden rounded-lg border border-gray-100 bg-white p-4 sm:h-32';
+                    pageLogos.slice(rowStart, rowStart + columns).forEach((logo) => {
+                        const logoCard = document.createElement('div');
+                        Object.assign(logoCard.style, {
+                            display: 'flex',
+                            flex: `0 0 calc((100% - ${(columns - 1) * gap}px) / ${columns})`,
+                            width: `calc((100% - ${(columns - 1) * gap}px) / ${columns})`,
+                            minWidth: '0',
+                            height: window.innerWidth >= 640 ? '132px' : '112px',
+                            alignItems: 'center',
+                            justifyContent: 'center',
+                            boxSizing: 'border-box',
+                            overflow: 'hidden',
+                            padding: window.innerWidth >= 640 ? '16px' : '12px',
+                            border: '1px solid #E5E7EB',
+                            borderRadius: '10px',
+                            background: '#FFFFFF',
+                        });
 
-                    const image = document.createElement('img');
-
-
+                        const image = document.createElement('img');
                         image.src = `${basePath}/${encodeURIComponent(logo.file)}`;
                         image.alt = logo.name;
                         image.loading = 'eager';
                         image.decoding = 'async';
-                        image.className =
-                            'block h-16 w-full max-w-[180px] object-contain sm:h-20';
+                        Object.assign(image.style, {
+                            display: 'block',
+                            width: '100%',
+                            height: window.innerWidth >= 640 ? '84px' : '68px',
+                            maxWidth: '190px',
+                            objectFit: 'contain',
+                        });
 
                         image.addEventListener('error', () => {
-                            console.error('Logo gagal dimuat:', {
+                            console.error('Customer logo gagal dimuat:', {
                                 name: logo.name,
                                 file: logo.file,
                                 url: image.src,
                             });
-
                             image.remove();
-
                             const fallback = document.createElement('span');
-                            fallback.className =
-                                'break-words text-center text-xs font-medium text-gray-500';
                             fallback.textContent = logo.name;
-
+                            fallback.style.cssText = 'font-size:12px;font-weight:600;color:#6B7280;text-align:center;overflow-wrap:anywhere;';
                             logoCard.appendChild(fallback);
                         }, { once: true });
 
                         logoCard.appendChild(image);
-                        page.appendChild(logoCard);
+                        row.appendChild(logoCard);
+                    });
 
-                });
+                    page.appendChild(row);
+                }
 
                 track.appendChild(page);
 
                 const dot = document.createElement('button');
-
                 dot.type = 'button';
-                dot.className =
-                    'size-2.5 cursor-pointer rounded-full transition';
-
+                dot.className = 'size-2.5 cursor-pointer rounded-full transition';
                 dot.setAttribute('aria-label', `Go to customer logos page ${pageIndex + 1}`);
-
                 dot.addEventListener('click', () => {
                     showPage(pageIndex);
                     restartAutoplay();
                 });
-
                 dotsContainer.appendChild(dot);
             }
 
             showPage(currentPage);
 
             const showNavigation = totalPages > 1;
-
             previousButton?.classList.toggle('hidden', !showNavigation);
             nextButton?.classList.toggle('hidden', !showNavigation);
             dotsContainer.classList.toggle('hidden', !showNavigation);
@@ -1019,7 +1090,8 @@ function initTestimonialFlipCards() {
 
         modalBody.replaceChildren(template.content.cloneNode(true));
 
-        const basePath = '/assets/images/about/partners';
+        const basePath = template.dataset.partnerLogoBase || '/assets/images/about/partners';
+        modalBody.dataset.logoLayoutVersion = 'partner-3col-v2';
         const track = modalBody.querySelector('[data-partners-track]');
         const viewport = modalBody.querySelector('[data-partners-viewport]');
         const previousButton = modalBody.querySelector('[data-partners-prev]');
@@ -1029,16 +1101,21 @@ function initTestimonialFlipCards() {
         if (!basePath || !track || !viewport || !dotsContainer) return;
 
         const partnerLogos = [
-            { name: 'Asahi Sunac', file: 'asahi.png' },
-            { name: 'BF Coating', file: 'bfcoating.png' },
-            { name: 'CMAK', file: 'cmak.png' },
-            { name: 'Eversun Machinery', file: 'eversun.png' },
-            { name: 'GH Cranes & Components', file: 'gh.png' },
-            { name: 'NH Hoist', file: 'nh.png' },
-            { name: 'VR', file: 'vr.png' },
-            { name: 'Worldhoists', file: 'wh.png' },
-            { name: 'Xiaolun', file: 'xiaolun.png' },
-            { name: 'Yaskawa', file: 'yaskawa.png' },
+            // Coating & Painting
+            { name: 'Asahi Sunac', file: 'asahi.webp' },
+            { name: 'BF Coating', file: 'bfcoating.webp' },
+            { name: 'VR', file: 'vr.webp' },
+
+            // Hoist & Crane
+            { name: 'CMAK', file: 'cmak.webp' },
+            { name: 'GH Cranes & Components', file: 'gh.webp' },
+            { name: 'NH Hoist', file: 'nh.webp' },
+            { name: 'Worldhoists', file: 'wh.webp' },
+
+            // Industrial Machinery & Automation
+            { name: 'Eversun Machinery', file: 'eversun.webp' },
+            { name: 'Xiaolun', file: 'xiaolun.webp' },
+            { name: 'Yaskawa', file: 'yaskawa.webp' },
         ];
 
         let currentPage = 0;
@@ -1046,9 +1123,9 @@ function initTestimonialFlipCards() {
         let resizeTimer = null;
 
         function getLogosPerPage() {
-            if (window.innerWidth >= 1024) return 16;
-            if (window.innerWidth >= 640) return 8;
-            return 4;
+            // Keep the full partner set together on tablet and desktop.
+            // Mobile uses two columns with up to six logos per page.
+            return window.innerWidth >= 640 ? partnerLogos.length : 6;
         }
 
         function showPage(index) {
@@ -1080,86 +1157,111 @@ function initTestimonialFlipCards() {
 
         function renderSlider() {
             logosPerPage = getLogosPerPage();
+            const columns = window.innerWidth >= 640 ? 3 : 2;
+            const gap = window.innerWidth >= 640 ? 18 : 12;
             const totalPages = Math.ceil(partnerLogos.length / logosPerPage);
 
             currentPage = Math.min(currentPage, Math.max(0, totalPages - 1));
-
             track.replaceChildren();
             dotsContainer.replaceChildren();
 
-            for (let pageIndex = 0; pageIndex < totalPages; pageIndex++) {
+            for (let pageIndex = 0; pageIndex < totalPages; pageIndex += 1) {
                 const page = document.createElement('div');
-                page.className =
-                    'grid min-w-full shrink-0 grid-cols-2 items-center gap-3 px-2 sm:grid-cols-4 sm:gap-4 lg:grid-cols-4';
+                page.className = 'min-w-full shrink-0';
+                Object.assign(page.style, {
+                    display: 'flex',
+                    flexDirection: 'column',
+                    gap: '18px',
+                    width: '100%',
+                    boxSizing: 'border-box',
+                    padding: '4px 8px',
+                });
 
                 const start = pageIndex * logosPerPage;
-                const logos = partnerLogos.slice(start, start + logosPerPage);
+                const pageLogos = partnerLogos.slice(start, start + logosPerPage);
 
-                logos.forEach((logo) => {
-                    const card = document.createElement('div');
-                card.className =
-                    'flex h-28 min-w-0 items-center justify-center overflow-hidden rounded-lg border border-gray-100 bg-white p-4 sm:h-32';
-                                    const image = document.createElement('img');
-                    image.src = `${basePath}/${encodeURIComponent(logo.file)}`;
-                    image.alt = logo.name;
-                    image.loading = 'eager';
-                    image.decoding = 'async';
-                    image.className =
-                        'block h-16 w-full max-w-[180px] object-contain sm:h-20';
+                for (let rowStart = 0; rowStart < pageLogos.length; rowStart += columns) {
+                    const row = document.createElement('div');
+                    Object.assign(row.style, {
+                        display: 'flex',
+                        flex: '0 0 auto',
+                        width: '100%',
+                        justifyContent: 'center',
+                        gap: `${gap}px`,
+                        boxSizing: 'border-box',
+                    });
 
-                    image.addEventListener('error', () => {
-                        console.error('Partner logo gagal dimuat:', {
-                            name: logo.name,
-                            file: logo.file,
-                            url: image.src,
+                    pageLogos.slice(rowStart, rowStart + columns).forEach((logo) => {
+                        const card = document.createElement('div');
+                        Object.assign(card.style, {
+                            display: 'flex',
+                            flex: `0 0 calc((100% - ${(columns - 1) * gap}px) / ${columns})`,
+                            width: `calc((100% - ${(columns - 1) * gap}px) / ${columns})`,
+                            minWidth: '0',
+                            height: window.innerWidth >= 640 ? '156px' : '132px',
+                            alignItems: 'center',
+                            justifyContent: 'center',
+                            boxSizing: 'border-box',
+                            overflow: 'hidden',
+                            padding: window.innerWidth >= 640 ? '20px' : '14px',
+                            border: '1px solid #E5E7EB',
+                            borderRadius: '12px',
+                            background: '#FFFFFF',
+                            boxShadow: '0 2px 8px rgba(15, 40, 70, 0.06)',
                         });
 
-                        image.remove();
+                        const image = document.createElement('img');
+                        image.src = `${basePath}/${encodeURIComponent(logo.file)}`;
+                        image.alt = logo.name;
+                        image.loading = 'eager';
+                        image.decoding = 'async';
+                        Object.assign(image.style, {
+                            display: 'block',
+                            width: '100%',
+                            height: window.innerWidth >= 640 ? '112px' : '92px',
+                            maxWidth: window.innerWidth >= 640 ? '270px' : '220px',
+                            objectFit: 'contain',
+                        });
 
-                        const fallback = document.createElement('span');
-                        fallback.className =
-                            'break-words text-center text-xs font-medium text-gray-500';
-                        fallback.textContent = logo.name;
-                        card.appendChild(fallback);
-                    }, { once: true });
+                        image.addEventListener('error', () => {
+                            console.error('Partner logo gagal dimuat:', {
+                                name: logo.name,
+                                file: logo.file,
+                                url: image.src,
+                            });
+                            image.remove();
+                            const fallback = document.createElement('span');
+                            fallback.textContent = logo.name;
+                            fallback.style.cssText = 'font-size:13px;font-weight:600;color:#6B7280;text-align:center;overflow-wrap:anywhere;';
+                            card.appendChild(fallback);
+                        }, { once: true });
 
-                    card.appendChild(image);
-                    page.appendChild(card);
-                });
+                        card.appendChild(image);
+                        row.appendChild(card);
+                    });
+
+                    page.appendChild(row);
+                }
 
                 track.appendChild(page);
 
                 const dot = document.createElement('button');
                 dot.type = 'button';
                 dot.className = 'size-2.5 cursor-pointer rounded-full transition';
-                dot.setAttribute(
-                    'aria-label',
-                    `Go to partner logos page ${pageIndex + 1}`
-                );
-
+                dot.setAttribute('aria-label', `Go to partner logos page ${pageIndex + 1}`);
                 dot.addEventListener('click', () => {
                     showPage(pageIndex);
                     startAutoplay();
                 });
-
                 dotsContainer.appendChild(dot);
             }
 
             const hasMultiplePages = totalPages > 1;
-
             previousButton?.classList.toggle('invisible', !hasMultiplePages);
             nextButton?.classList.toggle('invisible', !hasMultiplePages);
-
-            if (previousButton) {
-                previousButton.disabled = !hasMultiplePages;
-            }
-
-            if (nextButton) {
-                nextButton.disabled = !hasMultiplePages;
-            }
-
+            if (previousButton) previousButton.disabled = !hasMultiplePages;
+            if (nextButton) nextButton.disabled = !hasMultiplePages;
             dotsContainer.classList.toggle('hidden', !hasMultiplePages);
-
             showPage(currentPage);
         }
 

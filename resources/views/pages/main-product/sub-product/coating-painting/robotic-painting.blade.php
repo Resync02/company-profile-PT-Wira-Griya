@@ -10,13 +10,13 @@
         'model' => 'MPX3500',
         'type' => 'Robotic Painting System',
         'business' => 'Automotive',
-        'image' => 'assets/images/sub-product/coating-painting/robot-paint/mpx3500.png',
+        'image' => 'assets/images/sub-product/coating-painting/robot-paint/mpx3500.webp',
         'gallery' => [
-            'assets/images/sub-product/coating-painting/robot-paint/mpx1150.png',
-            'assets/images/sub-product/coating-painting/robot-paint/mpx1950.png',
-            'assets/images/sub-product/coating-painting/robot-paint/MPX2600.png',
-            'assets/images/sub-product/coating-painting/robot-paint/mpx3500.png',
-            'assets/images/sub-product/coating-painting/robot-paint/kf121.png',
+            'assets/images/sub-product/coating-painting/robot-paint/mpx1150.webp',
+            'assets/images/sub-product/coating-painting/robot-paint/mpx1950.webp',
+            'assets/images/sub-product/coating-painting/robot-paint/MPX2600.webp',
+            'assets/images/sub-product/coating-painting/robot-paint/mpx3500.webp',
+            'assets/images/sub-product/coating-painting/robot-paint/kf121.webp',
         ],
         'description' => 'A six-axis painting robot with a 2,700 mm working range, designed for automated coating of contoured workpieces and large painting applications.',
         'features' => [
@@ -47,13 +47,13 @@
         'model' => 'MPX2600',
         'type' => 'Robotic Painting System',
         'business' => 'Automotive',
-        'image' => 'assets/images/sub-product/coating-painting/robot-paint/MPX2600.png',
+        'image' => 'assets/images/sub-product/coating-painting/robot-paint/MPX2600.webp',
         'gallery' => [
-            'assets/images/sub-product/coating-painting/robot-paint/mpx1150.png',
-            'assets/images/sub-product/coating-painting/robot-paint/mpx1950.png',
-            'assets/images/sub-product/coating-painting/robot-paint/MPX2600.png',
-            'assets/images/sub-product/coating-painting/robot-paint/mpx3500.png',
-            'assets/images/sub-product/coating-painting/robot-paint/kf121.png',
+            'assets/images/sub-product/coating-painting/robot-paint/mpx1150.webp',
+            'assets/images/sub-product/coating-painting/robot-paint/mpx1950.webp',
+            'assets/images/sub-product/coating-painting/robot-paint/MPX2600.webp',
+            'assets/images/sub-product/coating-painting/robot-paint/mpx3500.webp',
+            'assets/images/sub-product/coating-painting/robot-paint/kf121.webp',
         ],
         'description' => 'A high-speed six-axis painting robot with a 2,000 mm working range and a hollow wrist designed to accommodate spray equipment.',
         'features' => [
@@ -84,13 +84,13 @@
         'model' => 'MPX1950',
         'type' => 'Robotic Painting System',
         'business' => 'Automotive',
-        'image' => 'assets/images/sub-product/coating-painting/robot-paint/mpx1950.png',
+        'image' => 'assets/images/sub-product/coating-painting/robot-paint/mpx1950.webp',
         'gallery' => [
-            'assets/images/sub-product/coating-painting/robot-paint/mpx1150.png',
-            'assets/images/sub-product/coating-painting/robot-paint/mpx1950.png',
-            'assets/images/sub-product/coating-painting/robot-paint/MPX2600.png',
-            'assets/images/sub-product/coating-painting/robot-paint/mpx3500.png',
-            'assets/images/sub-product/coating-painting/robot-paint/kf121.png',
+            'assets/images/sub-product/coating-painting/robot-paint/mpx1150.webp',
+            'assets/images/sub-product/coating-painting/robot-paint/mpx1950.webp',
+            'assets/images/sub-product/coating-painting/robot-paint/MPX2600.webp',
+            'assets/images/sub-product/coating-painting/robot-paint/mpx3500.webp',
+            'assets/images/sub-product/coating-painting/robot-paint/kf121.webp',
         ],
         'description' => 'A six-axis painting robot with a 1,450 mm working range and a 7 kg payload for automated painting of contoured workpieces.',
         'features' => [
@@ -120,13 +120,13 @@
         'model' => 'MPX1150',
         'type' => 'Robotic Painting System',
         'business' => 'Automotive',
-        'image' => 'assets/images/sub-product/coating-painting/robot-paint/mpx1150.png',
+        'image' => 'assets/images/sub-product/coating-painting/robot-paint/mpx1150.webp',
         'gallery' => [
-            'assets/images/sub-product/coating-painting/robot-paint/mpx1150.png',
-            'assets/images/sub-product/coating-painting/robot-paint/mpx1950.png',
-            'assets/images/sub-product/coating-painting/robot-paint/MPX2600.png',
-            'assets/images/sub-product/coating-painting/robot-paint/mpx3500.png',
-            'assets/images/sub-product/coating-painting/robot-paint/kf121.png',
+            'assets/images/sub-product/coating-painting/robot-paint/mpx1150.webp',
+            'assets/images/sub-product/coating-painting/robot-paint/mpx1950.webp',
+            'assets/images/sub-product/coating-painting/robot-paint/MPX2600.webp',
+            'assets/images/sub-product/coating-painting/robot-paint/mpx3500.webp',
+            'assets/images/sub-product/coating-painting/robot-paint/kf121.webp',
         ],
         'description' => 'A compact six-axis painting robot with a 727 mm working range, suitable for painting contoured parts and interior or exterior surfaces.',
         'features' => [
@@ -157,13 +157,13 @@
         'model' => 'KF121',
         'type' => 'Explosion-Proof Painting Robot',
         'business' => 'Automotive',
-        'image' => 'assets/images/sub-product/coating-painting/robot-paint/kf121.png',
+        'image' => 'assets/images/sub-product/coating-painting/robot-paint/kf121.webp',
         'gallery' => [
-            'assets/images/sub-product/coating-painting/robot-paint/mpx1150.png',
-            'assets/images/sub-product/coating-painting/robot-paint/mpx1950.png',
-            'assets/images/sub-product/coating-painting/robot-paint/MPX2600.png',
-            'assets/images/sub-product/coating-painting/robot-paint/mpx3500.png',
-            'assets/images/sub-product/coating-painting/robot-paint/kf121.png',
+            'assets/images/sub-product/coating-painting/robot-paint/mpx1150.webp',
+            'assets/images/sub-product/coating-painting/robot-paint/mpx1950.webp',
+            'assets/images/sub-product/coating-painting/robot-paint/MPX2600.webp',
+            'assets/images/sub-product/coating-painting/robot-paint/mpx3500.webp',
+            'assets/images/sub-product/coating-painting/robot-paint/kf121.webp',
         ],
         'description' => 'A compact explosion-proof painting robot from Kawasaki’s K series, designed for painting and handling small workpieces.',
         'features' => [
@@ -192,13 +192,13 @@
         'model' => 'KF192',
         'type' => 'Explosion-Proof Painting Robot',
         'business' => 'Automotive',
-        'image' => 'assets/images/sub-product/coating-painting/robot-paint/kf192.png',
+        'image' => 'assets/images/sub-product/coating-painting/robot-paint/kf192.webp',
         'gallery' => [
-            'assets/images/sub-product/coating-painting/robot-paint/mpx1150.png',
-            'assets/images/sub-product/coating-painting/robot-paint/mpx1950.png',
-            'assets/images/sub-product/coating-painting/robot-paint/MPX2600.png',
-            'assets/images/sub-product/coating-painting/robot-paint/mpx3500.png',
-            'assets/images/sub-product/coating-painting/robot-paint/kf121.png',
+            'assets/images/sub-product/coating-painting/robot-paint/mpx1150.webp',
+            'assets/images/sub-product/coating-painting/robot-paint/mpx1950.webp',
+            'assets/images/sub-product/coating-painting/robot-paint/MPX2600.webp',
+            'assets/images/sub-product/coating-painting/robot-paint/mpx3500.webp',
+            'assets/images/sub-product/coating-painting/robot-paint/kf121.webp',
         ],
         'description' => 'An explosion-proof six-axis painting robot with a 1,973 mm reach and a BBR wrist configuration for industrial painting applications.',
         'features' => [
@@ -230,13 +230,13 @@
         'model' => 'KF193',
         'type' => 'Explosion-Proof Painting Robot',
         'business' => 'Automotive',
-        'image' => 'assets/images/sub-product/coating-painting/robot-paint/kf193.png',
+        'image' => 'assets/images/sub-product/coating-painting/robot-paint/kf193.webp',
         'gallery' => [
-            'assets/images/sub-product/coating-painting/robot-paint/mpx1150.png',
-            'assets/images/sub-product/coating-painting/robot-paint/mpx1950.png',
-            'assets/images/sub-product/coating-painting/robot-paint/MPX2600.png',
-            'assets/images/sub-product/coating-painting/robot-paint/mpx3500.png',
-            'assets/images/sub-product/coating-painting/robot-paint/kf121.png',
+            'assets/images/sub-product/coating-painting/robot-paint/mpx1150.webp',
+            'assets/images/sub-product/coating-painting/robot-paint/mpx1950.webp',
+            'assets/images/sub-product/coating-painting/robot-paint/MPX2600.webp',
+            'assets/images/sub-product/coating-painting/robot-paint/mpx3500.webp',
+            'assets/images/sub-product/coating-painting/robot-paint/kf121.webp',
         ],
         'description' => 'An explosion-proof six-axis painting robot with a 1,973 mm reach and a 40 mm hollow wrist for routing painting hoses internally.',
         'features' => [
@@ -267,13 +267,13 @@
         'model' => 'KF194',
         'type' => 'Explosion-Proof Painting Robot',
         'business' => 'Automotive',
-        'image' => 'assets/images/sub-product/coating-painting/robot-paint/kf194.png',
+        'image' => 'assets/images/sub-product/coating-painting/robot-paint/kf194.webp',
         'gallery' => [
-            'assets/images/sub-product/coating-painting/robot-paint/mpx1150.png',
-            'assets/images/sub-product/coating-painting/robot-paint/mpx1950.png',
-            'assets/images/sub-product/coating-painting/robot-paint/MPX2600.png',
-            'assets/images/sub-product/coating-painting/robot-paint/mpx3500.png',
-            'assets/images/sub-product/coating-painting/robot-paint/kf121.png',
+            'assets/images/sub-product/coating-painting/robot-paint/mpx1150.webp',
+            'assets/images/sub-product/coating-painting/robot-paint/mpx1950.webp',
+            'assets/images/sub-product/coating-painting/robot-paint/MPX2600.webp',
+            'assets/images/sub-product/coating-painting/robot-paint/mpx3500.webp',
+            'assets/images/sub-product/coating-painting/robot-paint/kf121.webp',
         ],
         'description' => 'An explosion-proof six-axis painting robot with a 1,978 mm reach and a 70 mm hollow wrist designed to accommodate larger painting hoses.',
         'features' => [
@@ -303,8 +303,8 @@
 @endphp
 {{-- HERO BANNER --}}
 <section class="relative aspect-[5/4] overflow-hidden sm:aspect-[1351/400]">
-    <picture class="absolute inset-0 block h-full w-full"><source media="(max-width: 767px)" srcset="{{ asset('assets/images/banner/banner-m.jpg') }}"><img
-        src="{{ asset('assets/images/banner/banner-d.jpg') }}"
+    <picture class="absolute inset-0 block h-full w-full"><source media="(max-width: 767px)" srcset="{{ asset('assets/images/banner/banner-m.webp') }}"><img
+        src="{{ asset('assets/images/banner/banner-d.webp') }}"
         alt="Industrial coating and painting solutions"
         class="absolute inset-0 h-full w-full object-cover object-center"
     ></picture>
@@ -423,7 +423,7 @@
                         alt="{{ $product['brand'] }} {{ $product['model'] }}"
                         class="h-32 w-full object-contain transition duration-300 group-hover:scale-105"
                         loading="lazy"
-                        onerror="this.onerror=null;this.src='{{ asset('assets/images/home/robot-paint.png') }}';"
+                        onerror="this.onerror=null;this.src='{{ asset('assets/images/home/robot-paint.webp') }}';"
                     >
                 </div>
                 <div class="flex min-w-0 flex-1 flex-col py-3 pr-2">
@@ -568,10 +568,19 @@
                     <tbody id="robotic-modal-specs" class="divide-y divide-gray-200 bg-white"></tbody>
                 </table>
             </div>
-            <p class="mt-3 text-sm leading-relaxed text-gray-500">
-                Product information shown is for demonstration purposes.
-                Please confirm official specifications with the manufacturer.
-            </p>
+        <div class="mt-6 flex justify-end border-t border-gray-200 pt-5">
+            <a
+                id="robotic-painting-modal-whatsapp-inquiry"
+                href="https://wa.me/6285697828194"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="inline-flex w-full items-center justify-center gap-2 rounded-lg bg-[#25D366] px-6 py-3 text-sm font-bold text-white shadow-sm transition hover:bg-[#1DA851] focus:outline-none focus-visible:ring-2 focus-visible:ring-[#25D366] focus-visible:ring-offset-2 sm:w-auto"
+            >
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="h-5 w-5 shrink-0 fill-current" aria-hidden="true"><path d="M20.52 3.48A11.86 11.86 0 0 0 12.07 0C5.5 0 .15 5.34.15 11.91c0 2.1.55 4.15 1.6 5.96L0 24l6.3-1.65a11.9 11.9 0 0 0 5.76 1.47h.01c6.57 0 11.92-5.34 11.92-11.91 0-3.18-1.24-6.17-3.47-8.43ZM12.07 21.8a9.9 9.9 0 0 1-5.04-1.38l-.36-.21-3.74.98 1-3.65-.24-.37a9.86 9.86 0 0 1-1.52-5.26c0-5.47 4.45-9.92 9.91-9.92 2.65 0 5.14 1.03 7.01 2.91a9.86 9.86 0 0 1 2.9 7.01c0 5.47-4.45 9.91-9.92 9.91Zm5.44-7.42c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.65.07-.3-.15-1.26-.47-2.4-1.49-.89-.79-1.49-1.76-1.66-2.06-.17-.3-.02-.46.13-.61.14-.14.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.03-.52-.07-.15-.67-1.62-.92-2.22-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.49s1.07 2.89 1.22 3.09c.15.2 2.1 3.2 5.09 4.49.71.31 1.27.49 1.7.63.71.23 1.36.2 1.87.12.57-.09 1.76-.72 2.01-1.42.25-.7.25-1.3.17-1.42-.07-.12-.27-.2-.57-.35Z"/></svg>
+                <span>Inquire via WhatsApp</span>
+            </a>
+        </div>
+
         </div>
     </div>
 </div>
@@ -712,6 +721,15 @@ const initRoboticPaintingPage = () => {
     function openProductModal(index) {
         const product = products[index];
         if (!product) return;
+        const whatsappInquiry = document.getElementById('robotic-painting-modal-whatsapp-inquiry');
+        if (whatsappInquiry) {
+            const inquiryMessage = [
+                'Saya ingin menanyakan produk ini',
+                `Merek: ${product.brand}`,
+                `Model: ${product.model}`,
+            ].join('\n');
+            whatsappInquiry.href = `https://wa.me/6285697828194?text=${encodeURIComponent(inquiryMessage)}`;
+        }
 const modalBrand = document.getElementById('robotic-modal-brand');
 
 modalBrand.textContent = product.brand;
@@ -728,7 +746,7 @@ const thumbnails = document.getElementById('robotic-modal-thumbnails');
 const previousButton = document.getElementById('robotic-gallery-prev');
 const nextButton = document.getElementById('robotic-gallery-next');
 const galleryCounter = document.getElementById('robotic-gallery-counter');
-const fallbackImage = '{{ asset('assets/images/home/robot-paint.png') }}';
+const fallbackImage = '{{ asset('assets/images/home/robot-paint.webp') }}';
 const getImageUrl = (path) => '{{ asset('') }}' + path;
 // Gunakan maksimal 5 gambar yang didefinisikan pada product.gallery.
 // Jika gallery kosong, gunakan gambar utama produk sebagai fallback.
