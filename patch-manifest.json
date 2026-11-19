@@ -1,23 +1,28 @@
 {
-  "updated_pages": [
-    "resources/views/pages/main-product/sub-product/coating-painting/automatic-guns.blade.php",
-    "resources/views/pages/main-product/sub-product/coating-painting/hand-guns.blade.php",
-    "resources/views/pages/main-product/sub-product/coating-painting/mixing-color-change.blade.php",
-    "resources/views/pages/main-product/sub-product/coating-painting/paint-supply.blade.php",
-    "resources/views/pages/main-product/sub-product/coating-painting/powder-coating.blade.php",
-    "resources/views/pages/main-product/sub-product/coating-painting/robotic-painting.blade.php",
-    "resources/views/pages/main-product/sub-product/hoist-crane/electric-chain-hoist.blade.php",
-    "resources/views/pages/main-product/sub-product/hoist-crane/heavy-duty-hoist.blade.php",
-    "resources/views/pages/main-product/sub-product/hoist-crane/wire-rope-hoist.blade.php",
-    "resources/views/pages/main-product/sub-product/industrial-machinery/labeling-end-of-line-automation.blade.php",
-    "resources/views/pages/main-product/sub-product/industrial-machinery/liquid-filling-capping.blade.php",
-    "resources/views/pages/main-product/sub-product/industrial-machinery/mixing-process-system.blade.php",
-    "resources/views/pages/main-product/sub-product/industrial-machinery/packaging-solutions.blade.php",
-    "resources/views/pages/main-product/sub-product/industrial-machinery/powder-material-handling.blade.php",
-    "resources/views/pages/main-product/sub-product/industrial-machinery/solid-dosage-system.blade.php",
-    "resources/views/pages/main-product/sub-product/industrial-machinery/tube-filling-sealing.blade.php"
+  "files": [
+    "resources/views/pages/about.blade.php",
+    "public/assets/images/about/testimonial/customer/test1.webp",
+    "public/assets/images/about/testimonial/customer/test2.webp",
+    "public/assets/images/about/testimonial/customer/test3.webp",
+    "public/assets/images/about/testimonial/customer/test4.webp",
+    "public/assets/images/about/testimonial/customer/test5.webp",
+    "public/assets/images/about/testimonial/customer/test6.webp",
+    "public/assets/images/about/testimonial/customer/test7.webp",
+    "public/assets/images/about/testimonial/customer/test8.webp",
+    "public/assets/images/about/testimonial/company/test1.webp",
+    "public/assets/images/about/testimonial/company/test2.webp",
+    "public/assets/images/about/testimonial/company/test3.webp",
+    "public/assets/images/about/testimonial/company/test4.webp",
+    "public/assets/images/about/testimonial/company/test5.webp",
+    "public/assets/images/about/testimonial/company/test6.webp",
+    "public/assets/images/about/testimonial/company/test7.webp",
+    "public/assets/images/about/testimonial/company/test8.webp"
   ],
-  "removed_partner_disclaimers": 15,
-  "removed_demonstration_disclaimers": 1,
-  "whatsapp_inquiry_preserved_pages": 16
+  "testimonial_cards": 8,
+  "customer_portraits": 8,
+  "company_logos": 8,
+  "logo_source_folder": "public/assets/images/about/customer",
+  "original_customer_logos_preserved": true,
+  "build_required": false,
+  "note": "Fictional portrait images and sample quotes are demo-only; not real endorsements."
 }

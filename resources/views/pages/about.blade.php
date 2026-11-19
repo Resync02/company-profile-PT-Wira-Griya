@@ -1005,17 +1005,20 @@
 
         .testimonial-company-logo {
             display: flex;
-            min-height: 70px;
+            width: 100%;
+            min-height: 92px;
             align-items: center;
-            justify-content: flex-start;
+            justify-content: center;
         }
 
         .testimonial-company-logo img {
             display: block;
-            width: min(100%, 190px);
-            height: 58px;
+            width: 100%;
+            max-width: 250px;
+            height: 82px;
+            margin-inline: auto;
             object-fit: contain;
-            object-position: left center;
+            object-position: center;
         }
 
         /* Testimonial gallery with side navigation */
@@ -1101,11 +1104,15 @@
             }
 
             .testimonial-company-logo {
-                min-height: 58px;
+                min-height: 76px;
+                justify-content: center;
             }
 
             .testimonial-company-logo img {
-                height: 48px;
+                width: 100%;
+                max-width: 220px;
+                height: 68px;
+                object-position: center;
             }
         }
 
@@ -1130,70 +1137,71 @@
         }
     </style>
 
+    {{-- Demo testimonial content and fictional portraits. Replace with approved customer material before public endorsement use. --}}
     @php
         $testimonials = [
             [
                 'name' => 'Customer 01',
                 'position' => 'Procurement Manager',
                 'company' => 'Company 01',
-                'photo' => 'customer-1.jpg',
-                'logo' => 'customer-company-1.png',
+                'photo' => 'test1.webp',
+                'logo' => 'test1.webp',
                 'quote' => 'Sudah lebih dari 5 tahun kami bekerja sama dan sampai sekarang masih berhubungan dengan baik.',
             ],
             [
                 'name' => 'Customer 02',
                 'position' => 'Engineering Manager',
                 'company' => 'Company 02',
-                'photo' => 'customer-2.jpg',
-                'logo' => 'customer-company-2.png',
+                'photo' => 'test2.webp',
+                'logo' => 'test2.webp',
                 'quote' => 'Tim PT Wira Griya memberikan dukungan yang baik dan membantu kami menemukan solusi sesuai kebutuhan operasional.',
             ],
             [
                 'name' => 'Customer 03',
                 'position' => 'Purchasing Manager',
                 'company' => 'Company 03',
-                'photo' => 'customer-3.jpg',
-                'logo' => 'customer-company-3.png',
+                'photo' => 'test3.webp',
+                'logo' => 'test3.webp',
                 'quote' => 'Komunikasi berjalan dengan baik dan kebutuhan teknis kami ditangani secara profesional.',
             ],
             [
                 'name' => 'Customer 04',
                 'position' => 'Plant Manager',
                 'company' => 'Company 04',
-                'photo' => 'customer-4.jpg',
-                'logo' => 'customer-company-4.png',
+                'photo' => 'test4.webp',
+                'logo' => 'test4.webp',
                 'quote' => 'Kami menghargai kerja sama yang terjalin dan dukungan yang diberikan selama proses pengadaan.',
             ],
             [
                 'name' => 'Customer 05',
                 'position' => 'Operations Manager',
                 'company' => 'Company 05',
-                'photo' => 'customer-5.jpg',
-                'logo' => 'customer-company-5.png',
+                'photo' => 'test5.webp',
+                'logo' => 'test5.webp',
                 'quote' => 'PT Wira Griya menjadi salah satu rekan kerja yang dapat diajak berdiskusi mengenai kebutuhan industri kami.',
             ],
             [
                 'name' => 'Customer 06',
                 'position' => 'Technical Manager',
                 'company' => 'Company 06',
-                'photo' => 'customer-6.jpg',
-                'logo' => 'customer-company-6.png',
+                'photo' => 'test6.webp',
+                'logo' => 'test6.webp',
                 'quote' => 'Kami mendapatkan respons dan informasi teknis yang membantu dalam menentukan solusi peralatan.',
             ],
             [
                 'name' => 'Customer 07',
                 'position' => 'Project Manager',
                 'company' => 'Company 07',
-                'photo' => 'customer-7.jpg',
-                'logo' => 'customer-company-7.png',
+                'photo' => 'test7.webp',
+                'logo' => 'test7.webp',
                 'quote' => 'Kerja sama berlangsung dengan baik, mulai dari pembahasan kebutuhan hingga koordinasi proyek.',
             ],
             [
                 'name' => 'Customer 08',
                 'position' => 'General Manager',
                 'company' => 'Company 08',
-                'photo' => 'customer-8.jpg',
-                'logo' => 'customer-company-8.png',
+                'photo' => 'test8.webp',
+                'logo' => 'test8.webp',
                 'quote' => 'Kami berharap hubungan kerja sama ini dapat terus berkembang dan memberikan manfaat bagi kedua perusahaan.',
             ],
         ];
@@ -1236,7 +1244,7 @@
                                 {{-- CUSTOMER PHOTO --}}
                                 <div class="testimonial-photo-wrap">
                                     <img
-                                        src="{{ asset('assets/images/testimonials/' . $testimonial['photo']) }}"
+                                        src="{{ asset('assets/images/about/testimonial/customer/' . $testimonial['photo']) }}"
                                         alt="{{ $testimonial['name'] }}"
                                         data-testimonial-photo
                                         loading="lazy"
@@ -1249,7 +1257,7 @@
                                     {{-- COMPANY LOGO --}}
                                     <div class="testimonial-company-logo">
                                         <img
-                                            src="{{ asset('assets/images/testimonials/' . $testimonial['logo']) }}"
+                                            src="{{ asset('assets/images/about/testimonial/company/' . $testimonial['logo']) }}"
                                             alt="{{ $testimonial['company'] }}"
                                             data-testimonial-logo
                                             loading="lazy"
@@ -1257,10 +1265,6 @@
                                     </div>
 
                                     <div>
-                                        <p class="text-xs font-bold uppercase tracking-[.12em] text-[#2D5FA3]">
-                                            Customer Representative
-                                        </p>
-
                                         <h3 class="mt-2 text-lg font-bold leading-tight text-[#183E6E] sm:text-xl">
                                             {{ $testimonial['name'] }}
                                         </h3>
@@ -1271,10 +1275,6 @@
 
                                         <p class="mt-1 text-sm font-medium text-gray-500">
                                             {{ $testimonial['company'] }}
-                                        </p>
-
-                                        <p class="mt-3 text-xs font-semibold text-[#2D5FA3]">
-                                            Hover / Click to flip ↗
                                         </p>
                                     </div>
 

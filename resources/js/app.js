@@ -244,12 +244,12 @@ document.addEventListener('DOMContentLoaded', () => {
 vision: {
     title: 'Vision & Mission',
     body: `
-        <div class="relative flex h-[min(680px,calc(100vh-170px))] min-h-0 w-full flex-col overflow-hidden rounded-xl text-white">
+        <div class="relative flex h-auto min-h-0 w-full flex-col overflow-hidden rounded-xl text-white lg:h-[min(680px,calc(100vh-170px))]">
 
             <!-- Unified Background -->
             <div
                 class="absolute inset-0 bg-cover bg-center"
-                style="background-image: url('/assets/images/about/vnm/vnm.webp');"
+                style="background-image: url('/assets/images/about/bg.webp');"
                 aria-hidden="true"
             ></div>
 
@@ -263,7 +263,7 @@ vision: {
             <!-- =========================
                  VISION SECTION
             ========================== -->
-            <section class="relative z-10 flex min-h-0 flex-[0_0_40%] flex-col items-center justify-center px-5 py-5 text-center sm:px-10 sm:py-6 lg:px-14">
+            <section class="relative z-10 flex shrink-0 flex-col items-center justify-center px-5 py-7 text-center sm:px-10 sm:py-8 lg:min-h-0 lg:flex-[0_0_40%] lg:px-14 lg:py-6">
 
                 <div class="mx-auto flex w-full max-w-5xl flex-col items-center">
 
@@ -306,7 +306,7 @@ vision: {
             <!-- =========================
                  MISSION SECTION
             ========================== -->
-            <section class="relative z-10 flex min-h-0 flex-1 flex-col justify-center px-5 py-4 sm:px-10 sm:py-5 lg:px-14">
+            <section class="relative z-10 flex shrink-0 flex-col justify-center px-5 py-7 sm:px-10 sm:py-8 lg:min-h-0 lg:flex-1 lg:px-14 lg:py-5">
 
                 <div class="mx-auto flex w-full max-w-5xl flex-col justify-center">
 
@@ -340,7 +340,7 @@ vision: {
 
 
                     <!-- Mission Cards -->
-                    <div class="grid grid-cols-1 gap-2.5 sm:grid-cols-2 sm:gap-4">
+                    <div class="grid grid-cols-1 gap-3 sm:grid-cols-2 sm:gap-4">
 
 
                         <!-- Mission 01 -->
