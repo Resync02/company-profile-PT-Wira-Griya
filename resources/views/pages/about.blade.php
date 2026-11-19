@@ -1292,11 +1292,6 @@
                                     <blockquote class="mt-2 text-base font-semibold leading-relaxed sm:text-lg">
                                         {{ $testimonial['quote'] }}
                                     </blockquote>
-
-                                    <p class="mt-5 text-xs font-bold uppercase tracking-[.16em] text-white/65">
-                                        {{ $testimonial['company'] }} · Sample Quote
-                                    </p>
-
                                 </div>
                             </div>
 
