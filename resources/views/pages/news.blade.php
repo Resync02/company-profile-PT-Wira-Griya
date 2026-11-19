@@ -19,7 +19,7 @@
         [
             'id' => 3,
             'slug' => 'tips-for-choosing',
-            'category' => 'Tips & Guides',
+            'category' => 'Company Activites',
             'date' => '2026-03-18',
             'title' => 'Tips for Choosing the Right Overhead Crane for Your Industry',
             'excerpt' => 'Selecting the right overhead crane can improve operational efficiency, safety, and long-term productivity.',
@@ -28,7 +28,7 @@
                 [
             'id' => 11,
             'slug' => 'preventive-maintenance-strategies',
-            'category' => 'Tips & Guides',
+            'category' => 'Company Activites',
             'date' => '2026-11-17',
             'title' => 'Preventive Maintenance Strategies for Industrial Equipment',
             'excerpt' => 'A structured preventive maintenance program helps industrial operators monitor equipment condition, reduce avoidable interruptions, and plan maintenance activities more effectively.',
