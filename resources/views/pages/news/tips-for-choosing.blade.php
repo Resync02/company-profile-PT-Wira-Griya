@@ -7,7 +7,7 @@
 
 @php
     $article = [
-        'category' => 'Tips & Guides',
+        'category' => 'Company Activites',
         'date' => '2026-03-18',
         'title' => 'Tips for Choosing the Right Overhead Crane for Your Industry',
         'author' => 'Admin Wira',

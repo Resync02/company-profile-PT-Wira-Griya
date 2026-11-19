@@ -19,7 +19,7 @@
         [
             'id' => 3,
             'slug' => 'tips-for-choosing',
-            'category' => 'Company Activites',
+            'category' => 'Company Activities',
             'date' => '2026-03-18',
             'title' => 'Tips for Choosing the Right Overhead Crane for Your Industry',
             'excerpt' => 'Selecting the right overhead crane can improve operational efficiency, safety, and long-term productivity.',
@@ -28,7 +28,7 @@
                 [
             'id' => 11,
             'slug' => 'preventive-maintenance-strategies',
-            'category' => 'Company Activites',
+            'category' => 'Company Activities',
             'date' => '2026-11-17',
             'title' => 'Preventive Maintenance Strategies for Industrial Equipment',
             'excerpt' => 'A structured preventive maintenance program helps industrial operators monitor equipment condition, reduce avoidable interruptions, and plan maintenance activities more effectively.',
@@ -192,7 +192,8 @@
                     class="min-w-0 rounded border border-gray-200 bg-white px-3 py-2 text-sm text-dark outline-none focus:border-primary"
                 >
                     <option value="all">All Months</option>
-                    <option value="2026-03">March 2026</option>
+                    <option value="2026-03">October 2026</option>
+                    <option value="2026-11">November 2026</option>
                 </select>
             </div>
         </div>

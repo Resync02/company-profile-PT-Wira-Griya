@@ -8,7 +8,7 @@
 @php
     $article = [
         'title' => 'Preventive Maintenance Strategies for Industrial Equipment',
-        'category' => 'Tips & Guides',
+        'category' => 'Company Activites',
         'date' => '2026-11-17',
         'author' => 'Admin Wira',
         'image' => 'assets/images/home/industrial-machinery.webp',
