@@ -322,22 +322,6 @@
 
         <button
             type="button"
-            data-category="Industry News"
-            class="news-category border-b-2 border-transparent pb-3 text-base font-semibold text-gray-500 transition hover:text-primary"
-        >
-            Industry News
-        </button>
-
-        <button
-            type="button"
-            data-category="Tips &amp; Guides"
-            class="news-category border-b-2 border-transparent pb-3 text-base font-semibold text-gray-500 transition hover:text-primary"
-        >
-            Tips &amp; Guides
-        </button>
-
-        <button
-            type="button"
             data-category="Company Activities"
             class="news-category border-b-2 border-transparent pb-3 text-base font-semibold text-gray-500 transition hover:text-primary"
         >

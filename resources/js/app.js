@@ -241,10 +241,11 @@ document.addEventListener('DOMContentLoaded', () => {
             template: 'testimonial-modal-template',
         },
 
+
 vision: {
     title: 'Vision & Mission',
     body: `
-        <div class="relative flex h-auto min-h-0 w-full flex-col overflow-hidden rounded-xl text-white lg:h-[min(680px,calc(100vh-170px))]">
+        <div class="relative flex h-auto min-h-0 w-full flex-col overflow-hidden rounded-xl text-[#183E6E] lg:h-[min(680px,calc(100vh-170px))]">
 
             <!-- Unified Background -->
             <div
@@ -253,16 +254,13 @@ vision: {
                 aria-hidden="true"
             ></div>
 
-            <!-- Unified Dark Overlay -->
+            <!-- Light Overlay -->
             <div
-                class="absolute inset-0 bg-[#071D35]/75"
+                class="absolute inset-0 bg-white/30"
                 aria-hidden="true"
             ></div>
 
-
-            <!-- =========================
-                 VISION SECTION
-            ========================== -->
+            <!-- VISION SECTION -->
             <section class="relative z-10 flex shrink-0 flex-col items-center justify-center px-5 py-7 text-center sm:px-10 sm:py-8 lg:min-h-0 lg:flex-[0_0_40%] lg:px-14 lg:py-6">
 
                 <div class="mx-auto flex w-full max-w-5xl flex-col items-center">
@@ -270,25 +268,24 @@ vision: {
                     <!-- Vision Heading -->
                     <div class="mb-3 flex items-center justify-center gap-3">
 
-                        <!-- Eye Icon -->
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
                             viewBox="0 0 24 24"
                             fill="currentColor"
-                            class="size-9 shrink-0 text-[#F4B544] sm:size-11"
+                            class="size-9 shrink-0 text-[#D99A00] sm:size-11"
                             aria-hidden="true"
                         >
                             <path d="M12 4.5C5.5 4.5 1.7 11 1 12c.7 1 4.5 7.5 11 7.5s10.3-6.5 11-7.5c-.7-1-4.5-7.5-11-7.5Zm0 12a4.5 4.5 0 1 1 0-9 4.5 4.5 0 0 1 0 9Zm0-2.5a2 2 0 1 0 0-4 2 2 0 0 0 0 4Z"/>
                         </svg>
 
-                        <h3 class="text-4xl font-extrabold tracking-tight text-white sm:text-5xl">
+                        <h3 class="text-4xl font-extrabold tracking-tight text-[#183E6E] sm:text-5xl">
                             Vision
                         </h3>
 
                     </div>
 
                     <!-- Vision Description -->
-                    <p class="max-w-4xl text-base font-medium leading-relaxed text-white sm:text-lg lg:text-xl">
+                    <p class="max-w-4xl text-base font-medium leading-relaxed text-[#334B68] sm:text-lg lg:text-xl">
                         To become a leading industrial solutions provider in Indonesia, recognized for our commitment to quality, innovation, and sustainability.
                     </p>
 
@@ -296,16 +293,10 @@ vision: {
 
             </section>
 
+            <!-- DIVIDER -->
+            <div class="relative z-10 mx-auto w-[86%] shrink-0 border-t border-[#183E6E]/25"></div>
 
-            <!-- =========================
-                 DIVIDER
-            ========================== -->
-            <div class="relative z-10 mx-auto w-[86%] shrink-0 border-t border-white/30"></div>
-
-
-            <!-- =========================
-                 MISSION SECTION
-            ========================== -->
+            <!-- MISSION SECTION -->
             <section class="relative z-10 flex shrink-0 flex-col justify-center px-5 py-7 sm:px-10 sm:py-8 lg:min-h-0 lg:flex-1 lg:px-14 lg:py-5">
 
                 <div class="mx-auto flex w-full max-w-5xl flex-col justify-center">
@@ -313,7 +304,6 @@ vision: {
                     <!-- Mission Heading -->
                     <div class="mb-4 flex items-center justify-center gap-3 sm:mb-6">
 
-                        <!-- Target Icon -->
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
                             viewBox="0 0 24 24"
@@ -322,7 +312,7 @@ vision: {
                             stroke-width="1.8"
                             stroke-linecap="round"
                             stroke-linejoin="round"
-                            class="size-9 shrink-0 text-[#F4B544] sm:size-11"
+                            class="size-9 shrink-0 text-[#D99A00] sm:size-11"
                             aria-hidden="true"
                         >
                             <circle cx="12" cy="12" r="9"/>
@@ -332,72 +322,66 @@ vision: {
                             <path d="M16 4h4v4"/>
                         </svg>
 
-                        <h3 class="text-4xl font-extrabold tracking-tight text-white sm:text-5xl">
+                        <h3 class="text-4xl font-extrabold tracking-tight text-[#183E6E] sm:text-5xl">
                             Mission
                         </h3>
 
                     </div>
 
-
                     <!-- Mission Cards -->
                     <div class="grid grid-cols-1 gap-3 sm:grid-cols-2 sm:gap-4">
 
-
                         <!-- Mission 01 -->
-                        <article class="flex min-h-[76px] items-center gap-3 rounded-lg border border-white/25 bg-[#0C2947]/40 px-4 py-3 backdrop-blur-[2px] transition-colors duration-300 hover:bg-[#0C2947]/60 sm:gap-4 sm:px-5 sm:py-4">
+                        <article class="flex min-h-[76px] items-center gap-3 rounded-lg border border-[#BFD3EB] border-l-4 border-l-[#F5B940] bg-white/85 px-4 py-3 shadow-[0_4px_14px_rgba(24,62,110,0.07)] backdrop-blur-sm transition-all duration-300 hover:-translate-y-0.5 hover:bg-white hover:shadow-md sm:gap-4 sm:px-5 sm:py-4">
 
-                            <span class="shrink-0 text-4xl font-bold leading-none text-[#F4B544] sm:text-5xl">
+                            <span class="shrink-0 text-4xl font-bold leading-none text-[#1455D9] sm:text-5xl">
                                 01
                             </span>
 
-                            <p class="text-sm font-medium leading-relaxed text-white sm:text-base lg:text-lg">
+                            <p class="text-sm font-medium leading-relaxed text-[#334B68] sm:text-base lg:text-lg">
                                 Deliver high-quality industrial products and services.
                             </p>
 
                         </article>
 
-
                         <!-- Mission 02 -->
-                        <article class="flex min-h-[76px] items-center gap-3 rounded-lg border border-white/25 bg-[#0C2947]/40 px-4 py-3 backdrop-blur-[2px] transition-colors duration-300 hover:bg-[#0C2947]/60 sm:gap-4 sm:px-5 sm:py-4">
+                        <article class="flex min-h-[76px] items-center gap-3 rounded-lg border border-[#BFD3EB] border-l-4 border-l-[#F5B940] bg-white/85 px-4 py-3 shadow-[0_4px_14px_rgba(24,62,110,0.07)] backdrop-blur-sm transition-all duration-300 hover:-translate-y-0.5 hover:bg-white hover:shadow-md sm:gap-4 sm:px-5 sm:py-4">
 
-                            <span class="shrink-0 text-4xl font-bold leading-none text-[#F4B544] sm:text-5xl">
+                            <span class="shrink-0 text-4xl font-bold leading-none text-[#1455D9] sm:text-5xl">
                                 02
                             </span>
 
-                            <p class="text-sm font-medium leading-relaxed text-white sm:text-base lg:text-lg">
+                            <p class="text-sm font-medium leading-relaxed text-[#334B68] sm:text-base lg:text-lg">
                                 Provide innovative and efficient solutions tailored to customer needs.
                             </p>
 
                         </article>
 
-
                         <!-- Mission 03 -->
-                        <article class="flex min-h-[76px] items-center gap-3 rounded-lg border border-white/25 bg-[#0C2947]/40 px-4 py-3 backdrop-blur-[2px] transition-colors duration-300 hover:bg-[#0C2947]/60 sm:gap-4 sm:px-5 sm:py-4">
+                        <article class="flex min-h-[76px] items-center gap-3 rounded-lg border border-[#BFD3EB] border-l-4 border-l-[#F5B940] bg-white/85 px-4 py-3 shadow-[0_4px_14px_rgba(24,62,110,0.07)] backdrop-blur-sm transition-all duration-300 hover:-translate-y-0.5 hover:bg-white hover:shadow-md sm:gap-4 sm:px-5 sm:py-4">
 
-                            <span class="shrink-0 text-4xl font-bold leading-none text-[#F4B544] sm:text-5xl">
+                            <span class="shrink-0 text-4xl font-bold leading-none text-[#1455D9] sm:text-5xl">
                                 03
                             </span>
 
-                            <p class="text-sm font-medium leading-relaxed text-white sm:text-base lg:text-lg">
+                            <p class="text-sm font-medium leading-relaxed text-[#334B68] sm:text-base lg:text-lg">
                                 Build long-term partnerships with customers, suppliers, and stakeholders.
                             </p>
 
                         </article>
 
-
                         <!-- Mission 04 -->
-                        <article class="flex min-h-[76px] items-center gap-3 rounded-lg border border-white/25 bg-[#0C2947]/40 px-4 py-3 backdrop-blur-[2px] transition-colors duration-300 hover:bg-[#0C2947]/60 sm:gap-4 sm:px-5 sm:py-4">
+                        <article class="flex min-h-[76px] items-center gap-3 rounded-lg border border-[#BFD3EB] border-l-4 border-l-[#F5B940] bg-white/85 px-4 py-3 shadow-[0_4px_14px_rgba(24,62,110,0.07)] backdrop-blur-sm transition-all duration-300 hover:-translate-y-0.5 hover:bg-white hover:shadow-md sm:gap-4 sm:px-5 sm:py-4">
 
-                            <span class="shrink-0 text-4xl font-bold leading-none text-[#F4B544] sm:text-5xl">
+                            <span class="shrink-0 text-4xl font-bold leading-none text-[#1455D9] sm:text-5xl">
                                 04
                             </span>
 
-                            <p class="text-sm font-medium leading-relaxed text-white sm:text-base lg:text-lg">
+                            <p class="text-sm font-medium leading-relaxed text-[#334B68] sm:text-base lg:text-lg">
                                 Contribute to a safer, more productive, and sustainable industry.
                             </p>
 
                         </article>
-
 
                     </div>
 
